@@ -5,7 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java"
+    "code/homework/Methods.java",
+    "code/homework/Circus.java",
+    "code/variables/MethodAdvAppl.java",
+    "code/variables/OperationsAppl.java"
+
   ],
   "video": ""
 }
