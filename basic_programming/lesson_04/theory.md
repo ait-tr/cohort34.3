@@ -1,3 +1,69 @@
+# Accumulated knowledge:
+
+## **What does a real programmer “look like”? (How does it look like?)**
+
+- PRINTS FAST!!!
+- he has a good computer
+- he speaks good English
+- ability to quickly search for information on the Internet and everywhere
+- ability to learn all the time
+- flexibility of thinking, adaptability
+- good memory
+- ability to concentrate on a task
+- education, broad outlook
+- creative thinking
+- perseverance
+- skill to work in team
+- ability to rest and get up from the computer
+- attention to code
+- ability to ask questions and seek answers to them
+
+## Algorithm and its properties
+**Algorithm** is a _clear_ _sequence_ of _actions_, the implementation of which gives some
+known _result_.
+
+**Main properties of the algorithm:**
+1. Discretion (broken into steps).
+2. Effectiveness (there is a result at every step and at the end).
+3. Determinism (unambiguity, there is no possibility of “interpretation”).
+4. Limb (completed).
+
+## Variables and their types
+**8 primitive data types**:
++ byte - an integer takes up 1 byte in memory
++ short - an integer takes up 2 bytes in memory
++ char - positive integer takes up 2 bytes in memory
++ int - an integer takes up 4 bytes in memory
++ long - an integer takes up 8 bytes in memory
++ float - a floating point number takes 4 bytes in memory
++ double - floating point number takes 8 bytes in memory
++ boolean - a special logical type that takes one of two values: true or false
+
+We start the variable name with ... letter, do not start with ...
+
+The method name starts with ... letter.
+
+We start the class name with ... letter.
+
+## Methods
+A method that accepts nothing and returns nothing looks like this:
+piblic static ... methodName(){
+do something;
+}
+
+A method that takes parameters (arguments) and returns nothing looks like this:
+piblic static ... methodName(T1 t1, T2 2){
+do something;
+}
+
+A method that takes parameters (arguments) and returns a result of type T looks like this:
+piblic static ... methodName(T1 t1, T2 2){
+do something;
+return ...;
+}
+
+Any method is called by its name either without parameters or with parameters that are passed
+into method.
 
 ____________________________________________________________________________
 # Накопленные знания:

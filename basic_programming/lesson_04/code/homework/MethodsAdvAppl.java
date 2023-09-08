@@ -16,7 +16,7 @@ public class MethodsAdvAppl {
         double sSquare = squareArea(side);
         System.out.println("Square area = " + sSquare);
 
-        double a = 100;
+        double a = 500;
         double b = 200;
         double sRectangle = squareRectangle(a, b);
         System.out.println("Rectangle area = " + sRectangle);
@@ -33,7 +33,7 @@ public class MethodsAdvAppl {
     }
 
     public static double squareRectangle(double a, double b){
-        return a * b;
+        return a * b; // ответ, результат работы этого метода
     }
 
 }
