@@ -5,10 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Methods.java",
-    "code/homework/Circus.java",
-    "code/variables/MethodsAdvAppl.java",
-    "code/variables/OperationsAppl.java"
+    "code/homework/MethodsAdvAppl.java",
+    "code/practice/Division.java",
+    "code/practice/Methods1.java",
+    "code/practice/Methods2.java"
 
   ],
   "video": ""
