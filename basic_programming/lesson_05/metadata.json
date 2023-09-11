@@ -5,10 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/MethodsAdvAppl.java",
-    "code/practice/Division.java",
-    "code/practice/Methods1.java",
-    "code/practice/Methods2.java"
+    "code/homework/Cube.java",
+    "code/homework/Triangle.java",
+    "code/practice/Conditions.java",
+    "code/practice/Maximum.java",
+    "code/practice/SqEq.java",
+    "code/practice/Variables.java"
 
   ],
   "video": ""

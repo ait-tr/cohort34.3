@@ -3,13 +3,13 @@ package homework;
 public class Triangle {
     // некорректное с точки зрения математики решение
     public static void main(String[] args) {
-        int a = 11;
-        int h = 3;
-        int s = sTriangle(a, h);
+        double a = 11;
+        double h = 3;
+        double s = sTriangle(a, h);
         System.out.println("S triangle = " + s);
     }
 
-    public static int sTriangle(int a, int h){
-        return a * h / 2;
+    public static double sTriangle(double a, double h){
+        return 1.0 / 2.0 * a * h;
     }
 }
