@@ -46,7 +46,9 @@ public class Evaluation {
                 System.out.println("No games for 2 days!");
                 break;
             }
+            default: { // если пользователь ввел что-то другое (число)
+                System.out.println("Wrong input!");
+            }
         }
-
     }
 }

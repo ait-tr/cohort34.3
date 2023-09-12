@@ -5,12 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Cube.java",
-    "code/homework/Triangle.java",
-    "code/practice/Conditions.java",
-    "code/practice/Maximum.java",
-    "code/practice/SqEq.java",
-    "code/practice/Variables.java"
+    "code/homework/Discount.java",
+    "code/homework/LeapYear.java",
+    "code/homework/Triangle_1.java",
+    "code/practice/Evaluation.java",
+    "code/practice/TerOperator.java"
 
   ],
   "video": ""
