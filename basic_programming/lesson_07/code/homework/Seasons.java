@@ -13,51 +13,51 @@ public class Seasons {
         int month = scanner.nextInt();
 
         switch (month) {
-            case 1:
-            case 2:
-            case 12: {
-                System.out.println("This is Winter.");
+            case 3,4,5 :
+                System.out.println("Spring \uD83C\uDF38");
                 break;
-            }
-            case 3:
-            case 4:
-            case 5: {
-                System.out.println("This is Spring.");
+            case 6,7,8 :
+                System.out.println("Summer  ☀\uFE0F");
                 break;
-            }
-            case 6:
-            case 7:
-            case 8: {
-                System.out.println("This is Summer.");
+            case 9,10,11 :
+                System.out.println("Autumn \uD83C\uDF41");
                 break;
-            }
-            case 9:
-            case 10:
-            case 11: {
-                System.out.println("This is Fall.");
+            case 12,1,2:
+                System.out.println("Winter ❄\uFE0F");
                 break;
-            }
-            default: {
-                System.out.println("Wrong input!");
-            }
-
-//        switch (number) {
-//            case 3,4,5 :
-//                System.out.println("Spring \uD83C\uDF38");
-//                break;
-//            case 6,7,8 :
-//                System.out.println("Summer  ☀\uFE0F");
-//                break;
-//            case 9,10,11 :
-//                System.out.println("Autumn \uD83C\uDF41");
-//                break;
-//            case 12,1,2:
-//                System.out.println("Winter ❄\uFE0F");
-//                break;
-//            default:
-//                System.out.println("Incorrect \uD83D\uDE45\u200D♂\uFE0F");
-//        }
-
+            default:
+                System.out.println("Incorrect \uD83D\uDE45\u200D♂\uFE0F");
         }
+
+//        switch (month) {
+//            case 1:
+//            case 2:
+//            case 12: {
+//                System.out.println("This is Winter.");
+//                break;
+//            }
+//            case 3:
+//            case 4:
+//            case 5: {
+//                System.out.println("This is Spring.");
+//                break;
+//            }
+//            case 6:
+//            case 7:
+//            case 8: {
+//                System.out.println("This is Summer.");
+//                break;
+//            }
+//            case 9:
+//            case 10:
+//            case 11: {
+//                System.out.println("This is Fall.");
+//                break;
+//            }
+//            default: {
+//                System.out.println("Wrong input!");
+//            }
+
+
     }
 }
