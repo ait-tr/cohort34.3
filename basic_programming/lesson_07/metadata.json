@@ -5,11 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Discount.java",
-    "code/homework/LeapYear.java",
-    "code/homework/Triangle_1.java",
-    "code/practice/Evaluation.java",
-    "code/practice/TerOperator.java"
+    "code/homework/Calculator.java",
+    "code/homework/Salary.java",
+    "code/homework/Seasons.java",
+    "code/practice/Ampel.java",
+    "code/practice/Garbage.java",
+    "code/practice/WeekDays.java"
 
   ],
   "video": ""
