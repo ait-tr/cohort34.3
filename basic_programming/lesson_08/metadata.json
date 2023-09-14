@@ -5,12 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Calculator.java",
-    "code/homework/Salary.java",
-    "code/homework/Seasons.java",
-    "code/practice/Ampel.java",
-    "code/practice/Garbage.java",
-    "code/practice/WeekDays.java"
+    "code/homework/Coffee.java",
+    "code/homework/LeapYear_1.java",
+    "code/practice/Apples.java",
+    "code/practice/DigitsInNumber.java",
+    "code/practice/Power3.java",
+    "code/practice/Rocket.java"
 
   ],
   "video": ""
