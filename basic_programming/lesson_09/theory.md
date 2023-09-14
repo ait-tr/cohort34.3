@@ -66,15 +66,17 @@ do_something;
 }
 
 A method that takes parameters (arguments) and returns nothing looks like this:
-piblic static void methodName(T1 t1, T2 t2){
-do_something;
-}
+
+        piblic static void methodName(T1 t1, T2 t2){
+        do_something;
+        }
 
 A method that takes parameters (arguments) and returns a result of type T looks like this:
-piblic static T methodName(T1 t1, T2 t2){
-do something;
-return ...; // response, result from/from the method
-}
+
+        piblic static T methodName(T1 t1, T2 t2){
+        do something;
+        return ...; // response, result from/from the method
+        }
 
 If a method returns data, then only ONE TYPE.
 
