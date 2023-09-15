@@ -17,8 +17,8 @@ public class Runner {
         int day = 0;
         while(s < target) {
             s = s + s * 0.1;
-            System.out.printf("Distance %.2f", s);
-            System.out.println();
+            System.out.printf("Distance: %.2f", s); //  так печатаем результат с 2-мя знаками после запятой
+            System.out.println(); // переход на новую строку
             day++;
         }
         System.out.println("After " + day + " days you'll reach the target " + target + " km.");

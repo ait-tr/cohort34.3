@@ -10,6 +10,7 @@ public class PrintString {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input string : ");
         String str = scanner.nextLine(); // считывает всю введенную строку, включая пробелы
+        // scanner.next() - читает набор символов до пробела
         System.out.println("Input number to repeat the string: ");
         int n = scanner.nextInt();
         int count = 0;
