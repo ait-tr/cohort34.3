@@ -5,12 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Coffee.java",
-    "code/homework/LeapYear_1.java",
-    "code/practice/Apples.java",
-    "code/practice/DigitsInNumber.java",
-    "code/practice/Power3.java",
-    "code/practice/Rocket.java"
+    "code/homework/PrintString.java",
+    "code/homework/Runner.java",
+    "code/homework/SumOfDigits.java",
+    "code/practice/Multiply.java",
+    "code/practice/NumberBy5.java",
+    "code/practice/PrimeNumber.java"
 
   ],
   "video": ""
