@@ -1,4 +1,145 @@
+# Arrays
 
+1. Why do we need data sets?
+
+The main function of arrays is to store large amounts of information.
+
+## Examples of arrays that you know from life:
+- a list of employees
+- list of tasks/orders
+- phone book
+- ... (let's give more examples)
+- ...
+
+
+There is a variable and a data type => how to save them????
+int X = 1000;
+int Y = 2000;
+
+can be turned into an array of 2 numbers
+int X[0], X[1], ...
+
+## Defeenition:
+* An array is a container object that holds a fixed number of values of a **single type**.
+  An array is a container object containing a fixed number of values of the same type**.
+
+* The array can contain data of **ONLY ONE type**.
+* The type of what is stored in the array is the data types that we have in the Java language, there are no other types.
+
+
+**Main characteristics of the array:**
+- **type** of data placed in it (int, double, boolean, long, String, ...),
+- name (as Variable name),
+- length (natural number, cannot be negative) = array size (number of cells, length)
+  must be defined in **type int**.
+
+**IMPORTANT!** - you cannot change the length of an array after it has been created.
+
+In arrays, as elsewhere in Java, **elements are numbered starting from zero**.
+
+2. Array declaration syntax:
+
+- Step 1:
+    - determination/setting of **type of stored data** (data of ONE type is stored in the array),
+    - dimension planning (one-dimensional, two-dimensional, etc.) and size (depending on the amount of data)
+
+- Step 2: Declaring and Initiating the Array
+
+  Type[] arrayname = new Type[size];
+  The "=" symbol is an assignment operator
+
+  **Examples:**
+  int[] arrayNum = new int[5]; - defined an array of integers, array length = 5
+  String[] arrayName = new String[10]; - defined an array of strings, array length = 10
+  double[] arrayResults = new double[100]; - defined an array of fractional numbers, array length = 1
+
+3. Filling the array
+   After the array creation (initialization) procedure, it is filled with **default values**.
+    - for int all elements = 0
+    - for float, double all elements = 0.0
+    - for String all elements = "null"
+    - for char all elements = '\0'
+    - for boolean all elements = false
+
+
+Direct (manual) filling of the array:
+
+int[] myArray = new int[3];
+the array is called myArray, data type is int, array length = 3
+
+myArray[0] = 5;
+myArray[1] = -19;
+myArray[2] = 155;
+__________________
+
+         String[] directions = new String[4];
+
+         directions = {"left", "right", "up", "down"};
+         direction[0] = "left"
+         direction[1] = "right"
+         .....
+         direction[3] = "down"
+
+         direction[4] = "up-side-down" - error, attempt to access a non-existent array element
+         direction[5] - error, attempt to access a non-existent array element,
+                         out of range - going beyond the array limits
+__________________
+
+         int[] marks = {2, 5, 48, 5, 3, 5, 4, 1}; // you can also set an array this way
+         double[] temperature = {16.0, 18.0, 17.5, 22.6, 25.0, 28.0, 26.8}
+             temperature.length - returns the length of the array
+
+
+4. Access to array elements:
+   An array element is accessed by the **array name** and the **index of the element** within it:
+   arrayName[n] is the nth element in the array named arrayName, numbering starts at 0
+
+# For loop
+
+## Syntax
+         `for( initial value of parameter int i = 0; logical expression (i < n); increment step i++ ) {
+             operator 1;
+             operator 2;
+             ...
+         }`
+
+Typically, a for loop is used to **iterate through all the values in an array**.
+ i = 0, i < array length, i++
+
+Is it possible to construct any loops using a for loop? - More likely no than yes.
+
+Could there be i-- ? The answer is YES, in this case the cycle goes in reverse.
+
+## Using a For Loop
+
+### Filling an array in accordance with a mathematical pattern
+* arithmetic progression
+*    geometric progression
+* values of a given function, for example x squared => i * i
+
+### Filling an array with random data:
+
+* double a = Math.random(); - generates a random number in the range from [0, 1) - parentheses from mathematics
+  [ => 0 - maybe ) => 1 - can't be
+
+* double x = (Math.random() * (b-a) ) + a - generates a random number in the interval from [a, b) (a<b)
+  a - maybe, b - can't be
+
+* int n = (int)(Math.random() * (b - a + 1) + a) - generates a random **integer** number in the interval [a, b]
+  a - maybe, b - maybe
+
+## Standard tasks and operations with arrays:
+- search for an array element;
+- adding a new element (to the beginning, to the end, to the middle);
+- editing an array element;
+- deleting an array element;
+- search for maximum/minimum value;
+- sorting in ascending/descending order;
+- removal of duplicates;
+- array shift;
+- removal of empty (zero) elements.
+
+We will gradually go through all these points.
 ____________________________
 
 # Массивы
@@ -106,7 +247,9 @@ __________________
         }`
 
 Как правило, цикл for используют для **перебора всех значений массива**.
-Как правило, i = 0, i < длины массива, i++
+        for( i = 0, i < длины массива, i++) {
+            doSomething;
+        }
 
 Можно ли циклом for построить любые циклы? - Скорее НЕТ, чем да.
 
@@ -115,6 +258,7 @@ __________________
 ## Применение цикла For
 
 ### Заполнение массива в соответствии с математической закономерностью
+
 *    арифметическая прогрессия
 *    геометрическая прогрессия
 *    значения заданной функции, например x в квадрате => i * i
@@ -133,7 +277,7 @@ __________________
 ## Стандартные задачи и операции с массивами:
   - поиск элемента массива;
   - добавление нового элемента (в начало, в конец, в середину);
-  - редактирование элемента массива;
+  - редактирование(изменение) элемента массива;
   - удаление элемента массива;
   - поиск максимального/минимального значения;
   - сортировка по возрастанию/убыванию;
