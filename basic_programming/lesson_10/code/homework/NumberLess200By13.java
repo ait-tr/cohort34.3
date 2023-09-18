@@ -12,7 +12,7 @@ public class NumberLess200By13 {
             }
             num++;
         }
-        System.out.println();
+        System.out.println(); // переход на новую строку
         System.out.println("Done!");
     }
 }

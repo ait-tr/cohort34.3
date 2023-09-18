@@ -5,13 +5,13 @@ Print the temperature that was on Tuesday and then on Thursday.
 Find the average temperature for the past week.
 
 # Task 2
-Given an array of integers: 56, 73, 15, -10, 37, -14, 25, 65, 33, 38.
-Find the maximum array element and its index.
-
-# Task 3
 Create an array of 20 random integers ranging from 10 to 20.
 Print the array.
 Swap the first and last elements of the array and print the array again.
+
+# Task 3 (*)
+Given an array of integers: 56, 73, 15, -10, 37, -14, 25, 65, 33, 38.
+Find the maximum array element and its index.
 
 _____________________________
 
@@ -21,13 +21,13 @@ _____________________________
 Найти среднюю температуру за прошлую неделю.
 
 # Задача 2
-Задан массив целых чисел: 56, 73, 15, -10, 37, -14, 25, 65, 33, 38.
-Найдите максимальный элемент массива и его индекс.
-
-# Задача 3
 Создайте массив из 20 случайных целых чисел в интервале от 10 до 20.
 Выведите массив на печать.
 Поменяйте местами первый и последний элементы массива и снова выведите массив на печать.
+
+# Задача 3 (*)
+Задан массив целых чисел: 56, 73, 15, -10, 37, -14, 25, 65, 33, 38.
+Найдите максимальный элемент массива и его индекс.
 
 
 

@@ -13,13 +13,13 @@ public class Ticket {
         int age = 0;
         boolean isStudent = false;
         boolean isVIP = false;
+        double price = 0;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to cinema!");
         System.out.println("Input your answer: ");
         System.out.println("1 - senior, 2 - student, 3 - VIP, 4 - none of previous");
-        int status = scanner.nextInt();
-        double price = 0;
+        int status = scanner.nextInt(); // получаем ответ от пользователя
         switch (status){
             case 1 -> price = calculateTicketPrice(66, false, false);
             case 2 -> price = calculateTicketPrice(1, true, false);
