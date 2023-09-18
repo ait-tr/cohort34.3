@@ -14,7 +14,13 @@ public class Array {
             System.out.print(array[i] + " ");
         }
 
+        int temp = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1 ] = temp;
 
-
+        System.out.println(); // переход на новую строку
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
     }
 }
