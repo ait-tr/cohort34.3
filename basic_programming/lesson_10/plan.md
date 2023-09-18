@@ -1,4 +1,4 @@
-# Lesson plan No. 9 09/15/2023
+# Lesson plan No. 10 09/18/2023
 
 1. Homework:
 - Numbers less than 200 and multiples of 13
