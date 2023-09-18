@@ -5,12 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/PrintString.java",
-    "code/homework/Runner.java",
-    "code/homework/SumOfDigits.java",
-    "code/practice/Multiply.java",
-    "code/practice/NumberBy5.java",
-    "code/practice/PrimeNumber.java"
+    "code/homework/ChessDeck.java",
+    "code/homework/DayTime.java",
+    "code/homework/NumberLess200By13.java",
+    "code/homework/Ticket.java",
+    "code/practice/ArrayAlphabet.java"
 
   ],
   "video": ""
