@@ -21,6 +21,7 @@ public class Temperature {
         // печатаем
         System.out.println("Average temperature in City = " + averageTemp);
         System.out.printf("Average temperature in City = %.2f", averageTemp);
+        System.out.print(" Celsius");
         System.out.println("\nDone!");
     }
 }
