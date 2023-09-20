@@ -5,11 +5,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Array.java",
-    "code/homework/Temperature.java",
-    "code/practice/Abiturient.java",
-    "code/practice/AgeOfStudent.java",
-    "code/practice/RandomNumbers.java"
+    "code/homework/ArrayMethods.java",
+    "code/practice/ArrayExample.java",
+    "code/practice/Coin.java"
 
   ],
   "video": ""
