@@ -1,8 +1,10 @@
-# Lesson plan No. 10 09/19/2023
+# Lesson plan No. 12 09/20/2023
 
 1.Homework:
-- daily temperature for the week, average temperature for the week
-- an array of 20 numbers, rearrange the extreme elements between each other
+- filling the array with random numbers
+- sum of odd array elements
+- product of elements with even indices
+- "reversal" of the array
 
 2. The topic array (array) and the for loop:
 - see theory section
@@ -10,34 +12,65 @@
 3. Practice:
 
 **Task 1.**
-There are the applicant's grades from his certificate, 20 grades in total.
-Find the applicant's GPA.
-
-**Task 2.**
-Create an array that contains the ages of the students in the group.
-- what is the maximum age?
-- what is the minimum age?
-- are there any classmates of the same age? If yes, how many students do you have?
-  who are the same age?
-
-**Task 3.**
 Given an array of integers: 75, 34, -15, -123, 57, -145, 86, 77, 48, -59.
 Find the minimum array element and its index.
 Print all array elements with ODD indexes.
 Find the product of all even elements of the array.
 
-**Task 4.**
-Specify an array of 10 random natural numbers in the range from -20 to 20.
-Ask the user for some natural number.
-Determine if this number is in the array. Create and use a method
-searchInArray, which receives an array and the searched number as input, and returns
-the answer is whether this number was found in the array.
-
-**Task 5.**
+**Task 2.**
 Write a method that takes an array of integers and prints it in reverse order.
 First the last element, then the penultimate one, etc.
 Test the method on an array filled with numbers in words:
 zero, one, two, three, ..., nine
+Perform a "reversal" of the original array.
+
+**Task 3.**
+Finding duplicates in an array. Approach #2.
+Let's simplify the problem as follows.
+We have an array of integers, let's find out how many times a given number appears in it.
+
+**Task 4.**
+Flip a coin 100 times. How many times did it come up heads? How much is an eagle?
+Compare the final probabilities of heads and tails.
+
+**Task 5.**
+Search for "lucky dumpling".
+The hostess made 30 dumplings for the guests. She put a coin in one of the dumplings,
+which increases the weight of the dumpling by 15 grams.
+Write a program that searches for a lucky dumpling.
+
+**Tasks for repetition and consolidation:**
+
+***Task 1.***
+Write a program that calculates the sum of numbers from 1 to 1/n, n is entered from the keyboard.
+Example:
+n=10
+sum = 1 + 1/2 + 1/3 + ... + 1/10
+Use a for loop.
+
+***Task 1.***
+Enter n - a natural number. Write a method that takes n as input and calculates
+n! = 1 * 2 * 3 *... * n.
+Call the resulting method.
+At what value of n does the memory allocated for n of type int overflow?
+Use a for loop.
+
+***Task 2.***
+They put s rubles into the savings bank for a three percent deposit.
+What will the deposit amount be after n years? Use a for loop.
+
+***Task 3.***
+Enter 10 pairs of integers from the keyboard.
+Compare the numbers in each pair and print the larger ones.
+Use a for loop.
+
+**Task 4.**
+Find the product of two-digit odd numbers divisible by 17.
+
+**Task 5.**
+A businessman took out a loan of m thousand rubles from a bank at 10% per annum.
+In how many years will his debt exceed s thousand rubles if during this time he does not repay the debt?
+
 ___________________________________________
 
 # План занятия №12 20.09.2023
@@ -106,9 +139,9 @@ n! = 1 * 2 * 3 *... * n.
 Сравните числа в каждой паре и напечатайте большие из них.
 Использовать цикл for.
 
-**Задача 4. (*)**
+**Задача 4.**
 Найти произведение двузначных нечетных чисел кратных 17.
 
-**Задача 5. (*)**
+**Задача 5.**
 Бизнесмен взял ссуду m тысяч рублей в банке под 10% годовых.
 Через сколько лет его долг превысит s тысяч рублей, если за это время он не будет отдавать долг.
