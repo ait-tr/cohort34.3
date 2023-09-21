@@ -5,9 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/ArrayMethods.java",
-    "code/practice/ArrayExample.java",
-    "code/practice/Coin.java"
+    "code/homework/ArrayTask1.java",
+    "code/homework/Cube20throws.java",
+    "code/practice/ArrayAppl.java",
+    "code/practice/ArrayMethods.java"
 
   ],
   "video": ""

@@ -11,14 +11,17 @@ package homework;
 public class ArrayTask1 {
     public static void main(String[] args) {
 
-        int[] myArray = {10, 20, 30, 40, 50};
-        printArray(myArray);
-        printArrayReverse(myArray);
+        // int[] myArrayNew = new int[5]; // здесь только объявляем
 
+        int[] myArray = {10, 20, 30, 40, 50}; // объявили и заполнили массив из целых чисел
+        printArray(myArray); // вызываем метод, передаем на вход массив myArray
+        printArrayReverse(myArray); // вызываем еще один метод, передаем на вход массив myArray
+
+        // объявили и заполнили массив типа String
         String[] digitInWord = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
-        printArrayString(digitInWord);
-        reverseArrrayString(digitInWord);
-        printArrayString(digitInWord);
+        printArrayString(digitInWord); // печатаем массив
+        reverseArrrayString(digitInWord); // вызываем метод для разворота массива
+        printArrayString(digitInWord); // печатаем массив
 
     }
 

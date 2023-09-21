@@ -7,13 +7,17 @@ public class Cube20throws {
     public static void main(String[] args) {
 
         int[] cubeGame = new int[20];
-        int a = 1;
-        int b = 6;
 
+        int a = 1; // переменная для датчика случайных чисел, левый край отрезка
+        int b = 6; // переменная для датчика случайных чисел, правый край отрезка
+
+        // заполняем массив бросками кубика
         for (int i = 0; i < cubeGame.length; i++) {
             cubeGame[i] = (int) (Math.random() * (b - a + 1) + a);
         }
-        printArray(cubeGame);
+
+        printArray(cubeGame); // вызвал метод для печати
+
         int count1 = 0;
         int count2 = 0;
         int count3 = 0;
