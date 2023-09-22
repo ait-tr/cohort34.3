@@ -64,14 +64,14 @@ public class ArrayMethods1 {
         return minIndex;
     }
 
-    // пузырьковая сортировка от меньшего к большему
+    // сортировка выбором от меньшего к большему
     public static int[] sortArray(int[] arr){
         int min = arr[0];
         int indexMin = 0;
         for (int i = 0; i < arr.length; i++) {
             min = arr[i];
             indexMin = i;
-            for (int j = i; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if( arr[j] < min ) {
                     min = arr[j];
                     indexMin = j;
@@ -85,7 +85,7 @@ public class ArrayMethods1 {
         return arr;
     }
 
-    // пузырьковая сортировка от большего к меньшему
+    //  сортировка выбором от большего к меньшему
     public static int[] sortArrayAsc(int[] arr){
         int max = arr[0];
         int indexMax = 0;
