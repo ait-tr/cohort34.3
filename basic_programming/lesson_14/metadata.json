@@ -5,10 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/ArrayTask1.java",
-    "code/homework/Cube20throws.java",
-    "code/practice/ArrayAppl.java",
-    "code/practice/ArrayMethods.java"
+    "code/homework/ArrayAppl1.java",
+    "code/homework/ArrayMethods1.java",
+    "code/practice/Appl.java",
+    "code/practice/BubbleSortV2.java",
+    "code/practice/Faktorial.java",
+    "code/practice/Task1.java"
 
   ],
   "video": ""
