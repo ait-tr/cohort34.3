@@ -40,7 +40,7 @@ public class Calculator {
                 result = num1 % num2;
                 System.out.println("Your result is: " + result);
                 break;
-            default: System.out.println("You made a mistake in last nubmer. It must be between 1 and 5!");
+            default: System.out.println("You made a mistake in last number. It must be between 1 and 5!");
         }
     }
 }

@@ -1,0 +1,16 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework1/ArrayAppl2.java",
+    "code/homework1/ArrayMethods2.java",
+    "code/homework1/CoupleNumbers.java",
+    "code/practice/binary_search/ArrayAppl3.java",
+    "code/practice/binary_search/ArrayMethods3.java"
+
+  ],
+  "video": ""
+}

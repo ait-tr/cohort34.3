@@ -40,7 +40,7 @@ public class ArrayMethods {
         return maxIndex;
     }
 
-    // пузырьковая сортировка от меньшего к большему
+    // сортировка выбором от меньшего к большему
     public static int[] sortArray(int[] arr){
         int min = arr[0];
         int indexMin = 0;
