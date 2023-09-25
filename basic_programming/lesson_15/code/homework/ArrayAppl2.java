@@ -15,7 +15,7 @@ public class ArrayAppl2 {
         ArrayMethods2.split();
 
         ArrayMethods2.printArray(array2); // печать до сортировки
-        ArrayMethods2.sortedSort(array2); // сортировка
+        ArrayMethods2.selectedSort(array2); // сортировка
         ArrayMethods2.printArray(array2); // печать после сортировки
 
     }

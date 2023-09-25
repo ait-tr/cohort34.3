@@ -14,7 +14,7 @@ public class ArrayMethods2 {
     }
 
     // сортировка выбором от меньшего к большему
-    public static int[] sortedSort(int[] arr){
+    public static int[] selectedSort(int[] arr){
         int min = arr[0];
         int indexMin = 0;
         for (int i = 0; i < arr.length; i++) {

@@ -2,8 +2,34 @@ package practice.binary_search;
 
 public class ArrayMethods3 {
 
-    // пишем binarySearch
+    // поиск заданного дубликата
+    public static int searchDuplicate(int[] arr, int num){
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num) {
+                count++;
+            }
+        }
+        return count;
+    }
 
+    // пишем binarySearch
+    public static int binarySearch(int[] arr, int num){
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left <= right) {
+            int mid = (left + right) / 2;
+            if(arr[mid] == num) {
+                return mid;
+            } else if (num < arr[mid]) {
+                right = mid -1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return - left - 1; // возвращаем отрицательное число, если элемент не найден
+    }
 
 
     // пузырьковая сортировка от меньшего к большему
