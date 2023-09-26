@@ -4,12 +4,13 @@ public class Methods {
 
     public static int[] positiveNumbers(int[] arr){
         int count = 0;
+        // пробегаем по массиву и считаем кол-во положиых чисел
         for (int i = 0; i < arr.length; i++) {
             if(arr[i] > 0){
-                count++;
+                count++; // здесь подсчиталось кол-во чисел > 0
             }
         }
-        int[] arrPositive = new int[count];
+        int[] arrPositive = new int[count]; // объявляем новый массив с длиной count
         int indexPositive = 0;
         for (int i = 0; i < arr.length; i++) {
             if( arr[i] > 0 ){
