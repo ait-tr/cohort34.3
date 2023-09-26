@@ -11,7 +11,7 @@ public class Appl {
 
         int[] array = Methods.fillArray(10, -100, 100);
         Methods.printArray(array);
-        Methods.sortedSort(array);
+        Methods.selectedSort(array);
         Methods.printArray(array);
         int index = Methods.binarySearch(array, 0);
         System.out.println("Index = " + index);
