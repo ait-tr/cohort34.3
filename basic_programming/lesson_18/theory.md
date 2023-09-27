@@ -1,5 +1,57 @@
 # OOP - object-oriented programming (OOP)
 
+## Inheritance
+
+1. Inheritance (English inheritance) - the concept of object-oriented programming,
+   according to which the created data type can inherit data and functionality
+   from some already existing type, promoting the reuse of components
+   software.
+
+A simpler and more practical definition of inheritance:
+a new class being created can inherit fields and methods from an existing class.
+In the child class, the composition of the fields is expanded, and the methods are redefined.
+
+2. To initialize inheritance from another class, use the service word **extends**.
+
+Examples:
+
+public class Laptop extends Computer{
+...
+}
+
+public class Dog extends Pet {
+...
+}
+
+public class Cat extends Pet {
+...
+}
+
+    The parent class is also called a super class (**super**). The successor class is called a child class.
+    You can only inherit from one class.
+    Using inheritance in Java, you can build complex class hierarchies.
+
+3. A successor class, inherits the fields and methods of the super class.
+   In a child class, you can override the methods of the parent class if necessary
+   change or define new functionality in them.
+   Constructors are not inherited (except for the default one, if other constructors
+   No).
+   In addition to the public and private modifiers, there are also protected and package modifiers
+   protected (which is the default modifier).
+
+4. If it is necessary to prohibit inheritance from a class, then the final modifier is used.
+
+final class SuperMan {
+...
+}
+
+5. All classes that do not have a super class explicitly specified are inherited from the Object class.
+   That is, the Object class is the parent of all classes in Java by default.
+   In particular, all classes inherit from the Object class the toString method, which returns a string
+   representation of the object (fields and their values in one line).
+
+6. Check type correspondence (relatedness of objects of different classes),
+   you can use the instanceof operator.
 
 __________________________________________________
 
