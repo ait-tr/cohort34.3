@@ -1,6 +1,43 @@
 # Lesson plan No. 17 09/27/2023
 
+1.Homework:
+- Pet class
+- Student class
 
+2. Theory:
+   OOP is the next generation programming paradigm.
+   Classes, objects, fields and methods.
+   OOP principles (three main ones):
+    - encapsulation;
+    - **polymorphism;** - see the Theory section.
+    - inheritance.
+
+
+3. Practice:
+
+- Draw a diagram in which the terms will be present:
+    - Class
+    - Fields
+    - Object(s)
+    - Methods
+
+- Class fields:
+  We reinforce the skill of defining class fields and assigning them the correct data types.
+  Consider the following classes:
+    - Company
+    - Tree
+    - Building
+    - Letter
+    - User
+
+For each class we create a set of 4-5 main fields and define their types.
+
+- Let's implement the BankAccount class:
+    - fields: account, owner, bank, branch, balance
+    - create several constructors for different needs (this is an illustration of polymorphism)
+    - implement the display() and display(String greeting) method (this is another illustration
+      polymorphism)
+    - implement the deposit and withdraw methods
 
 ___________________________________________
 
