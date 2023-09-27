@@ -1,53 +1,76 @@
 package homework.pet.model;
 
 public class Pet {
-    private int id;
-    private String type;
-    private int age;
-    private String name;
+        // поля класса
+        private int id;
+        private String species;
+        private int age;
+        private String nickname;
 
-    public Pet(int id, String type, int age, String name) {
-        this.id = id;
-        this.type = type;
-        this.age = age;
-        this.name = name;
-    }
+        public Pet(int id, String species, int age, String nickname) {
+            this.id = id;
+            this.species = species;
+            this.age = age;
+            this.nickname = nickname;
+        }
 
-    public int getId() {
-        return id;
-    }
+        public int getId() {
+            return id;
+        }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+        public void setId(int id) {
+            this.id = id;
+        }
 
-    public String getType() {
-        return type;
-    }
+        public String getSpecies() {
+            return species;
+        }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+        public void setSpecies(String species) {
+            this.species = species;
+        }
 
-    public int getAge() {
-        return age;
-    }
+        public int getAge() {
+            return age;
+        }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+        public void setAge(int age) {
+            this.age = age;
+        }
 
-    public String getName() {
-        return name;
-    }
+        public String getNickname() {
+            return nickname;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public void setNickname(String nickname) {
+            this.nickname = nickname;
+        }
 
-    public void display(){
-        System.out.println("Pet{" +
-                "id=" + id + ", type='" + type + '\'' + ", age=" + age + ", name='" + name + '\'' + '}');
-    }
+        public void display() {
+            System.out.println("ID: " + id + ", Species: " + species + ", Age: "
+                    + age + ", Nickname: " + nickname);
+        }
 
+        public void thereIs(){
+            System.out.println("There is a" + species);
+        }
+        public void sleep(){
+            System.out.println("It sleeps");
+        }
+
+        public void makeSound(){
+            System.out.println("It communicates");
+        }
+
+        public void play(){
+            System.out.println("Pet plays");
+        }
+
+        public void eat(){
+            System.out.println("Pet eats");
+        }
+
+        public void bite(){
+            System.out.println("Pet bites");
+        }
 }
