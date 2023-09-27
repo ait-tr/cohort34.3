@@ -3,13 +3,13 @@ package homework.pet.model;
 public class Pet {
         // поля класса
         private int id;
-        private String species;
+        private String kind;
         private int age;
         private String nickname;
 
-        public Pet(int id, String species, int age, String nickname) {
+        public Pet(int id, String kind, int age, String nickname) {
             this.id = id;
-            this.species = species;
+            this.kind = kind;
             this.age = age;
             this.nickname = nickname;
         }
@@ -23,11 +23,11 @@ public class Pet {
         }
 
         public String getSpecies() {
-            return species;
+            return kind;
         }
 
         public void setSpecies(String species) {
-            this.species = species;
+            this.kind = species;
         }
 
         public int getAge() {
@@ -47,12 +47,12 @@ public class Pet {
         }
 
         public void display() {
-            System.out.println("ID: " + id + ", Species: " + species + ", Age: "
+            System.out.println("ID: " + id + ", Species: " + kind + ", Age: "
                     + age + ", Nickname: " + nickname);
         }
 
         public void thereIs(){
-            System.out.println("There is a" + species);
+            System.out.println("There is a" + kind);
         }
         public void sleep(){
             System.out.println("It sleeps");
