@@ -45,7 +45,7 @@ ___________________________________________
 
 1. Homework:
 - класс Pet 
-- скласс Student
+- класс Student
 
 2. Теория:
    ООП - парадигма программирования следующего поколения.
@@ -68,10 +68,55 @@ ___________________________________________
 закрепляем навык определения полей класса и задания им правильных типов данных.
 Рассмотрим следующие классы:
   - Компания
+    long id; // он же налоговый номер
+    String companyName;
+    String companyType;
+    int year; // год основания, дата - это будет отдельный тип Data
+    int employee; // кол-во сотрудников
+    
+address - плохая идея, адреса выносят в отдельный класс
+
   - Дерево
+    long id;
+    String breed; // порода, вид
+    int age;
+    double height; // рост, высота
+    double diametr; 
+    boolean type; // пригодность к чему-то
+
   - Здание
+    long kadastrNumber;
+    int floors; // этажность
+    boolean isLeaving; // жилое или нет
+    double square; // площадь
+    int yearOfBuilding; // год постойки
+
+address - плохая идея, адреса выносят в отдельный класс
+
   - Письмо
+    String sender;
+    String receiver; 
+    int postIndex;
+    String city;
+    String street;
+    String houseNumber;
+    double weight; 
+    double price;
+    String type;
+    boolean isLocal;
+
   - Пользователь
+    long customerId;
+    String login; // nic name
+    String firstName;
+    String lastName;
+    String email;
+    String phone;
+    int age;
+    String gender; // или boolean
+    String password;
+    String country;
+
 
 Для каждого из классов делаем набор из 4-5 главных полей, определяем им типы.
 

@@ -5,12 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/array/Appl.java",
-    "code/homework/array/Methods.java",
-    "code/practice/car/model/Car.java",
-    "code/practice/car/CarAppl.java",
-    "code/practice/employee/model/Employee.java",
-    "code/practice/employee/FirmaAppl.java"
+    "code/homework/pet/model/Pet.java",
+    "code/homework/pet/PetAppl.java",
+    "code/homework/student/model/Student.java",
+    "code/homework/student/StudentAppl.java",
+    "code/practice/bank_account/model/BankAccount.java",
+    "code/practice/bank_account/BankAppl.java"
 
   ],
   "video": ""
