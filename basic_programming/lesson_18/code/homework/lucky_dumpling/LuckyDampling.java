@@ -11,8 +11,9 @@ package homework.lucky_dumpling;
 public class LuckyDampling {
     public static void main(String[] args) {
         // заполняем массив на 30 пельменей с весом от 25 до 35 грамм
-        int[] dumpling = new int[30];
-        dumpling = Methods.fillArray(30, 25, 35);
+        //int[] dumpling = new int[30];
+        int n = 30;
+        int[] dumpling = Methods.fillArray(n, 25, 35);
         Methods.printArray(dumpling); // напечатал массив
         Methods.split();
 
