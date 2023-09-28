@@ -1,12 +1,15 @@
 package homework.cube;
 
 public class Cube {
+    // поля класса
     int a;
 
+    // конструктор
     public Cube(int a) {
         this.a = a;
     }
 
+    // геттеры и сеттеры
     public int getA() {
         return a;
     }
@@ -15,6 +18,7 @@ public class Cube {
         this.a = a;
     }
 
+    // методы класса
     public int perimeter(int a) {
         return 12 * a;
     }

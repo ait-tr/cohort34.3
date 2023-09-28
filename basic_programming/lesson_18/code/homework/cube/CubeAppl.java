@@ -2,6 +2,7 @@ package homework.cube;
 
 public class CubeAppl {
     public static void main(String[] args) {
+
         Cube cube1 = new Cube(10);
         Cube cube2 = new Cube(20);
         Cube cube3 = new Cube(100);
