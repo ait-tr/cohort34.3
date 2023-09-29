@@ -5,15 +5,16 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/cube/Cube.java",
-    "code/homework/cube/CubeAppl.java",
-    "code/homework/lucky_dumpling/LuckyDampling.java",
-    "code/homework/lucky_dumpling/Methods.java",
-    "code/practice/beverage/model/Beer.java",
-    "code/practice/beverage/model/Beverage.java",
-    "code/practice/beverage/BeverageAppl.java",
-    "code/consultation/arrays/ArrayAppl.java",
-    "code/consultation/arrays/Methods.java"
+    "code/homework/book/model/Book.java",
+    "code/homework/book/model/Dictionary.java",
+    "code/homework/book/BookAppl.java",
+    "code/homework/pets/model/Cat.java",
+    "code/homework/pets/model/Dog.java",
+    "code/homework/pets/model/Pet.java",
+    "code/homework/pets/PetAppl.java",
+    "code/practice/computers/model/Computer.java",
+    "code/practice/computers/model/Laptop.java",
+    "code/practice/computers/ComputerAppl.java"
 
   ],
   "video": ""
