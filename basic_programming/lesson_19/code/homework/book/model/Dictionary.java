@@ -1,6 +1,8 @@
-package homework.book;
+package homework.book.model;
 
-public class Dictionary extends Book{
+import homework.book.model.Book;
+
+public class Dictionary extends Book {
 
     private String language;
     private int numberOfWords;

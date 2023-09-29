@@ -1,5 +1,8 @@
 package homework.book;
 
+import homework.book.model.Book;
+import homework.book.model.Dictionary;
+
 public class BookAppl {
     public static void main(String[] args) {
 
