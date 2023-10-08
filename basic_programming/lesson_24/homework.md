@@ -1,7 +1,7 @@
 # Homework
 
 **Task 1.**
-Read the article, repeat the examples in it, except for the example with ArrayList.
+Read the article, repeat the examples in it, except the example with ArrayList.
 https://www.w3schools.com/java/java_wrapper_classes.asp
 
 **Task 2.**
@@ -24,6 +24,9 @@ _______________________________________________________
 https://www.w3schools.com/java/java_wrapper_classes.asp
 
 **Задача 2.**
+Прочитать в разделе теория Wrapper-классы более подробно
+
+**Задача 3.**
 Напишите приложение для вывода минимальных/максимальных числовых значений примитивных типов:
 byte, short, char, int, long, float, double  
 Типы как объекты String должны браться из аргументов основной функции main.
