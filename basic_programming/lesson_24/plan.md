@@ -1,35 +1,55 @@
-# Lesson plan No. 19 09/29/2023
+# Lesson plan No. 24 10/09/2023
 
 1.Homework:
-- class Pet and its child classes Cat and Dog
-- the Book class and its child class Dictionary
 
-2. Repetition
-- see the Theory section
+- Task 1
+  In the Supermarket class from class work, implement the public Product updateProduct(long barcode, double price) method
+  and check its operation in main.
 
+- Task 2
+  In the Supermarket class from class work, implement the public boolean removeProduct(long barCode) method and check
+  its work in main.
+
+2. New themes:
+- wrapper classes Integer, Double, Character, Boolean and their methods
+- launch the application with command line arguments
 
 3. Practice:
 
-- create a parent class Computer and child classes Laptop and Smartphone.
-- in all classes we override the toString method.
-- create an array of what is “in stock” (we create several objects of each class).
-- We calculate the total amount of memory on all devices.
+Exercise 1.
+Exercises with types from wrapper classes.
+
+Task 2.
+Implement a method for finding the greatest common divisor (GCD) of two natural numbers.
+Use Debugger to debug the solution.
+Develop an application that is passed two integers as arguments at startup,
+the application returns the gcd of these two numbers.
 
 ___________________________________________
 
-# План занятия №19 29.09.2023
+# План занятия №24 09.10.2023
 
 1. Homework:
-- класс Pet и его дочерние классы Cat и Dog
-- класс Book и его дочерний класс Dictionary
 
-2. Повторение 
-- см. раздел Теория
+- Задача 1
+В классе Supermarket из классной работы реализовать метод public Product updateProduct(long barcode, double price)
+и проверить его работу в main.
 
+- Задача 2
+В классе Supermarket из классной работы реализовать метод public boolean removeProduct(long barCode) и проверить
+его работу в main.
+
+2. Новые темы:
+- классы-обертки Integer, Double, Character, Boolean и их методы
+- запуск приложения с аргументами командной строки
 
 3. Практика:
 
-- создаем родительский класс Computer и дочерние классы Laptop и Smartphone.
-- во всех классах переопределяем метод toString.
-- создаем массив того, что есть "на складе" (создаем несколько объектов каждого класса).
-- Считаем общий объем памяти на всех устройствах.
+Задание 1.
+Упражнения с типами из классов-оберток.
+
+Задание 2.
+Реализовать метод для нахождения наибольшего общего делителя(НОД) двух натуральных чисел.
+Использовать Debugger для отладки решения.
+Разработать приложение, которому на старте передаются аргументами два целых числа,
+приложение возвращает НОД этих двух чисел.

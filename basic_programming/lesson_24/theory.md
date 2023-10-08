@@ -1,14 +1,35 @@
+# Wrapper classes
 
+1. In Java, there are data structures (arrays, collections) that can only work with **objects**, but
+   not with primitives, that is, with types int, double, byte, etc.
+   To solve this problem, Java has created "wrapper classes" for each primitive type:
+   Byte, Short, Character, Integer, Long, Float, Double, Boolean.
+   Each such class encapsulates the corresponding primitive type and extends a set of methods for working with them.
+
+2. For the convenience of working with wrapper classes, Java has implemented an autoboxing and auto-unboxing mechanism
+   (autounboxing). This means that we can use objects of “wrapper classes” in mathematical operations equally
+   with primitive types. Java will automatically convert the "wrapper class" object if necessary
+   into the corresponding primitive type (autounboxing), or vice versa - the primitive type will be packed into an object
+   class wrapper (autoboxing).
+
+3. Wrapper classes also have useful constants and methods. For example, Integer.MAX_VALUE stores the maximum possible
+   a number of integer type, and the static methods Double.isNaN(double a) and Double.isInfinite(double a),
+   can check whether the passed argument stores the special values NaN and Infinite, respectively.
+
+4. Wrapper classes, using parsing methods (starting with the word parse...), can convert thongs
+   (data of type String) into the primitive type corresponding to this wrapper class.
+   If the string contains a set of characters that can be interpreted as a number, then parsing will be successful.
+   If not, there will be an error.
 
 ----------------------------
 
 # Wrapper classes
 
-1. В Java существуют структуры, которые могут работать только с **объектами**, но не с примитивами -
-   int, double, byte и т.д.
+1. В Java существуют структуры данных (массивы, коллекции), которые могут работать только с **объектами**, но 
+   не с примитивами, то есть с типами int, double, byte и т.д.
    Для решения этой проблемы в Java созданы "классы обертки", для каждого примитивного типа:
    Byte, Short, Character, Integer, Long, Float, Double, Boolean.
-   Каждый такой класс инкапсулирует соответствующий примитивный тип.
+   Каждый такой класс инкапсулирует соответствующий примитивный тип и расширяет набор методов для работы с ними.
 
 2. Для удобства работы с wrapper classes в Java реализован механизм автоупаковки (autoboxing) и автораспаковки
    (autounboxing). Это означает, что мы можем использовать в математических действиях объекты "классов оберток" наравне
