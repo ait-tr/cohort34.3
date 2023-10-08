@@ -1,4 +1,17 @@
+**Task 1.**
+Read the article, repeat the examples in it, except for the example with ArrayList.
+https://www.w3schools.com/java/java_wrapper_classes.asp
 
+**Task 2.**
+Write an application to print the minimum/maximum numeric values of primitive types:
+byte, short, char, int, long, float, double
+Types as String objects must be taken from the arguments of the main function.
+
+If there is no type in the arguments, the application should print the maximum/minimum
+values of 7 types (byte, int, short, long, char, float, double).
+
+If the arguments contain the wrong type, the application should display a message:
+<argument> Invalid type.
 
 _______________________________________________________
 
