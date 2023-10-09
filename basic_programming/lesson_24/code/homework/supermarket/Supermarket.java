@@ -43,9 +43,16 @@ public class Supermarket {
     public boolean removeProduct(long barCode) {
         // TODO remove product
         // найти продукт в массиве по его баркоду и удалить элемент массива:
-        // пусть удаляемый продукт стоит на i-м индексе, тогда все элементы массива надо сдвинуть с места i + 1 на
-        // 1 позицию влево, последний элемент присвоить null, длину массива уменьшить на 1.
-
+        // пусть удаляемый продукт стоит на i-м индексе, тогда можно поставить на его место последний элемент массива,
+        // затем последний элемент присвоить null, длину массива уменьшить на 1.
+        for (int i = 0; i < products.length; i++) {
+            if (products[i] != null && products[i].getBarcode() == barCode) {
+                products[i] = products[products.length - 1];
+                products[products.length - 1] = null;
+                quantity--;
+                return true;
+            }
+        }
         return false;
     }
 

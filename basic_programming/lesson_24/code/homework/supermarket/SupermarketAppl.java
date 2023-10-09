@@ -14,12 +14,21 @@ public class SupermarketAppl {
         check = kiosk.addProduct(new Product(5000, "Book", 2));
         System.out.println(check);
         kiosk.printAllProducts();
+        System.out.println("----------------");
         Product product = kiosk.findProduct(2000);
         System.out.println(product);
         System.out.println("----------------");
         // test updateProduct
         kiosk.updateProduct(2000, 20.50);
         System.out.println(product);
+        // test removeProduct
+        System.out.println("----------------");
+        kiosk.removeProduct(2000);
+        kiosk.printAllProducts();
+        // add once again
+        System.out.println("----------------");
+        kiosk.addProduct(new Food(2000, "Sausages", 5, "20.10.2023", false));
+        kiosk.printAllProducts();
 
     }
 }
