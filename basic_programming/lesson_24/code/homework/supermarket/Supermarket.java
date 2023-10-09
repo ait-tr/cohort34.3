@@ -1,19 +1,21 @@
 package homework.supermarket;
 
 public class Supermarket {
-    private Product[] products;
-    private int quantity;
+    // поля класса
+    private Product[] products; // массив типа Product
+    private int quantity; // текущее кол-во продуктов в массиве ("на складе")
 
+    // конструктор
     public Supermarket(int capacity) {
-        products = new Product[capacity];
+        products = new Product[capacity]; // создаем новый объект
     }
 
     public boolean addProduct(Product product) {
         if (product == null || quantity == products.length || findProduct(product.getBarcode()) != null) {
             return false;
         }
-        products[quantity] = product;
-        quantity++;
+        products[quantity] = product; // добавляем в конец массива
+        quantity++; // увеличиваем на 1
         return true;
     }
 

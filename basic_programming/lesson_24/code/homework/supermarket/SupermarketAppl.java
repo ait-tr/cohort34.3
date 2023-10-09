@@ -2,7 +2,7 @@ package homework.supermarket;
 
 public class SupermarketAppl {
     public static void main(String[] args) {
-        Supermarket kiosk = new Supermarket(4);
+        Supermarket kiosk = new Supermarket(4); // новый супермаркет, создаем с помощью конструктра
         kiosk.addProduct(new Product(1000, "Gift card", 20));
         System.out.println(kiosk.getQuantity());
         kiosk.addProduct(new Food(2000, "Sausages", 5, "20.10.2023", false));
@@ -16,8 +16,9 @@ public class SupermarketAppl {
         kiosk.printAllProducts();
         Product product = kiosk.findProduct(2000);
         System.out.println(product);
+        System.out.println("----------------");
         // test updateProduct
-        kiosk.updateProduct(2000, 11.77);
+        kiosk.updateProduct(2000, 20.50);
         System.out.println(product);
 
     }
