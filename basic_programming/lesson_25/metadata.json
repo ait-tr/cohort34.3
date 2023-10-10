@@ -5,12 +5,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/supermarket/Food.java",
-    "code/homework/supermarket/Product.java",
-    "code/homework/supermarket/Supermarket.java",
-    "code/homework/supermarket/SupermarketAppl.java",
-    "code/practice/WrapperClassesAppl.java",
-    "code/practice/ArgsApplExample.java"
+    "code/homework/MaxMinAppl.java",
+    "code/practice/StringAppl.java"
 
   ],
   "video": ""
