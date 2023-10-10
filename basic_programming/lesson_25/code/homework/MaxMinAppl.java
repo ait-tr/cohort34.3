@@ -6,6 +6,10 @@ public class MaxMinAppl {
 
         if (args.length == 0) {
             System.out.println("All MIN and MAX");
+            System.out.println("int MAX " + Integer.MAX_VALUE);
+            System.out.println("int MIN " + Integer.MIN_VALUE);
+            System.out.println("long MAX " + Long.MAX_VALUE);
+            System.out.println("long MIN " + Long.MIN_VALUE);
         }
 
         for (int i = 0; i < args.length; i++) {
@@ -38,6 +42,7 @@ public class MaxMinAppl {
                     System.out.println("float MAX " + Float.MAX_VALUE);
                     System.out.println("float MIN " + Float.MIN_VALUE);
                 }
+
                 default -> {
                     System.out.println(args[i] + " - wrong type");
                 }

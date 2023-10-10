@@ -30,7 +30,7 @@ ___________________________________________
 - приложение с аргументами командной строки
 
 2. Новые темы:
-- Класс String. Понятие "immutable"
+- Класс String. Понятие "immutable".
 - методы класса String (length, charAt, equalsIgnoreCase, toUpperCase, toLowerCase, indexOf,
 lastIndexOf, substring, replace, split)
 

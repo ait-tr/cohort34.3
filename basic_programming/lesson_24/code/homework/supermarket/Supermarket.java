@@ -11,7 +11,7 @@ public class Supermarket {
     }
 
     public boolean addProduct(Product product) {
-        if (product == null || quantity == products.length || findProduct(product.getBarcode()) != null) {
+        if (product == null || quantity == products.length || findProduct(product.getBarСode()) != null) {
             return false;
         }
         products[quantity] = product; // добавляем в конец массива
@@ -21,18 +21,18 @@ public class Supermarket {
 
     public Product findProduct(long barcode) {
         for (int i = 0; i < products.length; i++) {
-            if (products[i] != null && products[i].getBarcode() == barcode) {
+            if (products[i] != null && products[i].getBarСode() == barcode) {
                 return products[i];
             }
         }
         return null;
     }
 
-    public Product updateProduct(long barcode, double price) {
+    public Product updateProduct(long barСode, double price) {
         // TODO update product price
         // найти продукт в массиве по его баркоду и обновить ему цену
         for (int i = 0; i < products.length; i++) {
-            if (products[i] != null && products[i].getBarcode() == barcode) {
+            if (products[i] != null && products[i].getBarСode() == barСode) {
                 products[i].setPrice(price);
                 return products[i];
             }
@@ -45,11 +45,11 @@ public class Supermarket {
         // найти продукт в массиве по его баркоду и удалить элемент массива:
         // пусть удаляемый продукт стоит на i-м индексе, тогда можно поставить на его место последний элемент массива,
         // затем последний элемент присвоить null, длину массива уменьшить на 1.
-        for (int i = 0; i < products.length; i++) {
-            if (products[i] != null && products[i].getBarcode() == barCode) {
+        for (int i = 0; i < products.length; i++) { // начинаем цикл, пробегаем по массиву
+            if (products[i] != null && products[i].getBarСode() == barCode) { // продукт не null и сравниваем barCode
                 products[i] = products[quantity - 1]; // последний элемент массива ставим на место удаляемого
                 products[quantity - 1] = null; // обнуляем последний элемент
-                quantity--; //
+                quantity--; // уменьшаем кол-во элементов в массиве
                 return true;
             }
         }
