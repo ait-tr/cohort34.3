@@ -47,9 +47,9 @@ public class Supermarket {
         // затем последний элемент присвоить null, длину массива уменьшить на 1.
         for (int i = 0; i < products.length; i++) {
             if (products[i] != null && products[i].getBarcode() == barCode) {
-                products[i] = products[products.length - 1];
-                products[products.length - 1] = null;
-                quantity--;
+                products[i] = products[quantity - 1]; // последний элемент массива ставим на место удаляемого
+                products[quantity - 1] = null; // обнуляем последний элемент
+                quantity--; //
                 return true;
             }
         }
