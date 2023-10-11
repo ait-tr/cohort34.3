@@ -9,6 +9,8 @@ package practice;
 4) alphabetic, digits, _ , - , . , @ -> разрешены буквы алфавита, цифры и некоторые символы
  */
 
+import java.util.Objects;
+
 public class User {
     // поля класса
     private String email;
@@ -33,8 +35,8 @@ public class User {
 
     private boolean validateEmail(String email){
         // k_l_b_1963@hotmail.com
-        int indexAt = email.indexOf('@'); // ищем индекс @ (index = 10)
-        if( indexAt == -1 || indexAt != email.lastIndexOf('@')) { // проверяем наличие @ и что она только одна
+        int indexAt = email.indexOf('@'); // ищем индекс @
+        if( indexAt <= 0 || indexAt != email.lastIndexOf('@')) { // проверяем наличие @ и что она только одна
             return false; // тогда вернем false
         }
         if(email.indexOf('.', indexAt) == -1) { // не нашлась точка, начиная с позиции @
@@ -53,5 +55,43 @@ public class User {
         return true;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        if (validatePassword(password)) {
+            this.password = password;
+        } else {
+            System.out.println("Password not valid");
+        }
+    }
+    /*
+    1) min 8 symbols
+    2) min one symbol of uppercase
+    3) min one symbol of lowercase
+    4) min one digit
+    5) min one special symbol (!%@*&)
+     */
+    private boolean validatePassword(String password) {
+        //TODO
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return email.equals(user.email);
+    }
 
 }
