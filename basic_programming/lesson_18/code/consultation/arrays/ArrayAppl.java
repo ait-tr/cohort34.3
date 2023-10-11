@@ -7,6 +7,8 @@ package consultation.arrays;
 // сортировка
 // есть ли заданное число? - найти его индекс
 
+import java.util.Arrays;
+
 public class ArrayAppl {
     public static void main(String[] args) {
 
@@ -17,6 +19,8 @@ public class ArrayAppl {
         int indexMax = Methods.indexMaxEl(numbers);
         System.out.println("Index of max element = " + indexMax);
         System.out.println("Max element = " + numbers[indexMax]);
+        Methods.bubbleSort(numbers); // сортируем массив
+        System.out.println(Arrays.toString(numbers)); // печатаем массив
 
     }
 }
