@@ -5,8 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/MaxMinAppl.java",
-    "code/practice/StringAppl.java"
+    "code/homework/LongSentence.java",
+    "code/homework/StringPractice1.java",
+    "code/homework/StringPractice2.java",
+    "code/practice/User.java",
+    "code/practice/UserAppl.java"
 
   ],
   "video": ""
