@@ -10,7 +10,9 @@
     "code/homework/nod/Nod.java",
     "code/homework/nod/NodAppl.java",
     "code/practice/sentencies/Sentence.java",
-    "code/practice/sentencies/SentenceTest.java"
+    "code/practice/sentencies/SentenceTest.java",
+    "code/practice/consultation/MaxOfArray.java",
+    "code/practice/consultation/MaxOfArrayTest.java"
 
   ],
   "video": ""
