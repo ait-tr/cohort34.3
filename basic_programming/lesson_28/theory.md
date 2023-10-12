@@ -49,7 +49,7 @@
    assert... (estimated: ожидаемое значение, actual: вызов тестируемого метода, "Сообщение(пояснение) о ...")
 
    Пример:   
-   void testMultiPly(){
+   void testMultiply(){
    assertEquals(20,calculator.multiply(4,5),"4*5 should be 20");
    }
 
