@@ -8,7 +8,9 @@
     "code/homework/user/User.java",
     "code/homework/user/UserAppl.java",
     "code/homework/nod/Nod.java",
-    "code/homework/nod/NodAppl.java"
+    "code/homework/nod/NodAppl.java",
+    "code/practice/sentencies/Sentence.java",
+    "code/practice/sentencies/SentenceTest.java"
 
   ],
   "video": ""
