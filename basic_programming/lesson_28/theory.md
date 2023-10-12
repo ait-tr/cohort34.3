@@ -1,3 +1,56 @@
+# Accumulated knowledge
+
+- wrapper classes: Byte, Short, Character, Integer, Long, Float, Double, Boolean.
+
+What are they needed for? - Answer:
+
+- applications with command line arguments
+
+Why is this necessary? - Answer:
+
+- String class and its methods
+
+Why is this necessary? - Answer:
+
+- TDD - test driven development
+  Unit tests
+
+Why is this necessary? - Answer:
+
+
+**Algorithm for conducting Unit tests**
+1. Select/create a directory for unit testing (usually in the directory where
+   there is a class under test, and in it there are methods to be tested)
+
+2. Create a new class (java file) in this directory with the name ClassNameTest
+
+3. Import libraries into this Class (file):
+   import org.junit.jupiter.api.Assertions;
+   import org.junit.jupiter.api.BeforeEach;
+   import org.junit.jupiter.api.Test;
+
+4. We connect the class under test and its methods with a line like:
+   ClassNameClassName; // this is a new field in the class ClassNameTest, in which the object of the class being tested is connected.
+
+5. Directive
+   @BeforeEach
+   void setUp(){
+   ClassName = new ClassName(); // create an instance of the tested class object before each test
+   }
+
+6. Directives
+   @Test
+   @DisplayName("This text can describe what we are testing")
+
+   create a method that calls
+   assert... (estimated: expected value, actual: call of the method under test, "Message (explanation) about ...")
+
+   Example:
+   void testMultiply(){
+   assertEquals(20,calculator.multiply(4,5),"4*5 should be 20");
+   }
+
+7. Run the test
 
 ------------------------------
 
