@@ -74,23 +74,25 @@ public class User {
      */
     public boolean validatePassword(String password) {
         //TODO
-        String symbols = "!@#$%^&*()_+";
-        boolean[] test = new boolean[5];
+        String symbols = "!@#$%^&*()_+"; // строка специальных символов
+
+        boolean[] test = new boolean[5]; // заводим массив типа boolean
         if (password.length() >= 8) {
             test[0] = true;
         }
-        for (int i = 0; i < password.length(); i++) {
-            char с = password.charAt(i);
-            if (Character.isUpperCase(с)) {
+        for (int i = 0; i < password.length(); i++) { // выбираем из строки password символы по одному
+            char с = password.charAt(i); // это текущий символ в строке password
+
+            if (Character.isUpperCase(с)) { // проверка
                 test[1] = true;
             }
-            if (Character.isLowerCase(с)) {
+            if (Character.isLowerCase(с)) { // проверка
                 test[2] = true;
             }
-            if(Character.isDigit(с)){
+            if(Character.isDigit(с)){ // проверка
                 test[3] = true;
             }
-            if(symbols.indexOf(с) >= 0){
+            if(symbols.indexOf(с) >= 0){ // если не найдется такой символ, то получим -1, поэтому проверяем, что >= 0
                 test[4] = true;
             }
         }

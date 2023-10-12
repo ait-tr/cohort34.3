@@ -5,11 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/LongSentence.java",
-    "code/homework/StringPractice1.java",
-    "code/homework/StringPractice2.java",
-    "code/practice/User.java",
-    "code/practice/UserAppl.java"
+    "code/homework/user/User.java",
+    "code/homework/user/UserAppl.java",
+    "code/homework/nod/Nod.java",
+    "code/homework/nod/NodAppl.java"
 
   ],
   "video": ""
