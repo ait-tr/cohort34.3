@@ -5,14 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/user/User.java",
-    "code/homework/user/UserAppl.java",
-    "code/homework/nod/Nod.java",
-    "code/homework/nod/NodAppl.java",
-    "code/practice/sentencies/Sentence.java",
-    "code/practice/sentencies/SentenceTest.java",
-    "code/practice/consultation/MaxOfArray.java",
-    "code/practice/consultation/MaxOfArrayTest.java"
+    "code/homework/calculator/CalcMethodsTest.java",
+    "code/homework/calculator/CalcMethods.java",
+    "code/practice/student/Student.java",
+    "code/practice/student/StudentTest.java",
+    "code/practice/user_test/User.java",
+    "code/practice/user_test/UserTest.java"
 
   ],
   "video": ""
