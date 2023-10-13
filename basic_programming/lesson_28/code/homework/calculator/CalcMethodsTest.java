@@ -39,6 +39,7 @@ class CalcMethodsTest {
     void divTest() {
         int a = 20;
         int b = 15;
+        System.out.println(a/b);
         assertEquals(1, calcMethods.div(a, b));
     }
 
