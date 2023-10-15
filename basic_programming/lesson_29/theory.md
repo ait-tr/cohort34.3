@@ -50,7 +50,7 @@ _________________________________________________________
 
 # StringBuilder
 
-
+https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html
 
 
 # Абстрактные классы и методы
