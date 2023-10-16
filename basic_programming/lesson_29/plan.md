@@ -30,7 +30,7 @@ ___________________________________________
 
 2. Новая тема:
 - StringBuilder. Performance test for String vs StringBuilder.
-- Abstract class.
+- Abstract classes.
 
 см. раздел теория.
 
