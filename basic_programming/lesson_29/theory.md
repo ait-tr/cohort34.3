@@ -50,6 +50,7 @@ _________________________________________________________
 
 # StringBuilder
 
+Ссылка на документацию Oracle по Java:
 https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html
 
 
