@@ -1,35 +1,39 @@
 **Task 1.**
-Read the article, repeat the example from it:
-https://www.w3schools.com/java/java_abstract.asp#:~:text=Abstract%20Classes%20and%20Methods&text=Abstract%20class%3A%20is%20a%20restricted,the%20subclass%20(inherited%20from ).
+Step 1 - repeat on your own all the steps that we did in the class using the example class
+Book and Library interface.
+- create a Book class with the fields ISBN, author, book title, year of publication;
+- create a Library interface with methods:
+    - add a book;
+    - delete a book;
+    - find a book;
+    - number of books;
+    - print a list of books.
+- create the class LibraryImpl, which implements Library
+- create the LibraryImplTest class, in which we create tests for methods.
 
-**Task 2.**
-1. Create an abstract class Shape with field type double and abstract methods calcArea and calcPerimeter.
-2. Create classes hw_27.Circle, Triangle, Square that extend the Shape class and implement abstract methods.
-3. Write a FigureAppl class with a main method. In the method, create an array of shapes. Add two circles to the array,
-   one triangle and one square. Calculate the total area and total perimeter of all shapes from an array of shapes.
+**Task 2.(*)**
+Implement the methods in the CompanyImpl class so that all tests pass.
 
-**Task 3.(*)**
-Calculate the total area of the circles from task 2.
 
 ___________________________
 
 **Задча 1.**
-Прочитать статью, повторить пример из нее:
-https://www.w3schools.com/java/java_abstract.asp#:~:text=Abstract%20Classes%20and%20Methods&text=Abstract%20class%3A%20is%20a%20restricted,the%20subclass%20(inherited%20from).
+Шаг 1 - повторите самостоятельно все те шаги, которые мы делали в классе на примере класса
+Book и интерфейса Library.
+- создаем класс Book c полями ISBN, автор, название книги, год издания;  
+- создаем интерфейс Library с методами:
+    - добавить книгу;
+    - удалить книгу;
+    - найти книгу;
+    - кол-во книг;
+    - напечатать список книг.
+- создаем класс LibraryImpl, который implements Library;
+- создаем класс LibraryImplTest, в котором создаем тесты для вышеперечисленных методов.
 
-**Задача 2.**
-1. Создайте абстрактный класс Shape с типом поля double (одно) и абстрактными методами calcArea и calcPerimeter.
-2. Создать классы Circle, Triangle, Square, расширяющие класс Shape и реализующие абстрактные методы.
-3. Напишите класс FigureAppl с методом main. В методе создайте массив фигур. Добавьте в массив два круга,
-   один треугольник и один квадрат. Рассчитайте общую площадь и общий периметр всех фигур из массива фигур.
+**Задача 2.(*)**
+Реализуйте методы в классе CompanyImpl, так, чтобы все тесты прошли.
 
-**Задача 3.**
-Рассчитайте общую площадь кругов из задачи 2.
 
-**Задание 4.** (на повторение и закрепление)
-Задан массив целых чисел {-5, 17, 23, -30, 22, 18, -3, 77, 19, -2}. Найдите среднюю
-величину по всем четным элементам массива.
-Разработайте соответсвующий тест (набор тестов).
 
 
 
