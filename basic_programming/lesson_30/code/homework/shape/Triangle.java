@@ -7,12 +7,14 @@ public class Triangle extends Shape{
     }
 
     @Override
-    public double calcArea(double size) {
-        return size * size * Math.sqrt(3) / 4;
+    public double calcArea() {
+        return size * size * Math.sqrt(3.0) / 4.0;
     }
 
     @Override
-    public double calcPerimeter(double size) {
+    public double calcPerimeter() {
         return 3 * size;
     }
+
+
 }

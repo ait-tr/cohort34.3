@@ -6,12 +6,12 @@ public class Square extends Shape{
     }
 
     @Override
-    public double calcArea(double size) {
+    public double calcArea() {
         return size * size;
     }
 
     @Override
-    public double calcPerimeter(double size) {
+    public double calcPerimeter() {
         return 4 * size;
     }
 }

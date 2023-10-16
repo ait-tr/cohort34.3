@@ -4,7 +4,7 @@ package homework.shape;
 //  2. Создать классы Circle, Triangle, Square, расширяющие класс Shape и реализующие абстрактные методы.
 
 public abstract class Shape {
-    private double size;
+    protected double size;
 
     public Shape(double size) {
         this.size = size;
@@ -18,7 +18,8 @@ public abstract class Shape {
         this.size = size;
     }
 
-    public abstract double calcArea(double size);
-    public abstract double calcPerimeter(double size);
+    public abstract double calcArea();
+
+    public abstract double calcPerimeter();
 
 }

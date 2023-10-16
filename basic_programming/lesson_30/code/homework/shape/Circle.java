@@ -6,14 +6,14 @@ public class Circle extends Shape{
         super(size);
     }
 
-
     @Override
-    public double calcArea(double size) {
+    public double calcArea() {
         return Math.PI * size * size;
     }
 
     @Override
-    public double calcPerimeter(double size) {
+    public double calcPerimeter() {
         return 2 * Math.PI * size;
     }
+
 }

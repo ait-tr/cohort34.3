@@ -10,19 +10,30 @@ public class FigureAppl {
 
         fig[0] = new Circle(10);
         fig[1] = new Circle(100);
-        fig[2] = new Triangle(10);
-        fig[3] = new Square(10);
+        fig[2] = new Triangle(100);
+        fig[3] = new Square(100);
 
         double s = 0;
         double p = 0;
         for (int i = 0; i < fig.length; i++) {
-            s = s + fig[i].calcArea(fig[i].getSize());
-            System.out.println(fig[i].calcArea(fig[i].getSize()));
-            p = p + fig[i].calcPerimeter(fig[i].getSize());
-            System.out.println(fig[i].calcPerimeter(fig[i].getSize()));
+            s = s + fig[i].calcArea();
+            p = p + fig[i].calcPerimeter();
         }
         System.out.println("S = " + s);
         System.out.println("P = " + p);
 
+        double circlesArea = totalCirclesArea(fig);
+        System.out.println("Circles area = " + circlesArea);
+
+    }
+
+    private static double totalCirclesArea(Shape[] figures) {
+        double res = 0;
+        for (int i = 0; i < figures.length; i++) {
+            if(figures[i] instanceof Circle) {
+                res += figures[i].calcArea();
+            }
+        }
+        return res;
     }
 }
