@@ -5,17 +5,18 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/array_task/ArrayMethods.java",
-    "code/homework/array_methods/ArrayMethodsTest.java",
-    "code/homework/prime_number/PrimeNumber.java",
-    "code/homework/prime_number/PrimeNumberTest.java",
-    "code/practice/employee_firma/model/Employee.java",
-    "code/practice/employee_firma/model/Manager.java",
-    "code/practice/employee_firma/model/SalesManager.java",
-    "code/practice/employee_firma/model/Worker.java",
-    "code/practice/employee_firma/EmployeeAppl.java",
-    "code/practice/string_builder/StringBuilderAppl.java",
-    "code/practice/string_builder/StringPerformanceTest.java"
+    "code/homework/array_task/ArrayTask.java",
+    "code/homework/array_methods/ArrayTaskTest.java",
+    "code/homework/shape/Circle.java",
+    "code/homework/shape/FigureAppl.java",
+    "code/homework/shape/Shape.java",
+    "code/homework/shape/Square.java",
+    "code/homework/shape/Triangle.java",
+    "code/practice/company/model/Employee.java",
+    "code/practice/company/model/Manager.java",
+    "code/practice/company/model/SalesManager.java",
+    "code/practice/company/model/Worker.java",
+    "code/practice/company/EmployeeAppl.java"
 
   ],
   "video": ""
