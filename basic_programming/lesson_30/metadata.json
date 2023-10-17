@@ -5,7 +5,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/array_methods/ArrayMethods.java",
+    "code/homework/array_task/ArrayMethods.java",
     "code/homework/array_methods/ArrayMethodsTest.java",
     "code/homework/prime_number/PrimeNumber.java",
     "code/homework/prime_number/PrimeNumberTest.java",
