@@ -12,12 +12,14 @@
     "code/homework/shape/Shape.java",
     "code/homework/shape/Square.java",
     "code/homework/shape/Triangle.java",
+    "code/practice/company/dao/Company.java",
+    "code/practice/company/dao/CompanyImpl.java",
     "code/practice/company/model/Employee.java",
     "code/practice/company/model/Manager.java",
     "code/practice/company/model/SalesManager.java",
     "code/practice/company/model/Worker.java",
-    "code/practice/company/EmployeeAppl.java"
-
+    "code/practice/company/EmployeeAppl.java",
+    "code/practice/company/tests/CompanyImplTest.java"
   ],
   "video": ""
 }
