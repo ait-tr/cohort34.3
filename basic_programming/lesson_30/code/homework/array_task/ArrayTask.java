@@ -5,13 +5,13 @@ package homework.array_task;
 //  Разработайте соответсвующий тест (набор тестов).
 
 public class ArrayTask {
-//    public static void main(String[] args) {
-//        int[] array = {-5, 17, 23, -30, 22, 18, -3, 77, 19, -2};
-//        double result = averageEvenElements(array);
-//        System.out.println(result);
-//    }
+    public static void main(String[] args) {
+        int[] array = {-5, 17, 23, -30, 22, 18, -3, 77, 19, -2};
+        double result = averageEvenElements(array);
+        System.out.println(result);
+    }
 
-    public double averageEvenElements(int[] arr){
+    public static double averageEvenElements(int[] arr){
         double result = 0;
         int sum = 0;
         int count = 0;
@@ -21,8 +21,7 @@ public class ArrayTask {
                 count++;
             }
         }
-        result = (double) sum/count;
+        result = (double) sum / count;
         return result;
     }
-
 }

@@ -1,6 +1,6 @@
 package homework.shape;
 
-public class Square extends Shape{
+public class Square extends Shape {
     public Square(double size) {
         super(size);
     }

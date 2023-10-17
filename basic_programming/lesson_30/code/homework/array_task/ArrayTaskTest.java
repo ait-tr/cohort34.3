@@ -15,7 +15,7 @@ class ArrayTaskTest {
 
     @Test
     void averageEvenElementsTest() {
-        int[] arr = {10, 11, 12, 13};
+        int[] arr = {-10, 11, 10, 13};
         assertEquals(11, arrayTask.averageEvenElements(arr));
     }
 }

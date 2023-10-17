@@ -11,8 +11,8 @@ Book and Library interface.
 - create the class LibraryImpl, which implements Library
 - create the LibraryImplTest class, in which we create tests for methods.
 
-**Task 2.(*)**
-Implement the methods in the CompanyImpl class so that all tests pass.
+**Task 2.**
+
 
 
 ___________________________
@@ -30,8 +30,8 @@ Book и интерфейса Library.
 - создаем класс LibraryImpl, который implements Library;
 - создаем класс LibraryImplTest, в котором создаем тесты для вышеперечисленных методов.
 
-**Задача 2.(*)**
-Реализуйте методы в классе CompanyImpl, так, чтобы все тесты прошли.
+**Задача 2.**
+Скопировать на 31-й урок пакет company 
 
 
 

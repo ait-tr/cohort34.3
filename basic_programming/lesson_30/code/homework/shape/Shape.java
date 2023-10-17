@@ -18,6 +18,7 @@ public abstract class Shape {
         this.size = size;
     }
 
+    //абстрактные методы
     public abstract double calcArea();
 
     public abstract double calcPerimeter();
