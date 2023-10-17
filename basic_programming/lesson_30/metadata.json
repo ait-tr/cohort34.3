@@ -6,7 +6,7 @@
   "homework": "homework.md",
   "code": [
     "code/homework/array_task/ArrayTask.java",
-    "code/homework/array_methods/ArrayTaskTest.java",
+    "code/homework/array_task/ArrayTaskTest.java",
     "code/homework/shape/Circle.java",
     "code/homework/shape/FigureAppl.java",
     "code/homework/shape/Shape.java",
