@@ -29,9 +29,9 @@ class CompanyImplTest {
 
     @Test
     void addEmployee() {
-        // не можем добавить null
+        // не можем добавить null - пустой объект
         assertFalse(company.addEmployee(null));
-        // не можем добавить второй раз, уже существующий
+        // не можем добавить второй раз, уже существующего работника
         assertFalse(company.addEmployee(employee[1]));
         Employee employee1 = new Manager(105, "Ivan", "Dubin", 55, 160, 6000, 6); // создали нового сотрудника
         assertTrue(company.addEmployee(employee1)); // добавили нового сотрудника

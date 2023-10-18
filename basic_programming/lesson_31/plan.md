@@ -1,7 +1,25 @@
 # Lesson plan No. 31 10/18/2023
 
+1.Homework:
+- Book and Library interface
 
+2. Topic:
+- Interfaces in Java and how to use them
+  see Theory section
 
+3. Practice:
+- create the Company interface with methods:
+  - add an employee
+  - delete employee
+  - find an employee
+  - number of employees
+  - PHOT
+  - average salary
+  - volume of sales
+  - print a list of employees
+- create the CompanyImpl class, which implements Company
+- create the CompanyImplTest class, in which we create tests for methods
+- implement methods in the CompanyImpl class
 
 
 ___________________________________________
