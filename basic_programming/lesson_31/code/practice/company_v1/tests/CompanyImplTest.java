@@ -43,19 +43,24 @@ class CompanyImplTest {
         // создаем еще одного нового
         Employee employee2 = new Manager(106, "Peter", "Dubin", 55, 160, 6000, 6); // создали нового сотрудника
         assertFalse(company.addEmployee(employee2)); // не можем превысить capacity
+        company.printEmployees();
     }
 
     @Test
     void removeEmployee() {
         // удаляем сотрудника
+        company.printEmployees();
+        System.out.println("---------------------");
         assertEquals(e[1], company.removeEmployee(102));
         assertEquals(3, company.quantity()); // сотрудников стало на 1 меньше (4 - 1)
         assertNull(company.removeEmployee(102)); // дважды не можем удалить
         assertNull(company.findEmployee(102)); // не можем найти после удаления
+        company.printEmployees();
     }
 
     @Test
     void findEmployee() {
+        company.printEmployees();
         // ищем сотрудника по id
         assertEquals(e[1], company.findEmployee(102));
         // ищем несуществующего сотрудника
@@ -85,6 +90,7 @@ class CompanyImplTest {
 
     @Test
     void printEmployees() {
+
         company.printEmployees();
     }
 }

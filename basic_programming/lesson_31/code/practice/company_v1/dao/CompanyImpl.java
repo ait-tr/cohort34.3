@@ -19,8 +19,9 @@ public class CompanyImpl implements Company {
         if( employee == null || size == employees.length || findEmployee(employee.getId()) != null) {
             return false;
         }
-        employees[size] = employee; // новый элемент
-        size++;
+//        employees[size] = employee; // новый элемент
+//        size++;
+        employees[size++] = employee; // ++ - это постфиксная операция
         return true;
     }
 
@@ -28,12 +29,14 @@ public class CompanyImpl implements Company {
     public Employee removeEmployee(int id) {
         for (int i = 0; i < size; i++) {
             if(employees[i].getId() == id){
-                Employee victim = employees[i]; // убрали найденный элемент в в переменную
-                employees[i] = employees[size - 1]; // на место найденного поставили последнего существ. в массиве
-                employees[size - 1] = null; // обнулили последнего
-                size--;
-                // можно написать короче этот код TODO
-                return victim;
+                Employee victim = employees[i]; // убрали найденный элемент в переменную
+//                employees[i] = employees[size - 1]; // на место найденного поставили последнего существ. в массиве
+//                employees[size - 1] = null; // обнулили последнего
+//                size--;
+//          можно написать короче этот код TODO
+                employees[i] = employees[--size]; // - префиксная операция
+               employees[size] = null; // обнуляем последний элемент
+            return victim;
             }
         }
         return null;
