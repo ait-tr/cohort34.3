@@ -9,6 +9,8 @@ import practice.company_v1.model.Manager;
 import practice.company_v1.model.SalesManager;
 import practice.company_v1.model.Worker;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CompanyImplTest {
@@ -23,7 +25,7 @@ class CompanyImplTest {
         e[0] = new Manager(101, "John", "Smith", 45, 160, 5000, 5);
         e[1] = new SalesManager(102, "Anna", "Black", 36, 160, 25000, 0.1);
         e[2] = new SalesManager(103, "Thomas", "White", 28, 160, 30000, 0.1);
-        e[3] = new Worker(104, "Gans", "Bauer", 30, 160, 5);
+        e[3] = new Worker(104, "Gans", "Bauer", 30, 80, 5);
 
         // добавим элементы массива в company
         for (int i = 0; i < e.length; i++) {
@@ -84,13 +86,29 @@ class CompanyImplTest {
     }
 
     @Test
-    void totalSales() {
+    void totalSalesTest() {
         assertEquals(55000, company.totalSales());
     }
 
     @Test
-    void printEmployees() {
+    void printEmployeesTest() {
 
         company.printEmployees();
+    }
+
+    @Test
+    void findEmployeesHoursGreaterThanTest(){
+        Employee[] actual = company.findEmployeesHoursGreaterThan(100);
+        Employee[] expected = {e[0], e[1], e[2]};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void findEmployeesSalaryRangeTest(){
+        company.printEmployees();
+        Employee[] actual = company.findEmployeesSalaryRange(2900, 6000);
+        Employee[] expected = {e[0], e[2]};
+        assertArrayEquals(expected, actual);
+        System.out.println(Arrays.toString(actual));
     }
 }

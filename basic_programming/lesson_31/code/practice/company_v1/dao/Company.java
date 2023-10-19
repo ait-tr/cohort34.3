@@ -11,6 +11,8 @@ package practice.company_v1.dao;
 
 import practice.company_v1.model.Employee;
 
+import java.security.spec.ECPoint;
+
 public interface Company {
     // объявляем методы, только сигнатуры, без тела метода
     boolean addEmployee(Employee employee);
@@ -21,5 +23,10 @@ public interface Company {
     double avgSalary(); // средняя зарплата по компании, average - средний
     double totalSales(); // - объем продаж
     void printEmployees();
+    //---------------------
+//      - список работников, у которых отработано больше часов, чем...
+    Employee[] findEmployeesHoursGreaterThan(int hours);
+//      - список работников, у которых зарплата в интервале от... и до...
+    Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary);
 
 }
