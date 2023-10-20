@@ -58,11 +58,11 @@ _________________________________________________________
 
 Параметр (generic) указывается в угловых скобках - <T>.
 
-Обычно используют буквы - T (type), E(entry), K(key), V(value)
+Обычно используют буквы - T(type), E(entry), K(key), V(value)
 
 **Важное правило:**
-Если хотим подставить в Generic примитивный тип, например int, double, boolean, то
-используем классы-обертки Integer, Boolean, Double, Float, Byte, Short, Character
+Если хотим подставить в Generic примитивный тип, например int, double, boolean, и т.д. то
+используем классы-обертки Integer, Boolean, Double, Float, Byte, Short, Character, String
 
 # Интерфейсы Comparable<T> и Comparator<T>
 
