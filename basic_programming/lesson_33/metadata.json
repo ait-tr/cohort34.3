@@ -5,13 +5,13 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/practice/company_v1/dao/Company.java",
-    "code/practice/company_v1/dao/CompanyImpl.java",
-    "code/practice/company_v1/model/Employee.java",
-    "code/practice/company_v1/model/Manager.java",
-    "code/practice/company_v1/model/SalesManager.java",
-    "code/practice/company_v1/model/Worker.java",
-    "code/practice/company_v1/tests/CompanyImplTest.java"
+    "code/practice/cats/Cat.java",
+    "code/practice/cats/CatTest.java",
+    "code/practice/json_wrapper/JsonWrapper1.java",
+    "code/practice/json_wrapper/JsonWrapper1.java",
+    "code/practice/json_wrapper/JsonWrapperAppl1.java",
+    "code/practice/json_wrapper/JsonWrapperAppl2.java"
+
 
   ],
   "video": ""
