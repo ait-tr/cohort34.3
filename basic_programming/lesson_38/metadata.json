@@ -5,16 +5,15 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/consultation/cars/dao/GarageImpl.java",
+    "code/consultation/cars/model/Car.java",
+    "code/consultation/cars/Garage.java",
     "code/practice/coffee/Coffee.java",
     "code/practice/coffee/CoffeeAppl.java",
     "code/practice/month/Month.java",
     "code/practice/month/MonthAppl.java",
     "code/practice/seasons/Season.java",
-    "code/practice/seasons/SeasonAppl.java",
-    "code/consultation/cars/dao/GarageImpl.java",
-    "code/consultation/cars/model/Car.java",
-    "code/consultation/cars/Garage.java"
-
+    "code/practice/seasons/SeasonAppl.java"
 
   ],
   "video": ""
