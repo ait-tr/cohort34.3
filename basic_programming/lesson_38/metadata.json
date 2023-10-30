@@ -5,12 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/practice/cats/Cat.java",
-    "code/practice/cats/CatTest.java",
-    "code/practice/json_wrapper/JsonWrapper1.java",
-    "code/practice/json_wrapper/JsonWrapper1.java",
-    "code/practice/json_wrapper/JsonWrapperAppl1.java",
-    "code/practice/json_wrapper/JsonWrapperAppl2.java"
+    "code/practice/coffee/Coffee.java",
+    "code/practice/coffee/CoffeeAppl.java",
+    "code/practice/month/Month.java",
+    "code/practice/month/MonthAppl.java",
+    "code/practice/seasons/Season.java",
+    "code/practice/seasons/SeasonAppl.java"
 
   ],
   "video": ""

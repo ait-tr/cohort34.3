@@ -8,6 +8,7 @@ public enum Season {
     private int number;
     private String name;
 
+
     // конструктор
     Season(int number, String name) {
         this.number = number;
