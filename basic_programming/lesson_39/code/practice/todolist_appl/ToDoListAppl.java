@@ -37,7 +37,7 @@ public class ToDoListAppl {
                     System.out.println("Input task ID: ");
                     int id = scanner.nextInt();
                     Task findedTask = toDoList.findTask(id - 1);
-                    System.out.println("Task finded: " + findedTask);
+                    System.out.println("Task found: " + findedTask);
                     break;
                 }
                 case 4: {
