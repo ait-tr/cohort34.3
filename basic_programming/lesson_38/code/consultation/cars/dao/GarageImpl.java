@@ -3,6 +3,8 @@ package consultation.cars.dao;
 import consultation.cars.Garage;
 import consultation.cars.model.Car;
 
+import java.util.function.Predicate;
+
 public class GarageImpl implements Garage {
 
     // поля класса
@@ -10,7 +12,7 @@ public class GarageImpl implements Garage {
     private int size; // текущее кол-во автомобилей в массиве
 
     // конструктор
-    public GarageImpl(int capacity){
+    public GarageImpl(int capacity) {
         cars = new Car[capacity];
     }
 
@@ -39,26 +41,56 @@ public class GarageImpl implements Garage {
 
     @Override
     public Car findCarByRegNumber(String regNumber) {
+        // пробегаем по массиву, ищем по условию элемент массива
+        for (int i = 0; i < size; i++) {
+            if (cars[i].getRegNumber().equals(regNumber)) {
+                return cars[i];
+            }
+        }
         return null;
     }
 
+    // Шаг 1 - подсчет кол-ва рез-ов count
+    // Шаг 2 - создаем массив длиной count
+    // Шаг 3 - заполняем этот массив результатами поиска/отбора по критерию
+    // Для отбора элементов будем использовать интерфейс Predicate
+
     @Override
     public Car[] findCarsByModel(String model) {
-        return new Car[0];
+        return findCarsByPredicate (c -> model.equals(c.getModel()));
     }
 
     @Override
     public Car[] findCarsByCompany(String company) {
-        return new Car[0];
+        return findCarsByPredicate(c -> company.equals(c.getCompany()));
     }
 
     @Override
     public Car[] findCarsByEngine(double min, double max) {
-        return new Car[0];
+        return findCarsByPredicate(c -> c.getEngine() >= min && c.getEngine()<= max);
     }
 
     @Override
     public Car[] findCarsByColor(String color) {
-        return new Car[0];
+        return findCarsByPredicate(c -> color.equals(c.getColor()));
+    }
+
+    private Car[] findCarsByPredicate(Predicate<Car> predicate){
+        int count = 0;
+        for (int i = 0; i < size; i++) { // обегаем массив
+            if(predicate.test(cars[i])) { // проверяем все элементы массива на тест в предикате
+                count++;
+            }
+        }
+        Car[] res = new Car[count];
+        // fill array
+        for (int i = 0, j = 0; j < res.length ; i++) {
+            if(predicate.test(cars[i])) {
+                res[j] = cars[i];
+                j++;
+            }
+        }
+        return res;
     }
 }
+

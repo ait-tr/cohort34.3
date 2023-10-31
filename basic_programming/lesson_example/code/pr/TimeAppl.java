@@ -1,4 +1,4 @@
-package practice.time_api;
+package pr;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
