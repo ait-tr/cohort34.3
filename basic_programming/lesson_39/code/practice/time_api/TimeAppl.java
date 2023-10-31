@@ -1,8 +1,10 @@
-package time_api;
+package practice.time_api;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.temporal.ChronoUnit;
+import java.util.Arrays;
 
 public class TimeAppl {
     public static void main(String[] args) {
@@ -51,6 +53,29 @@ public class TimeAppl {
         // 2 month ago
         newDate = currentDay.minusMonths(2);
         System.out.println("Twi month ago: " + newDate);
+
+        //operations with chronounits
+        System.out.println(localDateTime.plus(9, ChronoUnit.HALF_DAYS)); // сколько половинок дней прошло по 12 часов
+        // CENTURE - 100 years
+        newDate = currentDay.plus(2, ChronoUnit.CENTURIES);
+        System.out.println("In 2 centures: " + newDate);
+        System.out.println("It will be day of week: " + newDate.getDayOfWeek());
+
+        // получение интервала времени (сколько лет прошло? сколько лет персоне?)
+        LocalDate einstain = LocalDate.of(1879, 3, 14);
+        long res = ChronoUnit.YEARS.between(gagarin, einstain);
+        System.out.println(res);
+
+        System.out.println("Compare dates");
+        System.out.println(einstain.compareTo(gagarin)); // сравнение дат
+        LocalDate yesterday = LocalDate.of(2023, 10, 30);
+        System.out.println(currentDay.compareTo(yesterday));
+
+        // sorting time
+        LocalDate[] dates = {yesterday, einstain, gagarin, currentDay};
+        System.out.println(Arrays.toString(dates)); // неотсортированные даты
+        Arrays.sort(dates);
+        System.out.println(Arrays.toString(dates)); // отсортированные даты в массиве
 
     }
 }

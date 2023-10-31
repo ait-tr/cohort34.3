@@ -1,4 +1,4 @@
-package practice.todolist_appl;
+package practice.todoappl;
 
 import java.util.Scanner;
 import practice.todolist_appl.dao.ToDoListImpl;

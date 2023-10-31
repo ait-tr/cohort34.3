@@ -1,4 +1,4 @@
-package practice.todolist_appl.dao;
+package practice.todoappl.dao;
 
 import practice.todolist_appl.model.Task;
 

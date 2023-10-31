@@ -7,11 +7,12 @@
   "code": [
     "code/homework/DateOperation.java",
     "code/homework/DateOperationTest.java",
-    "code/practice/todolist_appl/dao/ToDoList.java",
-    "code/practice/todolist_appl/dao/ToDoListImpl.java",
-    "code/practice/todolist_appl/model/Menu.java",
-    "code/practice/todolist_appl/model/Task.java",
-    "code/practice/todolist_appl/ToDoListAppl.java"
+    "code/practice/time_api/TimeAppl.java",
+    "code/practice/todoappl/dao/ToDoList.java",
+    "code/practice/todoappl/dao/ToDoListImpl.java",
+    "code/practice/todoappl/model/Menu.java",
+    "code/practice/todoappl/model/Task.java",
+    "code/practice/todoappl/ToDoListAppl.java"
 
   ],
   "video": ""

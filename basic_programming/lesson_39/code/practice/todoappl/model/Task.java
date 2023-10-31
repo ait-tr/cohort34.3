@@ -1,4 +1,4 @@
-package practice.todolist_appl.model;
+package practice.todoappl.model;
 
 import java.util.Objects;
 

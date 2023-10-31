@@ -1,4 +1,4 @@
-package practice.todolist_appl.model;
+package practice.todoappl.model;
 
 public enum Menu {
     ADD(1, "Add task"), LIST(2, "List of tasks"), REMOVE(3, "Remove task"), EXIT(4, "Exit");
