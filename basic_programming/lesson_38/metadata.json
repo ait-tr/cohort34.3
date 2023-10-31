@@ -6,8 +6,10 @@
   "homework": "homework.md",
   "code": [
     "code/consultation/cars/dao/GarageImpl.java",
+    "code/consultation/cars/dao/GarageImplTest.java",
     "code/consultation/cars/model/Car.java",
     "code/consultation/cars/Garage.java",
+    "code/consultation/predicate/PredicateTest.java",
     "code/practice/coffee/Coffee.java",
     "code/practice/coffee/CoffeeAppl.java",
     "code/practice/month/Month.java",
