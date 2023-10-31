@@ -1,0 +1,18 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/DateOperation.java",
+    "code/homework/DateOperationTest.java",
+    "code/practice/todolist_appl/dao/ToDoList.java",
+    "code/practice/todolist_appl/dao/ToDoListImpl.java",
+    "code/practice/todolist_appl/model/Menu.java",
+    "code/practice/todolist_appl/model/Task.java",
+    "code/practice/todolist_appl/ToDoListAppl.java"
+
+  ],
+  "video": ""
+}
