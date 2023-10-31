@@ -1,6 +1,6 @@
 package practice.todoappl.dao;
 
-import practice.todolist_appl.model.Task;
+import practice.todoappl.model.Task;
 
 import java.util.Arrays;
 
