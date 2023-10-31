@@ -7,14 +7,15 @@ public interface ToDoList {
     boolean addTask(Task task);
 
     // remove Task
-    Task removeTask(int id);
-
-    // find Task
-    Task findTask(int id);
+    Task removeTask(int taskNumber);
 
     // print list of Tasks
-    void printTasks();
+    void viewTasks();
+    // подумать над Task[] viewTasks();
 
     // quantity of tasks
     int quantity();
+
+    // TODO - нужен ли в интерфейсе метод для выхода из меню?
+
 }

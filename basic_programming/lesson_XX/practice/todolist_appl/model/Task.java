@@ -6,12 +6,13 @@ public class Task implements Comparable<Task> {
     // fields
     private int id; // идентификатор
     private String task; // содержание задачи
-    private static int nextId;
+    private int taskNumber;
 
     // constructor
-    public Task(String task) { // по имени совпадает с именем класса, ничего не возвращает и не void
-        this.id = nextId++;
+    public Task(int id, String task, int taskNumber) {
+        this.id = id;
         this.task = task;
+        this.taskNumber = taskNumber;
     }
 
     // геттеры и сеттеры
@@ -31,10 +32,22 @@ public class Task implements Comparable<Task> {
         this.task = task;
     }
 
+    public int getTaskNumber() {
+        return taskNumber;
+    }
+
+    public void setTaskNumber(int taskNumber) {
+        this.taskNumber = taskNumber;
+    }
+
     // метод toString
     @Override
-    public String toString() { // переопределяем метод для себя, ЭТО ПОЛИМОРФИЗМ
-        return  (id + 1) + " : " + task;
+    public String toString() {
+        // TODO - сначала номер задачи, ее  текст
+        return "Task{" +
+                "task='" + task + '\'' +
+                ", taskNumber=" + taskNumber +
+                '}';
     }
 
     @Override
@@ -52,6 +65,7 @@ public class Task implements Comparable<Task> {
 
     @Override
     public int compareTo(Task o) {
-        return this.id - o.id; // естественная сортировка по id, от меньшего к большему
+        // return this.taskNumber - o.getTaskNumber(); // естественная сортировка по taskNumber, от меньшего к большему
+        return Integer.compare(this.taskNumber, o.taskNumber); // возможный вариант
     }
 }
