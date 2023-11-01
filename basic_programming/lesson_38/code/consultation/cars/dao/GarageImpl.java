@@ -14,6 +14,7 @@ public class GarageImpl implements Garage {
     // конструктор
     public GarageImpl(int capacity) {
         cars = new Car[capacity];
+        this.size = 0;
     }
 
     @Override
@@ -31,7 +32,7 @@ public class GarageImpl implements Garage {
             if (regNumber.equals(cars[i].getRegNumber())) {
                 Car temp = cars[i];
                 cars[i] = cars[--size]; // ставим на место удаляемого элемента ставим последнй из массива
-                cars[size] = null;
+                cars[size] = null; // затираем последний элемент в массиве
                 return temp;
             }
 
@@ -75,6 +76,11 @@ public class GarageImpl implements Garage {
         return findCarsByPredicate(c -> color.equals(c.getColor()));
     }
 
+    @Override
+    public int size() {
+        return size;
+    }
+
     private Car[] findCarsByPredicate(Predicate<Car> predicate){
         int count = 0;
         for (int i = 0; i < size; i++) { // обегаем массив
@@ -91,6 +97,12 @@ public class GarageImpl implements Garage {
             }
         }
         return res;
+    }
+
+    public static void printCars(Car[] cars){
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
+        }
     }
 }
 
