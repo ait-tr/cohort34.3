@@ -7,12 +7,12 @@
   "code": [
     "code/homework/DateOperation.java",
     "code/homework/DateOperationTest.java",
-    "code/practice/time_api/TimeAppl.java",
-    "code/practice/todoappl/dao/ToDoList.java",
-    "code/practice/todoappl/dao/ToDoListImpl.java",
-    "code/practice/todoappl/model/Menu.java",
-    "code/practice/todoappl/model/Task.java",
-    "code/practice/todoappl/ToDoListAppl.java"
+    "code/practice/album/dao/Album.java",
+    "code/practice/album/dao/AlbumImpl.java",
+    "code/practice/album/dao/AlbumImplTest.java",
+    "code/practice/album/model/Photo.java",
+    "code/practice/time_api/TimeAppl1.java"
+
 
   ],
   "video": ""
