@@ -5,8 +5,6 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/DateOperation.java",
-    "code/homework/DateOperationTest.java",
     "code/practice/time_api/TimeAppl.java",
     "code/practice/todoappl/dao/ToDoList.java",
     "code/practice/todoappl/dao/ToDoListImpl.java",
