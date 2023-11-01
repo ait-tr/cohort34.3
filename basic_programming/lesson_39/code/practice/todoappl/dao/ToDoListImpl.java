@@ -48,19 +48,7 @@ public class ToDoListImpl implements ToDoList {
     }
 
     @Override
-    public Task findTask(int id) {
-        // find by id
-        for (int i = 0; i < quantity; i++) {
-            if (tasks[i].getId() == id) {
-                Task findedTask = tasks[i];
-                return findedTask;
-            }
-        }
-        return null;
-    }
-
-    @Override
-    public void printTasks() {
+    public void viewTasks() {
         // for loop, print tasks
         for (int i = 0; i < quantity; i++) {
             System.out.println(tasks[i]);

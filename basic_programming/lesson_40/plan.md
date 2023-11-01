@@ -1,44 +1,44 @@
-# Lesson plan No. 39 10/31/2023
+# Lesson plan No. 40 11/01/2023
 
 1.Homework:
-- questions about the marathon;
-- questions on covered topics (Arrays and its methods) and examples (Car - Garage, City, Soldier).
+- questions about creating a menu for ToDoList
+- getAge method by birthday date of String type
 
-2.ENUM
+2. New topic - Java Time API, continued
 - see theory section
 
-3. Workshop on ENUM
+3. Workshop:
 
-**Task 1.**
-Set ENUM seasons - seasons.
-Try the following methods on it:
-.values()
-.valueOf()
-.ordinal()
+**Working with dates:**
+- find out the current date and time
+- is there a date, what day of the week was it? day of the month? day of the year?
+- there is a date, how can I find out if it was earlier? or later?
 
-**Task 2.**
-Set emun Month, determine the months, their names and the number of days in them.
-Implement a method that allows you to add months to the selected month, resulting in the correct month.
-Example: AUG + 6 month = FEB
-Check the method in the application.
+**Time travel**
+- to the future currentDay.plus
+- to the past currentDay.minus
+- use of ChronoUnit
 
-**Task 3.**
-Using enum, write a program to sell 4 types of coffee:
-ESPRESSO,
-AMERICANO,
-CAPUCCINO,
-LATTE
-Offer the user a choice of coffee, and based on the selection results, inform the cost of the drink.
+**Getting a time interval**
+
+**Sort array by time**
+
+**Date Formatter**
+
+**Parsing date from string**
+
+4. Developing an Album application that has a date field
+- see UML - diagram album.jpg
 
 ___________________________________________
 
-# План занятия №39 31.10.2023
+# План занятия №40 01.11.2023
 
 1. Homework:
 - вопросы по созданию меню для ToDoList
-- отладка приложения
+- метод getAge по дате дня рождения типа String 
 
-2. Новая тема - Java Time API
+2. Новая тема - Java Time API, продолжение
 - см. раздел теория
 
 3. Практикум:

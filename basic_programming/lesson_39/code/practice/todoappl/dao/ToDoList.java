@@ -1,6 +1,6 @@
 package practice.todoappl.dao;
 
-import practice.todolist_appl.model.Task;
+import practice.todoappl.model.Task;
 
 public interface ToDoList {
     // add Task
@@ -17,5 +17,6 @@ public interface ToDoList {
     int quantity();
 
     // TODO - нужен ли в интерфейсе метод для выхода из меню?
+    // Нет, не нужен
 
 }

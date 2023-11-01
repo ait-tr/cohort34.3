@@ -1,13 +1,15 @@
 package homework;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class DateOperation {
 
     public static int getAge(String birthDate) {
         //TODO
-        LocalDate date = LocalDate.parse(birthDate);
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("[dd/MM/yyyy][yyyy-MM-dd]");
+        LocalDate date = LocalDate.parse(birthDate, df);
         System.out.println(date);
         LocalDate currentDate = LocalDate.now();
         System.out.println(currentDate);
