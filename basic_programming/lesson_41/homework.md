@@ -23,6 +23,7 @@ ___________________________________________________
 **Задача 2.(*)**
 Реализовать приложение Forum согласно UML-схеме.
 
+[схема](https://github.com/ait-tr/cohort34.3/blob/main/basic_programming/lesson_41/code/forum.jpg)
 
 
 
