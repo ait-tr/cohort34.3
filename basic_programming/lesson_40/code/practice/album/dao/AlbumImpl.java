@@ -3,6 +3,7 @@ package practice.album.dao;
 import practice.album.model.Photo;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.Comparator;
 
 public class AlbumImpl implements Album {
@@ -38,6 +39,12 @@ public class AlbumImpl implements Album {
 
     @Override
     public Photo getPhotoFromAlbum(int photoId, int albumId) {
+        Photo pattern = new Photo(albumId, photoId, null, null, null);
+        for (int i = 0; i < size; i++) {
+            if (pattern.equals(photos[i])) {
+                return photos[i];
+            }
+        }
         return null;
     }
 
