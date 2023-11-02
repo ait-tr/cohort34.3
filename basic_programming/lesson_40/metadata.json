@@ -5,6 +5,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/consultation/city/City.java",
+    "code/consultation/city/CityTest.java",
     "code/homework/DateOperation.java",
     "code/homework/DateOperationTest.java",
     "code/practice/album/dao/Album.java",
