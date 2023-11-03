@@ -5,15 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/consultation/city/City.java",
-    "code/consultation/city/CityTest.java",
-    "code/homework/DateOperation.java",
-    "code/homework/DateOperationTest.java",
     "code/practice/album/dao/Album.java",
     "code/practice/album/dao/AlbumImpl.java",
     "code/practice/album/dao/AlbumImplTest.java",
-    "code/practice/album/model/Photo.java",
-    "code/practice/time_api/TimeAppl1.java"
+    "code/practice/album/model/Photo.java"
 
   ],
   "video": ""

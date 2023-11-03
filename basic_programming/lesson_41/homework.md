@@ -9,6 +9,11 @@ Develop an ArchiveAppl application that should have a menu with the following fu
 **Task 2.(*)**
 Implement the Forum application according to the UML diagram.
 
+[scheme](https://github.com/ait-tr/cohort34.3/blob/main/basic_programming/lesson_41/code/forum.jpg)
+
+**Task 3.**
+Upload projects from the Marathon to Git, send a link, write the date when everything was completed
+
 ___________________________________________________
 
 
@@ -25,7 +30,7 @@ ___________________________________________________
 
 [схема](https://github.com/ait-tr/cohort34.3/blob/main/basic_programming/lesson_41/code/forum.jpg)
 
-**Задача 3**
+**Задача 3.**
 Загрузить проекты из Марафона на Git, прислать ссылку, написать дату, когда было все закончено.
 
 
