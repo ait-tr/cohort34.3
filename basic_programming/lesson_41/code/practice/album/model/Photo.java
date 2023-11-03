@@ -1,6 +1,5 @@
 package practice.album.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Photo implements Comparable<Photo> {
