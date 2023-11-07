@@ -1,0 +1,23 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/archive/dao/Archive.java",
+    "code/homework/archive/dao/ArchiveImpl.java",
+    "code/homework/archive/dao/ArchiveImplTest.java",
+    "code/homework/archive/model/Document.java",
+    "code/homework/archive/model/Menu.java",
+    "code/homework/archive/ArchiveAppl.java",
+    "code/practice/todo_v3/dao/ToDoList.java",
+    "code/practice/todo_v3/dao/ToDoListImpl.java",
+    "code/practice/todo_v3/dao/ToDoListImplTest.java",
+    "code/practice/todo_v3/model/Menu.java",
+    "code/practice/todo_v3/model/Task.java",
+    "code/practice/todo_v3/ToDoListAppl.java"
+
+  ],
+  "video": ""
+}
