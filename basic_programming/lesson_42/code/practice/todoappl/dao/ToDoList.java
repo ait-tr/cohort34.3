@@ -11,6 +11,7 @@ public interface ToDoList {
 
     // print list of Tasks
     void viewTasks();
+    // TODO - задач списка
     // подумать над Task[] viewTasks();
 
     // quantity of tasks

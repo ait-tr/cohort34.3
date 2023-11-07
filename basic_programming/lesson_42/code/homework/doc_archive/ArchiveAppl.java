@@ -30,7 +30,7 @@ public class ArchiveAppl {
                     int folderId = scanner.nextInt();
                     System.out.println("Input document ID: ");
                     int documentId = scanner.nextInt();
-                    scanner.nextLine();
+                    scanner.nextLine(); // переход на новую строку и ожидание ввода
                     System.out.println("Input document title: ");
                     String title = scanner.nextLine();
                     System.out.println("Input document url: ");

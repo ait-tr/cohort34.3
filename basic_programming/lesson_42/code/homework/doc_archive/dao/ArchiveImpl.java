@@ -94,6 +94,19 @@ public class ArchiveImpl implements Archive{
         return Arrays.copyOf(res, j);//скопировали массив сам на себя, теперь он без элементов null
     }
 
+    // Метод getDocumentBetweenDate использует Integer.MIN_VALUE в качестве значения documentId в объекте pattern,
+    // чтобы найти левый край диапазона документов. Это делается для того, чтобы убедиться, что найденный индекс
+    // всегда будет меньше или равен нулю, так как Arrays.binarySearch ожидает, что документы будут упорядочены в
+    // массиве, и отрицательный индекс означает, что элемент не найден, но он мог бы быть вставлен в эту позицию.
+    //
+    //Использование 0 в качестве documentId в объекте pattern приведет к тому, что индекс, найденный с использованием
+    // Arrays.binarySearch, будет означать точное совпадение с этим documentId, что не всегда верно, так
+    // как documentId может быть неотрицательным числом.
+    //
+    //Итак, использование Integer.MIN_VALUE обеспечивает, что найденный индекс будет левым краем диапазона,
+    // который вы хотите получить. В данном контексте Integer.MIN_VALUE служит специальным значением, которое
+    // обозначает "нижнюю границу" для поиска, чтобы учесть все документы, начиная с заданной даты dateFrom.
+
     @Override
     public Document[] getDocBetweenDate(LocalDate dateFrom, LocalDate dateTo) {
         Document pattern = new Document(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay()); // почему Integer.MIN_VALUE, а не 0

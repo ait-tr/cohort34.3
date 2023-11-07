@@ -2,6 +2,7 @@ package practice.todoappl.dao;
 
 import practice.todoappl.model.Task;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 
 public class ToDoListImpl implements ToDoList {
@@ -10,6 +11,8 @@ public class ToDoListImpl implements ToDoList {
     private Task[] tasks;
     private int capacity;
     private int quantity;
+
+    private LocalDateTime time; // TODO - добавить дату и время создания задачи
 
     // constructor
     public ToDoListImpl(int capacity){

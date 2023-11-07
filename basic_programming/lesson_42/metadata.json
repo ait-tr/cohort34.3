@@ -16,7 +16,8 @@
     "code/practice/todoappl/dao/ToDoListImplTest.java",
     "code/practice/todoappl/model/Menu.java",
     "code/practice/todoappl/model/Task.java",
-    "code/practice/todoappl/ToDoListAppl.java"
+    "code/practice/todoappl/ToDoListAppl.java",
+    "code/practice/try_catch/TryCatchAppl.java"
 
   ],
   "video": ""
