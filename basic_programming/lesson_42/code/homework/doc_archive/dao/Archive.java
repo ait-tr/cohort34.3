@@ -12,5 +12,5 @@ public interface Archive {
     Document[] getAllDocFromFolder(int folderId);
     Document[] getDocBetweenDate(LocalDate dateFrom, LocalDate dateTo);
     int size(); //quantity
-    void viewArchive();
+    void viewArchive(); // метод для печати содержимого
 }

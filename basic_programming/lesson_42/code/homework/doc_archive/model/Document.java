@@ -11,8 +11,8 @@ public class Document implements Comparable<Document> {
     private String url;
     private LocalDateTime date;
 
+    // constructor
     public Document(int folderId, int documentId, String title, String url, LocalDateTime date) {
-
         this.folderId = folderId;
         this.documentId = documentId;
         this.title = title;
@@ -65,8 +65,8 @@ public class Document implements Comparable<Document> {
 
     @Override
     public int compareTo(Document o) {
-        int res = Integer.compare(folderId,o.folderId);
-        return res != 0 ? res: Integer.compare(documentId,o.documentId);
+        int res = Integer.compare(folderId,o.folderId); // сортировка по папке
+        return res != 0 ? res: Integer.compare(documentId,o.documentId); // сортировка по документу
     }
 }
 

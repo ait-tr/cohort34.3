@@ -22,6 +22,14 @@ class ArchiveImplTest {
     void setUp() {
         archive = new ArchiveImpl(7);
 
+//        ph[0] = new Photo(1, 1, "title1", "url1", now.minusDays(7));
+//        ph[1] = new Photo(1, 2, "title2", "url2", now.minusDays(7));
+//        ph[2] = new Photo(1, 3, "title3", "url3", now.minusDays(5));
+//        ph[3] = new Photo(2, 1, "title1", "url1", now.minusDays(7));
+//        пример данных, p[4] и p[5] совпадают по времени полностью
+//        ph[4] = new Photo(2, 4, "title4", "url4", LocalDateTime.of(now.minusDays(2).toLocalDate(), LocalTime.MAX));
+//        ph[5] = new Photo(1, 4, "title4", "url1", LocalDateTime.of(now.minusDays(2).toLocalDate(), LocalTime.MAX));
+
         d = new Document[6];
 
         d[0] = new Document(1,1,"t1","url1",now.minusDays(2));
@@ -81,7 +89,7 @@ class ArchiveImplTest {
     @Test
     void getDocFromFolderTest() {
         assertEquals(d[0],archive.getDocFromFolder(1,1));//проверка нахождения фото
-        assertNull(archive.getDocFromFolder(1,3));// ищем несуществующее
+        assertNull(archive.getDocFromFolder(4,3));// ищем несуществующее
     }
 
     @Test
