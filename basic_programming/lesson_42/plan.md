@@ -1,6 +1,24 @@
 # Lesson plan No. 41 11/03/2023
 
 
+1.Homework:
+- Document,Archive
+
+2. What we learned new over the past week:
+   -enum
+- Java Time API
+  -Git
+
+3. ToDoListAppl - final approach, work in groups.
+   The task is to make a working application.
+
+4. New topic - Exceptions, try...catch construction
+
+5. Practice:
+   treatment
+   // 1. Division by 0;
+   // 2. Going beyond the array;
+   // 3. Checking user input for correctness.
 
 
 ___________________________________________
