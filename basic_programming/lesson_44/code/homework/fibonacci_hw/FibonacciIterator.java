@@ -29,9 +29,9 @@ public class FibonacciIterator implements Iterator<Integer> {
         if (counter++ <= 2) {
             return 1;
         }
-        int currNum = prevNum;
-        prevNum = prevPrevNum + prevNum;
-        prevPrevNum = currNum;
+        int currNum = prevNum; // текущее число
+        prevNum = prevPrevNum + prevNum; // вычисляем следующее как сумму двух предыдущих
+        prevPrevNum = currNum; // переносим текущее число
         return prevNum; // TODO - как получить сл. число Фибоначчи в ряду = предыдущее + текущее
     }
 }
