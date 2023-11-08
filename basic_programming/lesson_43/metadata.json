@@ -16,7 +16,13 @@
     "code/hw/todo_v3/dao/ToDoListImplTest.java",
     "code/hw/todo_v3/model/Menu.java",
     "code/hw/todo_v3/model/Task.java",
-    "code/hw/todo_v3/ToDoListAppl.java"
+    "code/hw/todo_v3/ToDoListAppl.java",
+    "code/practice/fibonacci/Fibonacci.java",
+    "code/practice/fibonacci/FibonacciAppl.java",
+    "code/practice/fibonacci/FibonacciIterator.java",
+    "code/practice/mystring/model/MyStringIterator.java",
+    "code/practice/mystring/MyString.java",
+    "code/practice/mystring/MyStringAppl.java"
 
   ],
   "video": ""

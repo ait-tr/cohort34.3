@@ -1,6 +1,10 @@
 package practice.mystring;
 
-public class MyString {
+import practice.mystring.model.MyStringIterator;
+
+import java.util.Iterator;
+
+public class MyString implements Iterable<Character>{
     // field
     private StringBuilder str; // StringBuilder - это встроенный в Java класс
 
@@ -31,5 +35,10 @@ public class MyString {
     @Override
     public String toString() {
         return str.toString();
+    }
+
+    @Override
+    public Iterator<Character> iterator() {
+        return new MyStringIterator(str);
     }
 }
