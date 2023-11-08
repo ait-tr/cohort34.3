@@ -5,18 +5,18 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/archive/dao/Archive.java",
-    "code/homework/archive/dao/ArchiveImpl.java",
-    "code/homework/archive/dao/ArchiveImplTest.java",
-    "code/homework/archive/model/Document.java",
-    "code/homework/archive/model/Menu.java",
-    "code/homework/archive/ArchiveAppl.java",
-    "code/practice/todo_v3/dao/ToDoList.java",
-    "code/practice/todo_v3/dao/ToDoListImpl.java",
-    "code/practice/todo_v3/dao/ToDoListImplTest.java",
-    "code/practice/todo_v3/model/Menu.java",
-    "code/practice/todo_v3/model/Task.java",
-    "code/practice/todo_v3/ToDoListAppl.java"
+    "code/hw/archive/dao/Archive.java",
+    "code/hw/archive/dao/ArchiveImpl.java",
+    "code/hw/archive/dao/ArchiveImplTest.java",
+    "code/hw/archive/model/Document.java",
+    "code/hw/archive/model/Menu.java",
+    "code/hw/ArchiveAppl.java",
+    "code/hw/todo_v3/dao/ToDoList.java",
+    "code/hw/todo_v3/dao/ToDoListImpl.java",
+    "code/hw/todo_v3/dao/ToDoListImplTest.java",
+    "code/hw/todo_v3/model/Menu.java",
+    "code/hw/todo_v3/model/Task.java",
+    "code/hw/todo_v3/ToDoListAppl.java"
 
   ],
   "video": ""
