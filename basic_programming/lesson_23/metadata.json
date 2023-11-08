@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [     
+     "code/homework/Computer.java",
+    "code/practice/Food.java",
+     "code/practice/Goat.java",
+     "code/practice/GoatAppl.java",
+     "code/practice/Product.java",
+     "code/practice/Supermarket.java",
+     "code/practice/SupermarketApp.java"
+
+  ]
+}
