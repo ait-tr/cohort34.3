@@ -56,6 +56,8 @@ In the body of this loop, the variable "e" takes in turn the value of each eleme
 In a for-each loop, you cannot modify the iterable set.
 
 
+## Java Collection Framework
+
 Java Collection Framework (JCF) - a set (set) of classes and interfaces that are most often implemented
 data structures used. JCF consists of two large subsections: Map and Collection.
 We begin our study with collections.
