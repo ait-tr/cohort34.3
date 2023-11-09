@@ -1,6 +1,6 @@
 package homework;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class TwoGroups {
     public static void main(String[] args) {
@@ -38,5 +38,7 @@ public class TwoGroups {
         System.out.println(Arrays.toString(gr1));
         System.out.println("------------------");
         System.out.println(Arrays.toString(gr2));
+        System.out.println("------------------");
+        
     }
 }
