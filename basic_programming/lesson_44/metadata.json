@@ -9,7 +9,8 @@
     "code/homework/fibonacci_hw/FibonacciAppl.java",
     "code/homework/fibonacci_hw/FibonacciIterator.java",
     "code/practice/complexity/ComplexityAppl.java",
-    "code/practice/ilist/IList.java"
+    "code/practice/ilist/IList.java",
+    "code/consultation/BinarySearchEx.java"
 
   ],
   "video": ""

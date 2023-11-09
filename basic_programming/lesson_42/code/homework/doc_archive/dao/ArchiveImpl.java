@@ -112,12 +112,28 @@ public class ArchiveImpl implements Archive{
         Document pattern = new Document(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay()); // почему Integer.MIN_VALUE, а не 0
         //ввели объектную переменную, шаблон
         int from = Arrays.binarySearch(documents, 0, size, pattern, comparator);//находим индекс начального фото левый край
-        from = from>=0 ? from : -from-1;
+        from = from>=0 ? from : - from -1;
+
         pattern = new Document(0, Integer.MAX_VALUE, null, null, LocalDateTime.of(dateTo, LocalTime.MAX));// находим
         // правый край
         int to = Arrays.binarySearch(documents, 0, size, pattern, comparator);
         to = to >=0 ? to : -to-1;
         return Arrays.copyOfRange(documents, from, to);// диапазон, создаем новый массив с нужными документами
+    }
+
+    @Override
+    public Document[] getDocBetweenDateTwo(LocalDate dateFrom, LocalDate dateTo) {
+        Document[] docArray = new Document[size];
+        int j = 0;
+        for (int i = 0; i < size; i++) {
+            LocalDateTime docDate = documents[i].getDate();
+            if(docDate.isAfter(dateFrom.atStartOfDay()) && docDate.isBefore(dateTo.plusDays(1).atStartOfDay())) {
+                docArray[j] = documents[i];
+                j++;
+            }
+            return Arrays.copyOf(docArray, j);
+        }
+        return new Document[0];
     }
 
     @Override

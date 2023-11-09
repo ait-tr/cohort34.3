@@ -112,6 +112,16 @@ class ArchiveImplTest {
     }
 
     @Test
+    void getDocBetweenDateTestTwo() {
+        LocalDate ld = now.toLocalDate(); // оставляем только дату
+        Document[] actual = archive.getDocBetweenDateTwo(ld.minusDays(7), ld.minusDays(3));
+        Arrays.sort(actual);
+        Document[] expected = {d[1],d[2],d[3], d[4], d[5]};
+        Arrays.sort(expected);
+        assertArrayEquals(expected,actual);
+    }
+
+    @Test
     void sizeTest() {
         assertEquals(6,archive.size());
     }
