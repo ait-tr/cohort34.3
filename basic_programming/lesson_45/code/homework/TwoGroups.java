@@ -13,14 +13,14 @@ public class TwoGroups {
         String[] gr1 = new String[l1];
         String[] gr2 = new String[l2];
 
-        int a = 0;
-        int b = 1;
-        int m = 0;
-        int n = 0;
+        int a = 0; // орел
+        int b = 1; // решка
+        int m = 0; // счетчик массива 1
+        int n = 0; // счетчик массива 2
         // int i = 0;
 
         for (int i = 0; i < group.length; i++) {
-            int randomFactor = (int) (Math.random() * (b - a + 1) + a);
+            int randomFactor = (int) (Math.random() * (b - a + 1) + a); //
             if (randomFactor == 0 && m < l1) { // если 0 и есть место, то
                 gr1[m] = group[i];
                 m++;

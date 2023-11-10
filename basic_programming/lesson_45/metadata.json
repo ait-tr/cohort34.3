@@ -6,7 +6,10 @@
   "homework": "homework.md",
   "code": [
     "code/homework/TwoGroups.java",
-    "code/homework/TwoWeeksTemperature.java"
+    "code/homework/TwoWeeksTemperature.java",
+    "code/practice/ilist/IList.java",
+    "code/practice/ilist/IListAppl.java",
+    "code/practice/ilist/IListImpl.java"
 
   ],
   "video": ""
