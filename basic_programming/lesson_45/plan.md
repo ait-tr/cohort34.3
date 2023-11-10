@@ -26,5 +26,5 @@ ___________________________________________
 - interface IList
 - class IListImpl
 
-3. class IListAppl - проверка методов из IListImpl
+3. class IListAppl - проверка/апробация методов из IListImpl
 
