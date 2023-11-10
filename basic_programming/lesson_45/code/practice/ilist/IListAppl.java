@@ -19,6 +19,7 @@ public class IListAppl {
 
         System.out.println("--------------------");
 
+        // список с данными типа String
         IList<String> listOfCities = new IListImpl<>();
         listOfCities.add("Berlin");
         // ...
