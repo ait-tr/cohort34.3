@@ -12,7 +12,13 @@ public class EmployeeAppl {
         empl[0] = new Manager(100, "John", "Smith", 45, 160, 5000, 5);
         empl[1] = new SalesManager(101,"Anna", "Black", 36, 160, 25000, 0.1);
         empl[2] = new SalesManager(102,"Thomas", "White", 28, 160, 30000, 0.1);
-        empl[3] = new Worker(103, "Gans", "Bauer", 30, 160, 5);
+        empl[3] = new Worker(103, "Gans", "Bauer", 30, 80, 5);
+
+//        e[0] = new Manager(101, "John", "Smith", 45, 160, 5000, 5);
+//        e[1] = new SalesManager(102, "Anna", "Black", 36, 160, 25000, 0.1);
+//        e[2] = new SalesManager(103, "Thomas", "White", 28, 160, 30000, 0.1);
+//        e[3] = new Worker(104, "Gans", "Bauer", 30, 80, 5);
+
 
         double total = totalSalary(empl); // вызываем метод для расчета зарплаты
         System.out.println("Total salary: " + total);

@@ -77,12 +77,12 @@ class CompanyImplTest {
 
     @Test
     void totalSalaryTest() {
-        assertEquals(12100., company.totalSalary(), 0.01);
+        assertEquals(11700., company.totalSalary(), 0.01);
     }
 
     @Test
     void avgSalaryTest() {
-        assertEquals( 12100.0 / 4, company.avgSalary(), 0.01);
+        assertEquals( 11700.0 / 4, company.avgSalary(), 0.01);
     }
 
     @Test
