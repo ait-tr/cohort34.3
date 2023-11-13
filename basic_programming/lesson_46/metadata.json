@@ -5,9 +5,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/list_hw/IList.java",
-    "code/homework/list_hw/IListAppl.java",
-    "code/homework/list_hw/IListImpl.java",
+    "code/homework/ilist_hw/IList.java",
+    "code/homework/ilist_hw/IListAppl.java",
+    "code/homework/ilist_hw/IListImpl.java",
     "code/practice/city_bus/Bus.java",
     "code/practice/city_bus/CityBusAppl.java"
 
