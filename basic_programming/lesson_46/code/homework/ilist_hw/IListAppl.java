@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class IListAppl {
     public static void main(String[] args) {
-
+/*
         // список с целыми числами
         IList<Integer> list = new IListImpl<>();
         System.out.println(list.size());
@@ -67,7 +67,7 @@ public class IListAppl {
         for (Integer el : list) {
             System.out.println(el);
         }
-
+*/
         // список с данными типа String
         IList<String> city = new IListImpl<>();
         System.out.println("=============================");
@@ -78,13 +78,23 @@ public class IListAppl {
         city.add("Madrid");
         city.add("Istanbul");
         city.add("Moscow");
+
         for (String s : city) {
-            System.out.print(s +" | ");
+            System.out.print(s + " | ");
         }
-        System.out.println("--------------------");
+
+        System.out.println();
+        for (int i = 0; i < city.size(); i++) {
+            System.out.print(city.get(i) + ", ");
+        }
+
+
+
+/*
+
+  System.out.println("--------------------");
         System.out.println(city.indexOf("London"));
         System.out.println(city.lastIndexOf("London"));
-
 //        System.out.println(city.set(0, "New York")); // todo зачем тогда писать сам Элемент??
         city.set(0, "New York"); // вместо London ставим New York
         System.out.println("--------------------");
@@ -127,6 +137,9 @@ public class IListAppl {
             System.out.print(o + " | ");
         }
         System.out.println();
+    }
+
+ */
     }
 }
 
