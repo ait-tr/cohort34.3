@@ -3,7 +3,6 @@ package practice.company_v2.tests;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import practice.company_v2.dao.Company;
-import practice.company_v2.dao.CompanyArrayListImpl;
 import practice.company_v2.dao.CompanyImpl;
 import practice.company_v2.model.Employee;
 import practice.company_v2.model.Manager;

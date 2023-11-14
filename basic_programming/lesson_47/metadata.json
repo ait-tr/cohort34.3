@@ -8,8 +8,14 @@
     "code/homework/ilist_hw/IList.java",
     "code/homework/ilist_hw/IListAppl.java",
     "code/homework/ilist_hw/IListImpl.java",
-    "code/practice/city_bus/Bus.java",
-    "code/practice/city_bus/CityBusAppl.java"
+    "code/practice/company_v2/dao/Company.java",
+    "code/practice/company_v2/dao/CompanyImpl.java",
+    "code/practice/company_v2/model/Employee.java",
+    "code/practice/company_v2/model/Manager.java",
+    "code/practice/company_v2/model/SalesManager.java",
+    "code/practice/company_v2/model/Worker.java",
+    "code/practice/company_v2/tests/CompanyImplTest.java",
+    "code/practice/company_v2/EmployeeAppl.java"
 
   ],
   "video": ""
