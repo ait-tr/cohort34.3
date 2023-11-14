@@ -3,6 +3,7 @@ package practice.company_v2.tests;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import practice.company_v2.dao.Company;
+import practice.company_v2.dao.CompanyArrayListImpl;
 import practice.company_v2.dao.CompanyImpl;
 import practice.company_v2.model.Employee;
 import practice.company_v2.model.Manager;
@@ -20,7 +21,7 @@ class CompanyImplTest {
 
     @BeforeEach
     void setUp() {
-        company = new CompanyImpl(5);
+        company = new CompanyArrayListImpl(5); // создан объект класса CompanyArrayListImpl
         e = new Employee[4];
         e[0] = new Manager(101, "John", "Smith", 45, 160, 5000, 5);
         e[1] = new SalesManager(102, "Anna", "Black", 36, 160, 25000, 0.1);

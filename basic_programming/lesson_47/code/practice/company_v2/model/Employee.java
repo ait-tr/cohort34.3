@@ -8,6 +8,8 @@ public abstract class Employee {
     protected int age;
     protected double hours;
 
+    // TODO дополнить полями
+
     // конструктор
     public Employee(int id, String firstName, String lastName, int age, double hours) {
         this.id = id;

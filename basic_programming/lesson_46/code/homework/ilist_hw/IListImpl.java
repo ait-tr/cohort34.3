@@ -26,6 +26,7 @@ public class IListImpl<E> implements IList<E> {
         return size;
     }
 
+    // O(n)
     @Override
     public void clean() {
         for (int i = 0; i < size; i++) {
@@ -33,14 +34,14 @@ public class IListImpl<E> implements IList<E> {
         }
         size = 0;
     }
-
+    // O(n)
     @Override
     public boolean add(E element) {
         ensureCapacity(); // проверили размер массива
         elements[size++] = element; // добавили элемент в массив и увеличили его размер
         return true;
     }
-
+        // O(n)
     private void ensureCapacity() {
         if (size == elements.length) { // когда размер массива достиг его возможной длины
             if (size == Integer.MAX_VALUE) {
@@ -54,6 +55,7 @@ public class IListImpl<E> implements IList<E> {
         }
     }
 
+    // O(n)
     @Override
     public boolean add(int index, E element) {
         if (index == size) { // добавление в конец списка
@@ -61,13 +63,14 @@ public class IListImpl<E> implements IList<E> {
             return true;
         }
         // добавление в середину списка
-        checkIndex(index);
-        ensureCapacity();
-        System.arraycopy(elements, index, elements, index + 1, size++ - index); // раздвигаем массив
-        elements[index] = element; // ставим элемент на его место (index)
+        checkIndex(index); // O(1)
+        ensureCapacity(); // O(n)
+        System.arraycopy(elements, index, elements, index + 1, size++ - index); // раздвигаем массив O(n)
+        elements[index] = element; // ставим элемент на его место (index) O(1)
         return true;
     }
 
+    // O(1)
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(index);
