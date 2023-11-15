@@ -33,7 +33,7 @@ public class ComplexityAppl {
 
        // Arrays.sort(arr); // сортируем целые числа - оценим отдельно
 
-        /*
+
         System.out.println(Arrays.toString(arr));
         System.out.println("---------------------");
         int index = Arrays.binarySearch(arr, -67);
@@ -47,11 +47,12 @@ public class ComplexityAppl {
 
         // при 8 элементах - 3 итерации деления массива
         // при 16 элементах - 4 итерации
+        // при 32 элементах - 5 итераций
         // ...
         // 1024 элемента - 10 итераций
         // 2048 элементов - 11 итераций
         // O(log(n)) - это логарифмическая сложность (самая низкая!)
-*/
+
         // сортировка методом BubbleSort сравниваем по 2 элемента, i - й с i + 1 -ым
         for (int i = 0; i < arr.length - 1 ; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {

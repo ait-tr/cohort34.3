@@ -169,8 +169,23 @@ public class CompanyArrayListImpl implements Company {
         return res;
     }
 
+    // реализация от Кирилла Соколова
     @Override
     public Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
-        return new Employee[0];
+        int count = 0;
+        for (Employee e : employees) {
+            if (e.calcSalary() > minSalary && e.calcSalary() < maxSalary) {
+                count++;
+            }
+        }
+        Employee[] res = new Employee[count];
+        count = 0;
+        for (Employee e : employees) {
+            if (e.calcSalary() > minSalary && e.calcSalary() < maxSalary) {
+                res[count] = e;
+                count = count + 1;
+            }
+        }
+        return res;
     }
 }

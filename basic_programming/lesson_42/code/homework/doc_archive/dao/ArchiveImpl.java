@@ -107,17 +107,24 @@ public class ArchiveImpl implements Archive{
     // который вы хотите получить. В данном контексте Integer.MIN_VALUE служит специальным значением, которое
     // обозначает "нижнюю границу" для поиска, чтобы учесть все документы, начиная с заданной даты dateFrom.
 
+    // O(n)
     @Override
     public Document[] getDocBetweenDate(LocalDate dateFrom, LocalDate dateTo) {
+        // O(1)
         Document pattern = new Document(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay()); // почему Integer.MIN_VALUE, а не 0
         //ввели объектную переменную, шаблон
+        //O(log(n))
         int from = Arrays.binarySearch(documents, 0, size, pattern, comparator);//находим индекс начального фото левый край
+        //O(1)
         from = from>=0 ? from : - from -1;
-
+        // O(1)
         pattern = new Document(0, Integer.MAX_VALUE, null, null, LocalDateTime.of(dateTo, LocalTime.MAX));// находим
         // правый край
+        // O(log(n))
         int to = Arrays.binarySearch(documents, 0, size, pattern, comparator);
+        // O(1)
         to = to >=0 ? to : -to-1;
+        // O(n)
         return Arrays.copyOfRange(documents, from, to);// диапазон, создаем новый массив с нужными документами
     }
 
