@@ -170,16 +170,22 @@ public class CompanyArrayListImpl implements Company {
     }
 
     // реализация от Кирилла Соколова
+    // O(n)
     @Override
+    // подсчет количества элементов, удовлетворяющих критерию
     public Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
+        // O(1)
         int count = 0;
+        // O(n)
         for (Employee e : employees) {
             if (e.calcSalary() > minSalary && e.calcSalary() < maxSalary) {
                 count++;
             }
         }
-        Employee[] res = new Employee[count];
+        // O(1)
+        Employee[] res = new Employee[count]; // создали новый массив
         count = 0;
+        // O(n)
         for (Employee e : employees) {
             if (e.calcSalary() > minSalary && e.calcSalary() < maxSalary) {
                 res[count] = e;

@@ -1,38 +1,35 @@
 package practice.linked_list;
 
 public interface NodeList<E> extends Iterable<E>{
-    int size(); // размер
+    // прописываем методы
 
-    default boolean isEmpty(){
+    int size(); // размер листа
+
+    default boolean isEmpty() {
         return size() == 0;
-    } // пустой?
+    }
+    boolean add(E element); // добавление
 
-    boolean add(E element); // добавление элемента
+    void clear(); // зачистка
 
-    void clear(); // очистка
+    default boolean contains(Object o) {
+        return indexOf(o) >=0; // есть ли такой объект
+    }
 
-    default boolean contains(Object o){
-        return indexOf(o) >= 0;
-    } // наличие объекта в списке
-
-    default boolean remove(Object o) {  // удаление объекта
+    default boolean remove(Object o) {
         int index = indexOf(o);
-        if(index < 0){
+        if (index < 0) {
             return false;
         }
         remove(index);
         return true;
     }
 
-    boolean add(int index, E element); // добавление элемента по индексу
-
+    boolean add(int index, E element); // добавить на место по индексу
     E get(int index); // получение элемента по индексу
-
-    int indexOf(Object o); // получение индекса объекта
-
+    int indexOf(Object o); // определение индекса элемента в листе (списке)
     int lastIndexOf(Object o);
+    E remove(int index); // удаление из листа узла по его индекс (номеру)
+    E set(int index, E element);
 
-    E remove(int index); // удаление по индексу
-
-    E set(int index, E element); // обновление элемента
 }

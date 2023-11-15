@@ -4,8 +4,10 @@ import java.util.Iterator;
 
 public class NodeListImpl<E> implements NodeList<E> {
 
+    // fields
     private Node<E> first;
     private Node<E> last;
+
     private int size;
 
 
@@ -15,123 +17,42 @@ public class NodeListImpl<E> implements NodeList<E> {
     }
 
     @Override
-    public boolean add(E element) {
-        Node<E> newNode = new Node<>(last, element, null);
+    public boolean add(E element) { // добавляем элемент в список
+        Node<E> newNode = new Node<>(last, element, null); // создаем новый, следующий узел, он последний
         if (last != null) {
             last.next = newNode;
         } else {
-            first = newNode;
+            first = newNode; // если список был пустой, то новый создаваемый становится первым
         }
         last = newNode;
         size++;
         return true;
+        // узел новый, следующий, в конец списка
     }
 
     @Override
     public void clear() {
-        //TODO
-        first = last = null;
-        size = 0;
+        // TODO
     }
 
     @Override
     public boolean add(int index, E element) {
-        if (index == size) {
+        if (index == size) { // добавление элемента в конец
             return add(element);
         }
-        Node<E> node = getNodeByIndex(index);
-        Node<E> newNode = new Node<>(node.prev, element, node);
+        Node<E> node = getNodeByIndex(index); // берем узел по его индексу
+        Node<E> newNode = new Node<>(node.prev, element, node); // создаем новый узел для вставки в список
         node.prev = newNode;
         if (index != 0) {
             newNode.prev.next = newNode;
         } else {
-            first = newNode;
+            first = newNode; // вставка в начало списка
         }
         size++;
         return true;
     }
 
-    @Override
-    public E get(int index) {
-        Node<E> node = getNodeByIndex(index);
-        return node.data;
-    }
-
-    @Override
-    public int indexOf(Object o) {
-        int index = 0;
-        if (o != null) {
-            for (Node<E> node = first; node != null; node = node.next, index++) {
-                if (o.equals(node.data)) {
-                    return index;
-                }
-            }
-        } else {
-            for (Node<E> node = first; node != null; node = node.next, index++) {
-                if (o == node.data) {
-                    return index;
-                }
-            }
-        }
-        return -1;
-    }
-
-    @Override
-    public int lastIndexOf(Object o) {
-        //TODO
-        int index = size - 1;
-        if (o != null) {
-            for (Node<E> x = last; x != null; x = x.prev, index--) {
-                if (o.equals(x.data)) {
-                    return index;
-                }
-            }
-        } else {
-            for (Node<E> x = last; x != null; x = x.prev, index--) {
-                if (o == x.data) {
-                    return index;
-                }
-            }
-        }
-        return -1;
-    }
-
-    @Override
-    public E remove(int index) {
-        //TODO
-        Node<E> node = getNodeByIndex(index);
-        return unlink(node);
-    }
-
-    @Override
-    public E set(int index, E element) {
-        //TODO
-        Node<E> node = getNodeByIndex(index);
-        E victim = node.data;
-        node.data = element;
-        return victim;
-    }
-
-    @Override
-    public Iterator<E> iterator() {
-        //TODO
-        return new Iterator<E>() {
-            Node<E> node = first;
-
-            @Override
-            public boolean hasNext() {
-                return node != null;
-            }
-
-            @Override
-            public E next() {
-                E data = node.data;
-                node = node.next;
-                return data;
-            }
-        };
-    }
-
+    // разобраться, как работает метод
     private Node<E> getNodeByIndex(int index) {
         checkIndex(index);
         Node<E> node;
@@ -143,7 +64,7 @@ public class NodeListImpl<E> implements NodeList<E> {
         } else {
             node = last;
             for (int i = size - 1; i > index; i--) {
-                node = node.next;
+                node = node.prev;
             }
         }
         return node;
@@ -155,24 +76,33 @@ public class NodeListImpl<E> implements NodeList<E> {
         }
     }
 
-    private E unlink(Node<E> node) {
-        E victim = node.data;
-        Node<E> prev = node.prev;
-        Node<E> next = node.next;
-        if (prev != null) {
-            prev.next = next;
-            node.prev = null;
-        } else {
-            first = next;
-        }
-        if (next != null) {
-            next.prev = prev;
-            node.next = null;
-        } else {
-            last = prev;
-        }
-        node.data = null;
-        size--;
-        return victim;
+    @Override
+    public E get(int index) {
+        return null;
+    }
+
+    @Override
+    public int indexOf(Object o) {
+        return 0;
+    }
+
+    @Override
+    public int lastIndexOf(Object o) {
+        return 0;
+    }
+
+    @Override
+    public E remove(int index) {
+        return null;
+    }
+
+    @Override
+    public E set(int index, E element) {
+        return null;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return null;
     }
 }

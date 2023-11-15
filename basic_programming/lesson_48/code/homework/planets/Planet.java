@@ -13,7 +13,7 @@ import java.util.Objects;
 //       - алфавиту;
 //       - массе;
 //       - количеству спутников.
-public class Planet {
+public class Planet implements Comparable<Planet>{
    private String name;
    private double distance;
    private double mass;
@@ -81,4 +81,8 @@ public class Planet {
         return Objects.hash(name);
     }
 
+    @Override
+    public int compareTo(Planet o) {
+        return Double.compare(this.getDistance(), o.getDistance());
+    }
 }

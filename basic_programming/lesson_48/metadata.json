@@ -5,19 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/alphabet/Alphabet.java",
-    "code/homework/random_numbers/RandomNumbers.java",
-    "code/homework/sport/Menu.java",
-    "code/homework/sport/SportAppl.java",
-    "code/homework/sport/Sportsmen.java",
-    "code/practice/company_v2/dao/Company.java",
-    "code/practice/company_v2/dao/CompanyImpl.java",
-    "code/practice/company_v2/model/Employee.java",
-    "code/practice/company_v2/model/Manager.java",
-    "code/practice/company_v2/model/SalesManager.java",
-    "code/practice/company_v2/model/Worker.java",
-    "code/practice/company_v2/tests/CompanyImplTest.java",
-    "code/practice/company_v2/EmployeeAppl.java"
+    "code/homework/planets/Planet.java",
+    "code/homework/planets/PlanetAppl.java",
+    "code/practice/linked_list/Node.java",
+    "code/practice/linked_list/NodeList.java",
+    "code/practice/linked_list/NodeListImpl.java"
 
   ],
   "video": ""
