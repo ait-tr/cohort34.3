@@ -5,11 +5,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/planets/Planet.java",
-    "code/homework/planets/PlanetAppl.java",
-    "code/practice/linked_list/Node.java",
-    "code/practice/linked_list/NodeList.java",
-    "code/practice/linked_list/NodeListImpl.java"
+    "code/homework/CitiesOfGermany.java"
 
   ],
   "video": ""
