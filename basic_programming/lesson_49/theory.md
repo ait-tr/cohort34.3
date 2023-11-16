@@ -37,3 +37,6 @@ LinkedList хранит в себе ссылку на первый и после
 LinkedList: https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html 
 
 ArrayList: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+Зачем нужен и где применяется LinkedList:
+https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/

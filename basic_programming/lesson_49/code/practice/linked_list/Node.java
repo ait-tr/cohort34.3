@@ -12,4 +12,5 @@ public class Node <E>{
         this.data = data;
         this.next = next;
     }
+
 }

@@ -31,7 +31,6 @@ public class CitiesOfGermany {
         gCities.add("Бремен"); // Бремен
         gCities.add("Берлин"); // Берлин
 
-
         System.out.println("Столицы земель Германии : ");
         System.out.println(gCities);
         // Добавить Гамбург в середину списка, в начало списка.
