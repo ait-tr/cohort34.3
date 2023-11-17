@@ -8,7 +8,11 @@
     "code/homework/country/Country.java",
     "code/homework/country/CountryListAppl.java",
     "code/homework/method/MethodAppl.java",
-    "code/homework/country/MethodConv.java"
+    "code/homework/country/MethodConv.java",
+    "code/practice/supermarket/dao/Supermarket.java",
+    "code/practice/supermarket/dao/SupermarketImpl.java",
+    "code/practice/supermarket/model/Product.java",
+    "code/practice/supermarket/SupermarketAppl.java"
 
   ],
   "video": ""

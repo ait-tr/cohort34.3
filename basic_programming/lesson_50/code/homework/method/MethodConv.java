@@ -15,5 +15,4 @@ public class MethodConv<E> {
         }
         return invList;
     }
-
 }

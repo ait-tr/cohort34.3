@@ -10,6 +10,7 @@ public class CountryListAppl {
         List<Country> countries = new LinkedList<Country>();
 
         Country[] country = new Country[11];
+
         country[0] = new Country("United Kindom", 50, "Europe");
         country[1] = new Country("Germany", 80, "Europe");
         country[2] = new Country("Spain", 40, "Europe");
