@@ -1,4 +1,4 @@
-package country;
+package homework.country;
 
 import java.util.Comparator;
 import java.util.LinkedList;

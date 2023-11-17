@@ -139,7 +139,6 @@ public class NodeListImpl<E> implements NodeList<E> {
         return 0;
     }
 
-
     @Override
     public E remove(int index) {
         Node<E> node = getNodeByIndex(index);
