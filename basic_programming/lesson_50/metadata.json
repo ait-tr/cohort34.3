@@ -5,12 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/CitiesOfGermany.java",
-    "code/practice/linked_list/Node.java",
-    "code/practice/linked_list/NodeList.java",
-    "code/practice/linked_list/NodeListAppl.java",
-    "code/practice/linked_list/NodeListImpl.java",
-    "code/practice/performance_test/PerformanceTestAppl.java"
+    "code/homework/country/Country.java",
+    "code/homework/country/CountryListAppl.java",
+    "code/homework/method/MethodAppl.java",
+    "code/homework/country/MethodConv.java"
 
   ],
   "video": ""
