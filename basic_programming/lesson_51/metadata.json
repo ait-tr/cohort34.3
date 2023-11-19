@@ -5,11 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/practice/supermarket_with_test/dao/Supermarket.java",
-    "code/practice/supermarket_with_test/dao/SupermarketImpl.java",
-    "code/practice/supermarket_with_test/model/Product.java",
-    "code/practice/supermarket_with_test/test/SupermarketImplTest.java",
-    "code/practice/supermarket_with_test/SupermarketAppl.java"
+    "code/homework/supermarket_with_test/dao/Supermarket.java",
+    "code/homework/supermarket_with_test/dao/SupermarketImpl.java",
+    "code/homework/supermarket_with_test/model/Product.java",
+    "code/homework/supermarket_with_test/test/SupermarketImplTest.java",
+    "code/homework/supermarket_with_test/SupermarketAppl.java"
 
   ],
   "video": ""
