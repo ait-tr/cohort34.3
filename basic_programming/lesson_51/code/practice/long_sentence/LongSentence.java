@@ -1,4 +1,4 @@
-package practice.long_sentense;
+package practice.long_sentence;
 
 import java.util.HashSet;
 import java.util.Set;
