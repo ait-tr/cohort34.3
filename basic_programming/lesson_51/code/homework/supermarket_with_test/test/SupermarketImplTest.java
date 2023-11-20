@@ -64,12 +64,13 @@ class SupermarketImplTest {
     void findByBrandTest() {
         ArrayList<Product> actual = (ArrayList<Product>) myMarket.findByCategory("bread");
         // надо перенести actual в массив
-        int l = actual.size();
-        Product[] productsActual = new Product[l];
+        int l = actual.size(); // определил длину массива
+        Product[] productsActual = new Product[l];  // создал массив элементов типа Product длины l
+        // заполнил созданный массив
         for (int i = 0; i < l; i++) {
             productsActual[i] = actual.get(i);
         }
-        Product[] expected = {products[0], products[4]};
+        Product[] expected = {products[0], products[4]}; //
         assertArrayEquals(expected, productsActual);
     }
 
