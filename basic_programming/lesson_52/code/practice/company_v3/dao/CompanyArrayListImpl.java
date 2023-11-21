@@ -1,12 +1,12 @@
-package practice.company_v2.dao;
+package practice.company_v3.dao;
 
-import practice.company_v2.model.Employee;
-import practice.company_v2.model.SalesManager;
+import practice.company_v3.model.Employee;
+import practice.company_v3.model.SalesManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompanyArrayListImpl implements Company{
+public class CompanyArrayListImpl implements Company {
     // поля, которые описывают компанию
 //    private Employee[] employees; // сотрудники - массив для хранения сотрудников
 //    private int size; // текущее кол-во сотрудников в компании

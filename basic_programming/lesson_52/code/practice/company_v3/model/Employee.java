@@ -1,4 +1,4 @@
-package practice.company_v2.model;
+package practice.company_v3.model;
 
 public abstract class Employee {
     //поля класса

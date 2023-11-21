@@ -1,0 +1,24 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/currency_convertor/Currency.java",
+    "code/homework/currency_convertor/CurrencyConvertor.java",
+    "code/homework/german_lands/GermanLands.java",
+    "code/homework/numbers_more_10/NumbersMore10.java",
+    "code/practice/company_v3/dao/Company.java",
+    "code/practice/company_v3/dao/CompanyArrayListImpl.java",
+    "code/practice/company_v3/dao/CompanyImpl.java",
+    "code/practice/company_v3/model/Employee.java",
+    "code/practice/company_v3/model/Manager.java",
+    "code/practice/company_v3/model/SalesManager.java",
+    "code/practice/company_v3/model/Worker.java",
+    "code/practice/company_v3/tests/CompanyImplTest.java",
+    "code/practice/company_v3/EmployeeAppl.java"
+
+  ],
+  "video": ""
+}
