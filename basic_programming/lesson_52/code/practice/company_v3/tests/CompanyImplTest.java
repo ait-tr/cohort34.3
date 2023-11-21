@@ -4,12 +4,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import practice.company_v3.dao.Company;
 import practice.company_v3.dao.CompanyArrayListImpl;
+import practice.company_v3.dao.CompanyHashSetImpl;
 import practice.company_v3.model.Employee;
 import practice.company_v3.model.Manager;
 import practice.company_v3.model.SalesManager;
 import practice.company_v3.model.Worker;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,10 +21,16 @@ class CompanyImplTest {
     Employee[] e;
 
     // добавить comparator по id для сортировки массивов перед assertArrayEquals
+    Comparator<Employee> comparator = new Comparator<Employee>() {
+        @Override
+        public int compare(Employee o1, Employee o2) {
+            return Integer.compare(o1.getId(), o2.getId());
+        }
+    };
 
     @BeforeEach
     void setUp() {
-        company = new CompanyArrayListImpl(5); // создан объект класса CompanyArrayListImpl
+        company = new CompanyHashSetImpl(5); // создан объект класса CompanyArrayListImpl
         e = new Employee[4];
         e[0] = new Manager(101, "John", "Smith", 45, 160, 5000, 5);
         e[1] = new SalesManager(102, "Anna", "Black", 36, 160, 25000, 0.1);
@@ -94,13 +102,13 @@ class CompanyImplTest {
 
     @Test
     void printEmployeesTest() {
-
         company.printEmployees();
     }
 
     @Test
     void findEmployeesHoursGreaterThanTest(){
         Employee[] actual = company.findEmployeesHoursGreaterThan(100);
+        Arrays.sort(actual, comparator); // сортировка по ID сотрудника
         Employee[] expected = {e[0], e[1], e[2]};
         assertArrayEquals(expected, actual);
     }
@@ -109,6 +117,7 @@ class CompanyImplTest {
     void findEmployeesSalaryRangeTest(){
         company.printEmployees();
         Employee[] actual = company.findEmployeesSalaryRange(2900, 6000);
+        Arrays.sort(actual, comparator); // сортировка по ID сотрудника
         Employee[] expected = {e[0], e[2]};
         assertArrayEquals(expected, actual);
         System.out.println(Arrays.toString(actual));

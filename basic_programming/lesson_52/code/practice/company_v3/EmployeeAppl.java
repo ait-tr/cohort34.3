@@ -19,7 +19,7 @@ public class EmployeeAppl {
         double average = averageAge(empl);
         System.out.println("Average age: " + average);
         double totalSales = totalSales(empl);
-        System.out.println(totalSales);
+        System.out.println("Total sales: " + totalSales);
 
     }
 

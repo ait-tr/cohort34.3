@@ -1,6 +1,8 @@
 
 **Task 1.**
-Based on TreeSet, create a sorted list of the names of our group.
+Read the theory from lesson 52.
+Fill your TreeSet with 10 elements (numbers).
+In the Oracle documentation, study and try the methods for TreeSet.
 
 
 **Task 2.**
@@ -12,7 +14,9 @@ Start implementing the Citizens application based on the UML diagram.
 ___________________________________________________
 
 **Задача 1.**
-На базе TreeSet создать отсортированный список имен нашей группы.
+Прочитать теорию из урока 52.
+Наполнить свою TreeSet 10-ю элементами (числа).
+В документации Oracle изучить и попробовать методы для TreeSet.
 
 
 **Задача 2.**
