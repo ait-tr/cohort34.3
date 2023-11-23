@@ -13,7 +13,7 @@ public interface Citizens {
     Person find(int id);
 
     // поиск списка в диапазоне возраста
-    Iterable<Person> find(int minAge, int maxAge);
+    Iterable<Person> find(int minAge, int maxAge); // вернем перебираемые данные по жителям
 
     // поиск по фамилии
     Iterable<Person> find(String lastName);

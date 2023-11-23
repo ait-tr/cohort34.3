@@ -8,7 +8,6 @@ public class Person implements Comparable<Person>{
     private int id;
     private String firstName;
     private String lastName;
-
     private LocalDate birthDate;
 
     public Person(int id, String firstName, String lastName, LocalDate birthDate) {
@@ -48,6 +47,8 @@ public class Person implements Comparable<Person>{
         return age;
     }
 
+        // реализация через StringBuilder, так как нам возможно придется часто "перегенерировать" списки
+    // жителей, в среднем списки могу содержать десятки/сотни тысяч жителей
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Person{");
@@ -74,6 +75,6 @@ public class Person implements Comparable<Person>{
 
     @Override
     public int compareTo(Person o) {
-        return Integer.compare(this.id, o.id);
+        return Integer.compare(this.id, o.id); // sort by id
     }
 }
