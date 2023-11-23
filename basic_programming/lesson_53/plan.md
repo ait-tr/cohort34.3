@@ -15,9 +15,11 @@ ___________________________________________
 # План занятия №52 21.11.2023
 
 1. Проверка Homework:
-- class Person
-- interface Citizens
-- CitizensImpl - начало
+- TreeSet - testing methods
+- Citizens:
+  - class Person
+  - interface Citizens
+  - CitizensImpl - начало
 
 2. Практика: 
 - делаем реализацию CitizensImpl на ArrayList, 
