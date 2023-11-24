@@ -1,4 +1,4 @@
-# Lesson plan No. 51 11/20/2023
+# Lesson plan No. 53 11/23/2023
 
 1. Homework check:
 - class Person
@@ -12,7 +12,7 @@
 
 ___________________________________________
 
-# План занятия №52 21.11.2023
+# План занятия №53 23.11.2023
 
 1. Проверка Homework:
 - TreeSet - testing methods

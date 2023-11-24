@@ -1,4 +1,4 @@
-# Lesson plan No. 49 11/16/2023
+# Lesson plan No. 50 11/17/2023
 
 1. Homework check:
 - LinkedList containing the cities - capitals of the German states.
@@ -17,7 +17,7 @@
 
 ___________________________________________
 
-# План занятия №49 16.11.2023
+# План занятия №50 17.11.2023
 
 1. Проверка Homework:
 - класс Country и сортировка списков стран;

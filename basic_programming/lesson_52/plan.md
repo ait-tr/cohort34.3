@@ -1,4 +1,4 @@
-# Lesson plan No. 51 11/20/2023
+# Lesson plan No. 52 11/21/2023
 
 1. Homework check:
 - lands of Germany;
