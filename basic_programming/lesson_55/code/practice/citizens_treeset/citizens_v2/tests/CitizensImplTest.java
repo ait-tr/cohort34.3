@@ -1,10 +1,11 @@
-package practice.citizens.tests;
+package practice.citizens_treeset.citizens_v2.tests;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import practice.citizens.dao.Citizens;
-import practice.citizens.dao.CitizensImpl;
-import practice.citizens.model.Person;
+import practice.citizens_treeset.citizens_v2.dao.Citizens;
+import practice.citizens_treeset.citizens_v2.dao.CitizensImpl;
+import practice.citizens_treeset.citizens_v2.dao.CitizensSetImpl;
+import practice.citizens_treeset.citizens_v2.model.Person;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ class CitizensImplTest {
 
     @BeforeEach
     void setUp() {
-        citizens = new CitizensImpl(List.of(
+        citizens = new CitizensSetImpl(List.of(
                 new Person(1, "Peter", "Jackson", now.minusYears(23)),
                 new Person(2, "John", "Smith", now.minusYears(20)),
                 new Person(3, "Mary", "Jackson",now.minusYears(23)),

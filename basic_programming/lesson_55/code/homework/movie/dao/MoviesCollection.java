@@ -4,7 +4,7 @@ import homework.movie.model.Movie;
 
 import java.time.LocalDate;
 
-public interface MoviesCollection extends Iterable<Movie>{
+public interface MoviesCollection<Movie> extends Iterable<Movie>{
     boolean addMovie(Movie movie);
     Movie removeMovie(long imdb);
     Movie findById(long imdb);
