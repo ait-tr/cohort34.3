@@ -1,75 +1,22 @@
-# JVF: HashSet and TreeSet
+# JVF: Map
 
-##HashSet
-If we are talking about the uniqueness of elements in a collection, then we must decide how this uniqueness is determined.
-There are only two options:
-- 1) two objects are the same if the equals method returns true.
-- 2) two objects are the same if the comparison method (compareTo or compare) returns zero.
 
-Based on option one, an implementation of the Set interface called HashSet is built. That's why equals() and hashSet
-implemented by a “pair”, jointly.
-If you decide to store objects of some type in a HashSet, then it is advisable to ensure that the fields
-those involved in the hashCode calculation were unchanged. Changing the relevant fields may result in
-"leakage" of data from the set.
-
-## TreeSet
-Based on option two, an implementation of the Set interface called TreeSet is built.
-
-TreeSet Java is implemented as <a href="https://habrahabr.ru/post/330644/">red-black tree</a>.
-Here is <a href="https://www.cs.usfca.edu/~galles/visualization/RedBlack.html">visualization of a red-black tree</a>.
-
-In a TreeSet, to determine the uniqueness of the stored data, it must be either Comparable or in a TreeSet
-Comparator must be passed during creation.
 
 _______________________________________________________________
 
-# JVF: HashSet и TreeSet
+# JVF: Map
 
-## HashSet
-Если мы говорим об уникальности элементов в коллекции, то мы должны решить, как эта уникальность определяется.
-Есть всего две опции:
-- 1) два объекта одинаковые, если метод equals возвращает true.
-- 2) два объекта одинаковые, если метод сравнения (compareTo или compare) возвращает ноль.
+Еще одной частью JCF является интерфейс Map.
 
-На опции один, построена реализация интерфейса Set называемая HashSet. Именно поэтому equals() и hashSet
-реализуются "парой", совместно.
-Если объекты какого-то типа решили хранить в HashSet, то желательно позаботиться, чтобы поля
-участвующие в расчете hashCode были неизменными. Изменение соответствующих полей, может привести к
-"утечке" данных из сета.
+Map<K, V> это интерфейс определяющий функциональность для структуры данных типа множество пар ключ-значение. 
+Все ключи в мапах являются уникальными. Мапы не итерируемы.
 
-## TreeSet
-На опции два, построена реализация интерфейса Set называемая TreeSet.
+Основные методы интерфейса Map приведены в презентации по JCF.
 
-TreeSet Java реализован как <a href="https://habrahabr.ru/post/330644/">красно-черное дерево</a>. 
-Вот <a href="https://www.cs.usfca.edu/~galles/visualization/RedBlack.html">визуализация красно-черного дерева</a>.
+По аналогии с сетами, мы изучим две разновидности мап: HashMap и TreeMap.
 
-В TreeSet для определения уникальности хранимых данных, они должны быть или Comparable, или в TreeSet 
-при создании должен быть передан Comparator.
 
-## Interface vs Class
-Использование интерфейсов вместо конкретных реализаций имеет несколько преимуществ:
-Гибкость кода: Когда вы используете интерфейс (например, List<String> вместо ArrayList<String>), 
-вы связываете свой код с общими методами и поведением интерфейса, а не конкретной реализацией. 
-Это позволяет вам легко изменять или переключаться между разными реализациями (например, изменить 
-ArrayList на LinkedList или другую реализацию List) без изменения остального кода, что делает 
-ваш код более гибким и поддерживаемым.
 
-Абстракция: Использование интерфейсов помогает скрыть детали реализации от внешнего кода. 
-Когда вы используете List<String> myList = new ArrayList<>();, вы скрываете конкретную реализацию 
-ArrayList за интерфейсом List, что позволяет сосредоточиться на том, как использовать список, 
-а не на том, как он реализован.
-
-Повышение читаемости и понятности: Объявление переменной или поля как интерфейса 
-(List<String>, Set<String>) делает ваш код более понятным для других разработчиков, 
-поскольку они могут сразу видеть общие функции и возможности, предоставляемые этим интерфейсом, 
-без необходимости изучать конкретную реализацию.
-
-Упрощение тестирования: Использование интерфейсов упрощает тестирование, так как вы можете легко 
-подставлять моки или заглушки (mocks или stubs) вместо реальных реализаций для тестирования вашего кода.
-
-Тем не менее иногда бывает полезно использовать конкретную реализацию 
-(например, ArrayList<String> myList = new ArrayList<>();), если вы уверены, что точно нуждаетесь 
-в определенных функциях или характеристиках, специфичных для этой реализации.
 
 
 

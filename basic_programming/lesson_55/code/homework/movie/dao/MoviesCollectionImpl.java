@@ -14,12 +14,14 @@ public class MoviesCollectionImpl implements MoviesCollection<Movie> {
 
     public MoviesCollectionImpl() {
         this.movies = new ArrayList<>();
-    }
+    } // здесь movies стал ArrayList
 
     // заполняем ArrayList объектами из списка фильмов List<Movie> movies, который подаем на вход конструктора
     public MoviesCollectionImpl (List<Movie> list){
         this();
         for (Movie m : list) {
+            // movies.add(m); // чей метод add используется? - это метод от ArrayList, он не отсекает дубликаты на этапе
+            // создания коллекции
             addMovie(m); // вызываем метод из класса
         }
     }
@@ -35,7 +37,7 @@ public class MoviesCollectionImpl implements MoviesCollection<Movie> {
             return false;
         }
         // добавляем фильм
-        movies.add(movie);
+        movies.add(movie); // чей метод add используется?
         return true;
     }
 

@@ -42,6 +42,7 @@ public class CitizensImpl implements Citizens {
             add(person);
         }
     }
+
     // O(n)
     @Override
     public boolean add(Person person) {

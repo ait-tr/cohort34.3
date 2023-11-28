@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import practice.citizens_treeset.citizens_v2.dao.Citizens;
 import practice.citizens_treeset.citizens_v2.dao.CitizensImpl;
+import practice.citizens_treeset.citizens_v2.dao.CitizensImpl;
 import practice.citizens_treeset.citizens_v2.dao.CitizensSetImpl;
 import practice.citizens_treeset.citizens_v2.model.Person;
 
