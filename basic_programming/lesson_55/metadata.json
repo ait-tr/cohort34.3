@@ -12,6 +12,7 @@
     "code/homework/movie/MovieCollectionAppl.java",
     "code/practice/citizens_treeset/citizens_v2/dao/Citizens.java",
     "code/practice/citizens_treeset/citizens_v2/dao/CitizensImpl.java",
+    "code/practice/citizens_treeset/citizens_v2/dao/CitizensSetImpl.java",
     "code/practice/citizens_treeset/citizens_v2/model/Person.java",
     "code/practice/citizens_treeset/citizens_v2/tests/CitizensImplTest.java",
     "code/practice/hashset/ISet.java",
