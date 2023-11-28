@@ -9,11 +9,13 @@
     "code/homework/movie/dao/MoviesCollectionImpl.java",
     "code/homework/movie/model/Movie.java",
     "code/homework/movie/tests/MoviesCollectionImplTest.java",
-    "code/homework/movie/MoviesCollectionAppl.java",
+    "code/homework/movie/MovieCollectionAppl.java",
     "code/practice/citizens_treeset/citizens_v2/dao/Citizens.java",
     "code/practice/citizens_treeset/citizens_v2/dao/CitizensImpl.java",
     "code/practice/citizens_treeset/citizens_v2/model/Person.java",
-    "code/practice/citizens_treeset/citizens_v2/tests/CitizensImplTest.java"
+    "code/practice/citizens_treeset/citizens_v2/tests/CitizensImplTest.java",
+    "code/practice/hashset/ISet.java",
+    "code/practice/hashset/IHashSet.java"
 
   ],
   "video": ""
