@@ -11,14 +11,12 @@
 4. Practice:
 - try to create a HashMap and work with it
 
-
-
 ___________________________________________
 
 # План занятия №56 29.11.2023
 
 1. Проверка Homework:
-- имплементацию Citizens на HashSet - что не получилось?;
+- имплементацию Citizens на HashSet - что не получилось?
 - Сделать имплементацию CompanyTreeSetImpl - что получилось?
 
 2. Делаем собственную имплементацию HashSet
