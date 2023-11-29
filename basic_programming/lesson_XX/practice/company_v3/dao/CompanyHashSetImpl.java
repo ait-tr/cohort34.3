@@ -89,7 +89,7 @@ public class CompanyHashSetImpl implements Company{
     }
 
     @Override
-    public Employee[] findEmployeesHoursGreaterThan(int hours) {
+    public treeset_company.model.Employee[] findEmployeesHoursGreaterThan(int hours) {
         return findEmploeesByPredicate(e -> e.getHours() >= hours);
     }
 
@@ -104,7 +104,7 @@ public class CompanyHashSetImpl implements Company{
     }
 
     @Override
-    public Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
+    public treeset_company.model.Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
         return findEmploeesByPredicate(e -> e.calcSalary() >= minSalary && e.calcSalary() < maxSalary);
     }
 

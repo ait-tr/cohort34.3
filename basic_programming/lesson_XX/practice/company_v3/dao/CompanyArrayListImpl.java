@@ -1,5 +1,5 @@
-package practice.company_v3.dao;
 
+import practice.company_v3.dao.Company;
 import practice.company_v3.model.Employee;
 import practice.company_v3.model.SalesManager;
 
@@ -121,7 +121,7 @@ public class CompanyArrayListImpl implements Company {
     // O(n)
     @Override
     // подсчет количества элементов, удовлетворяющих критерию
-    public Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
+    public treeset_company.model.Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
         // O(1)
         int count = 0;
         // O(n)

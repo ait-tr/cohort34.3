@@ -1,11 +1,10 @@
 package practice.citizens_treeset.citizens_v2.tests;
 
+import citizens_hashset.CitizensHashSetImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import practice.citizens_treeset.citizens_v2.dao.Citizens;
 import practice.citizens_treeset.citizens_v2.dao.CitizensImpl;
-import practice.citizens_treeset.citizens_v2.dao.CitizensImpl;
-import practice.citizens_treeset.citizens_v2.dao.CitizensSetImpl;
 import practice.citizens_treeset.citizens_v2.model.Person;
 
 import java.time.LocalDate;
@@ -22,7 +21,7 @@ class CitizensImplTest {
 
     @BeforeEach
     void setUp() {
-        citizens = new CitizensSetImpl(List.of(
+        citizens = new CitizensHashSetImpl(List.of(
                 new Person(1, "Peter", "Jackson", now.minusYears(23)),
                 new Person(2, "John", "Smith", now.minusYears(20)),
                 new Person(3, "Mary", "Jackson",now.minusYears(23)),
@@ -36,6 +35,8 @@ class CitizensImplTest {
         citizens = new CitizensImpl(List.of(
                 new Person(1, "Peter", "Jackson", now.minusYears(23)),
                 new Person(1, "Peter", "Jackson", now.minusYears(23))
+//                new Person(3, "Mary", "Jackson",now.minusYears(23)),
+//                new Person(4, "Bruce", "Willis", now.minusYears(25))
         ));
         // проверяем, что добавился только один объект
         assertEquals(1,citizens.size());
@@ -73,10 +74,18 @@ class CitizensImplTest {
         Iterable<Person> persons = citizens.find("Jackson");
         // перенесем полученных в рез-те поиска в ArrayList
         List<Person> actual = new ArrayList<>();
+        System.out.println("------------ArrayList-----------");
         for (Person person : persons) {
             actual.add(person);
+            System.out.println(person);
         }
         Collections.sort(actual); // сортируем по id
+        System.out.println("------------ArrayList Sorted-----------");
+        for (Person p : actual) {
+            System.out.println(p);
+        }
+
+
         List<Person> expected = List.of (
                 new Person(1, "Peter", "Jackson", now.minusYears(23)),
                 new Person(3, "Mary", "Jackson",now.minusYears(23))
@@ -133,6 +142,12 @@ class CitizensImplTest {
     @Test
     void getAllPersonsSortedByLastNameTest() {
         Iterable<Person> persons = citizens.getAllPersonsSortedByLastName();
+        System.out.println("-------------------------------");
+        for (Person p : persons) {
+            System.out.println(p);
+        }
+        System.out.println("-------------------------------");
+
         String lastName = "";
         int count = 0;
         for (Person person : persons) {

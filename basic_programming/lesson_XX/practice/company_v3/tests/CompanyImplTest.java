@@ -2,13 +2,12 @@ package practice.company_v3.tests;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import practice.company_v3.dao.Company;
-import practice.company_v3.dao.CompanyArrayListImpl;
-import practice.company_v3.dao.CompanyHashSetImpl;
-import practice.company_v3.model.Employee;
-import practice.company_v3.model.Manager;
-import practice.company_v3.model.SalesManager;
-import practice.company_v3.model.Worker;
+import treeset_company.dao.Company;
+import treeset_company.dao.CompanySetImpl;
+import treeset_company.model.Employee;
+import treeset_company.model.Manager;
+import treeset_company.model.SalesManager;
+import treeset_company.model.Worker;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -30,7 +29,7 @@ class CompanyImplTest {
 
     @BeforeEach
     void setUp() {
-        company = new CompanyHashSetImpl(5); // создан объект класса CompanyArrayListImpl
+        company = new CompanySetImpl(5); // создан объект класса CompanySetImpl
         e = new Employee[4];
         e[0] = new Manager(101, "John", "Smith", 45, 160, 5000, 5);
         e[1] = new SalesManager(102, "Anna", "Black", 36, 160, 25000, 0.1);

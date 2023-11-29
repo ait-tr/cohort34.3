@@ -10,7 +10,6 @@ package practice.company_v3.dao;
 //    - напечатать список сотрудников
 
 import practice.company_v3.model.Employee;
-import practice.company_v3.model.Employee;
 
 public interface Company {
     // объявляем методы, только сигнатуры, без тела метода
@@ -24,8 +23,8 @@ public interface Company {
     void printEmployees();
     //---------------------
 //      - список работников, у которых отработано больше часов, чем...
-    Employee[] findEmployeesHoursGreaterThan(int hours);
+    treeset_company.model.Employee[] findEmployeesHoursGreaterThan(int hours);
 //      - список работников, у которых зарплата в интервале от... и до...
-    Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary);
+    treeset_company.model.Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary);
 
 }
