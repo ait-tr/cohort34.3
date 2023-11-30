@@ -1,10 +1,7 @@
-package hashset;
-
-import homework.Car;
+package homework;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.List;
 
 public class IHashSet<E> implements ISet<E> {
 
@@ -31,10 +28,6 @@ public class IHashSet<E> implements ISet<E> {
     // конструктор по умолчанию
     public IHashSet(){
         this(16, 0.75);
-    }
-
-    public IHashSet(List<Car> cars) {
-        this();
     }
 
     @Override
