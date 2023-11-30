@@ -20,6 +20,7 @@ public class IHashSetAppl {
 
         hashset.ISet<String> mySet = new hashset.IHashSet<>();
         System.out.println(mySet.size());
+
         mySet.add("Amsterdam");
         mySet.add("Ottawa");
         mySet.add("Berlin");
@@ -64,7 +65,7 @@ public class IHashSetAppl {
         car[0] = new Car("VW", "123", "silver");
         car[1] = new Car("Mercedes", "456", "black");
         car[2] = new Car("Volvo", "789", "brown");
-        car[3] = new Car("Volvo", "789", "brown");
+        car[3] = new Car("Volvo", "790", "brown");
         for (int i = 0; i < car.length; i++) {
             carSet.add(car[i]);
         }

@@ -72,6 +72,9 @@ _______________________________________________________________
 Еще одной частью JCF является интерфейс Map.
 
 Map<K, V> это интерфейс определяющий функциональность для структуры данных типа множество пар ключ-значение.
+Key - это ключ.
+Value - это значение.
+
 Все ключи в мапах являются уникальными. Мапы не итерируемы.
 
 Основные методы интерфейса Map приведены в презентации по JCF.
@@ -97,40 +100,43 @@ Hash (ключа) | Значение
 При этом в HashMap могут быть два и более совпадающих по значению (но не по ключу!)
 элементов коллекции.
 
-**Примеры HashMap (полезные пары ключ - значение):**
+**Примеры Map(мапов) (полезные пары ключ - значение):**
 адрес - все жильцы по этому адресу
 артикул - количество этого на складе
 имя - кол-во таких имен в группе
 слово - кол-во повторений в речи
+что ищется в поиске - кол-во результатов поиска 
 ...
 
 #### Операции с элементами HashMap
-nameHashMap.put ( key , value) - добавление и **обновление** элемента
-nameHashMap.get ( key ) - получение значения по ключу
-nameHashMap.remove ( key ) - удаление значения по ключу
-nameHashMap.size () - получение размера коллекции элементов
+nameMap.put (key , value) - добавление и **обновление** элемента
+nameMap.get (key ) - получение значения по ключу
+nameMap.remove (key ) - удаление значения по ключу
+nameMap.size () - получение размера коллекции элементов
+
+
+#### Синтаксис создания новой Map
+Map<keyType, valueType> nameMap = new HashMap<keyType, valueType>();
+Map<keyType, valueType> nameMap = new TreeMap<keyType, valueType>();
 
 #### Цикл по элементам HashMap
 // Print keys - проход по всем ключам
-for (String key : nameHashMap.keySet()) {
-System.out.println(key);
+for (String key : nameMap.keySet()) {
+    System.out.println(key);
 }
 
 // Print values - проход по всем значениям
-for (String value : nameHashMap.values()) {
-System.out.println(value);
+for (String value : nameMap.values()) {
+  System.out.println(value);
 }
 
 // Print keys and values - проход по всем ключам и их значениям
-for (String key : nameHashMap.keySet()) {
-System.out.println("key: " + key + " value: " + nameHashMap.get(i));
+for (String key : nameMap.keySet()) {
+    System.out.println("key: " + key + " value: " + nameHashMap.get(i));
 }
 
 Номерных индексов, как в массивах или списках, в HashMap нет — доступ к элементу
 коллекции осуществляется по **ключу** (напоминаю, что он должен быть уникальным).
-
-#### Синтаксис создания новой HashMap
-HashMap<keyType, valueType> nameHashMap = new HashMap<keyType, valueType>();
 
 
 
