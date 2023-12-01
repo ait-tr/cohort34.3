@@ -5,12 +5,22 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/Car.java",
-    "code/homework/IHashSet.java",
-    "code/homework/IHashSetAppl.java",
-    "code/homework/ISet.java",
-
-
+    "code/homework/digits_freq/DigitsFreqAppl.java",
+    "code/homework/sentence_map/SentenceMap.java",
+    "code/practice/car_garage/dao/Garage.java",
+    "code/practice/car_garage/dao/GarageImpl.java",
+    "code/practice/car_garage/dao/GarageSetImpl.java",
+    "code/practice/car_garage/model/Car.java",
+    "code/practice/car_garage/tests/GarageImplTest.java",
+    "code/practice/collections/CollectionsMethods.java",
+    "practice/company_stream/dao/Company.java",
+    "code/practice/company_stream/dao/CompanySetImpl.java",
+    "code/practice/company_stream/model/Employee.java",
+    "code/practice/company_stream/model/Manager.java",
+    "code/practice/company_stream/model/SalesManager.java",
+    "code/practice/company_stream/model/Worker.java",
+    "code/practice/company_stream/tests/CompanyImplTest.java",
+    "code/practice/stream_intro/StreamAppl.java"
   ],
   "video": ""
 }
