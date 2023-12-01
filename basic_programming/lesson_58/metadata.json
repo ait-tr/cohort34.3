@@ -20,7 +20,10 @@
     "code/practice/company_stream/model/SalesManager.java",
     "code/practice/company_stream/model/Worker.java",
     "code/practice/company_stream/tests/CompanyImplTest.java",
-    "code/practice/stream_intro/StreamAppl.java"
+    "code/practice/stream_intro/StreamAppl.java",
+    "code/practice/user/User.java",
+    "code/practice/UserAppl/UserAppl.java"
+
   ],
   "video": ""
 }
