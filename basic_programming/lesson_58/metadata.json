@@ -13,7 +13,7 @@
     "code/practice/car_garage/model/Car.java",
     "code/practice/car_garage/tests/GarageImplTest.java",
     "code/practice/collections/CollectionsMethods.java",
-    "practice/company_stream/dao/Company.java",
+    "code/practice/company_stream/dao/Company.java",
     "code/practice/company_stream/dao/CompanySetImpl.java",
     "code/practice/company_stream/model/Employee.java",
     "code/practice/company_stream/model/Manager.java",
