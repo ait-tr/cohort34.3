@@ -1,7 +1,22 @@
 # Lesson plan No. 58 12/01/2023
 
 1. Homework check:
+1. Checking homework:
+- frequency of letters in a sentence;
+- frequency of digits in 1_000_000 random numbers.
 
+2. Topics:
+- Collections class and its methods;
+- functional programming:
+  - lambda expressions;
+  - method reference syntax.
+- Stream API.
+
+2. Practice:
+- methods of the Collections class;
+- Users class and working with a list of users;
+- StreamAppl - detailed analysis;
+- Car-Garage: implementation on a structure from JCF and Stream API.
 
 
 ___________________________________________
