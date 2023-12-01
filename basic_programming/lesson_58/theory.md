@@ -84,10 +84,10 @@ _______________________________________________________________
 (https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/Arrays.html).
 
 Нас интересуют в первую очередь методы:
+- `sort(List<T> list)`
+- `reverse(List<?> list)`
 - `max(Collection<?> coll)`
 - `min(Collection<?> coll)`
-- `reverse(List<?> list)`
-- `sort(List<T> list)`
 
 Методы `min()` и `max()` работают с любыми коллекциями (см. интерфейс `Collection` ниже) и возвращают
 минимальный и максимальный элементы.

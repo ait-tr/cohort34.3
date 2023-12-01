@@ -1,9 +1,6 @@
 package practice.collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class CollectionsMethods {
     public static void main(String[] args) {
@@ -16,58 +13,69 @@ public class CollectionsMethods {
 
         List<String> fruits = new ArrayList<>();
 
-        fruits.add("banana");
-        fruits.add("orange");
-        fruits.add("grape");
-        fruits.add("watermelon");
         fruits.add("apple");
+        fruits.add("orange");
+        fruits.add("banana");
+        fruits.add("pear");
+        fruits.add("plum");
+        fruits.add("strawberry");
 
-        System.out.println("-----------------------");
-        for (String s : fruits) {
-            System.out.println(s);
+        System.out.println("----------------------");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
-        System.out.println("-----------------------");
-        // Элемент, который мы ищем в списке
-        String searchElement = "bananaA";
+        System.out.println("----------------------");
 
-        //  Проверяем, содержится ли элемент в списке
-        if (Collections.binarySearch(fruits, searchElement) >= 0) {
-            System.out.println("Элемент '" + searchElement + "' найден в списке.");
-        } else {
-            System.out.println("Элемент '" + searchElement + "' не найден в списке.");
+        Collections.sort(fruits); // сделали сортировку
+
+        System.out.println("----------------------");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
+        System.out.println("----------------------");
 
-        Comparator<String> fruitsComparator = new Comparator<String>() {
+        String key = "banana";
+        int index = Collections.binarySearch(fruits, key);
+        System.out.println("Index = " + index + " of " + key);
+        // ищем отсутвующий элемент
+        key = "kiwi";
+        index = Collections.binarySearch(fruits, key);
+        System.out.println("Index = " + index + " of " + key);
+
+        Comparator<String> fComparator = new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
-                return - o1.compareTo(o2);
+                return - o1.compareTo(o2); // сортируем стринги в обратном порядке
             }
         };
 
-        Collections.sort(fruits, fruitsComparator);
-        System.out.println("-----------------------");
-        for (String s : fruits) {
-            System.out.println(s);
+        Collections.sort(fruits, fComparator);
+        // печатаем результат
+        System.out.println("----------------------");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
-        System.out.println("-----------------------");
-        int index = Collections.binarySearch(fruits, "apple", fruitsComparator);
-        System.out.println("Index apple = " + index);
-
-        // Элемент, который мы ищем в списке
-        searchElement = "orange";
-
-        //  Проверяем, содержится ли элемент в списке
-        if (Collections.binarySearch(fruits, searchElement, fruitsComparator) >= 0) {
-            System.out.println("Элемент '" + searchElement + "' найден в списке.");
-        } else {
-            System.out.println("Элемент '" + searchElement + "' не найден в списке.");
-        }
+        System.out.println("----------------------");
 
         String max = Collections.max(fruits);
-        System.out.println("Max: " + max);
+        System.out.println("Max of = " + max);
 
         String min = Collections.min(fruits);
-        System.out.println("Min: " + min);
+        System.out.println("Min of = " + min);
+
+        Collections.reverse(fruits);
+        // печатаем результат
+        System.out.println("----------------------");
+        for (String fruit : fruits) {
+            System.out.println(fruit);
+        }
+        System.out.println("----------------------");
+
+        max = Collections.max(fruits);
+        System.out.println("Max of = " + max);
+
+        min = Collections.min(fruits);
+        System.out.println("Min of = " + min);
 
     }
 }
