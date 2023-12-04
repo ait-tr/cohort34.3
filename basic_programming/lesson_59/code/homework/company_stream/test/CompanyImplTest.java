@@ -1,11 +1,12 @@
-package homework.company_stream.company_stream.test;
+package homework.company_stream.test;
 
-import homework.company_stream.company_stream.dao.Company;
-import homework.company_stream.company_stream.dao.CompanySetImpl;
-import homework.company_stream.company_stream.model.Employee;
-import homework.company_stream.company_stream.model.Manager;
-import homework.company_stream.company_stream.model.SalesManager;
-import homework.company_stream.company_stream.model.Worker;
+import homework.company_stream.dao.Company;
+import homework.company_stream.dao.CompanySetImpl;
+import homework.company_stream.model.Employee;
+import homework.company_stream.model.Manager;
+import homework.company_stream.model.SalesManager;
+import homework.company_stream.model.Worker;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -46,7 +47,7 @@ public class CompanyImplTest {
     @Test
     void removeEmployee() {
         // удаляем сотрудника
-        assertEquals(employee[1], company.removeEmployee(102));
+        Assertions.assertEquals(employee[1], company.removeEmployee(102));
         assertEquals(3, company.quantity()); // сотрудников стало на 1 меньше (4 - 1)
         assertNull(company.removeEmployee(102)); // дважды не можем удалить
         assertNull(company.findEmployee(102)); // не можем найти после удаления
@@ -55,7 +56,7 @@ public class CompanyImplTest {
     @Test
     void findEmployee() {
         // ищем сотрудника по id
-        assertEquals(employee[1], company.findEmployee(102));
+        Assertions.assertEquals(employee[1], company.findEmployee(102));
         // ищем несуществующего сотрудника
         assertNull(company.findEmployee(105));
     }

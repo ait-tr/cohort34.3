@@ -11,7 +11,7 @@
     "code/consultation/supermarket_2/test/SuperMarketSetImplTest.java",
     "code/homework/car_garage/dao/Garage.java",
     "code/homework/car_garage/dao/GarageImpl.java",
-    "code/homework/car_garage/dao/GarageSetImpl.java",
+    "code/homework/car_garage/dao/GarageImplTest.java",
     "code/homework/car_garage/model/Car.java",
     "code/homework/car_garage/tests/GarageImplTest.java",
     "code/homework/company_stream/dao/Company.java",
@@ -20,7 +20,7 @@
     "code/homework/company_stream/model/Manager.java",
     "code/homework/company_stream/model/SalesManager.java",
     "code/homework/company_stream/model/Worker.java",
-    "code/homework/company_stream/tests/CompanyImplTest.java",
+    "code/homework/company_stream/test/CompanyImplTest.java",
     "code/practice/prime_numbers/PrimeNumbers.java",
     "code/practice/users/User.java",
     "code/practice/users/UserAppl.java"

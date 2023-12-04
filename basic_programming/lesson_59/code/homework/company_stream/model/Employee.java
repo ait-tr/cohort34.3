@@ -1,4 +1,4 @@
-package homework.company_stream.company_stream.model;
+package homework.company_stream.model;
 
 public abstract class Employee {
     //поля класса

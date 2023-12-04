@@ -1,6 +1,6 @@
-package homework.company_stream.company_stream.dao;
+package homework.company_stream.dao;
 
-import homework.company_stream.company_stream.model.Employee;
+import homework.company_stream.model.Employee;
 
 public interface Company {
     // объявляем методы, только сигнатуры, без тела метода

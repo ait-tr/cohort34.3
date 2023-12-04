@@ -1,4 +1,4 @@
-package homework.company_stream.company_stream.model;
+package homework.company_stream.model;
 
 public class SalesManager extends Employee{
     private double salesValue;

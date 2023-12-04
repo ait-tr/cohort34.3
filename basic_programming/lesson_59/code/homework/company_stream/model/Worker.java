@@ -1,4 +1,4 @@
-package homework.company_stream.company_stream.model;
+package homework.company_stream.model;
 
 public class Worker extends Employee{
     private double grade;

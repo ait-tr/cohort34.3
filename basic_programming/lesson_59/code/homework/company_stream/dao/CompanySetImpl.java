@@ -1,7 +1,7 @@
-package homework.company_stream.company_stream.dao;
+package homework.company_stream.dao;
 
-import homework.company_stream.company_stream.model.Employee;
-import homework.company_stream.company_stream.model.SalesManager;
+import homework.company_stream.model.Employee;
+import homework.company_stream.model.SalesManager;
 
 import java.util.ArrayList;
 import java.util.HashSet;
