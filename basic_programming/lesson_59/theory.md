@@ -1,4 +1,44 @@
+#Streams
+Functional Streams can be created for any iterable object. Stream is a sequence of operations
+over the elements of the iterable object.
 
+With the advent of Java 8, the Stream API allowed programmers to write in much shorter time what previously took a lot of time.
+lines of code, namely, to simplify working with data sets, in particular, to simplify operations:
+- filtration,
+- sorting,
+- transformation,
+- and other manipulations with data.
+
+Streams consist of **intermediate** and **terminal** operations.
+There can be several intermediate operations and they always return the stream.
+There can only be one terminal operation, and it is placed at the end of the stream.
+A terminal operation returns the result of the entire stream.
+
+Stream "lazy". That is, the stream will start working only when a terminal operation is added to it.
+
+If the stream, “on the conveyor belt,” contains objects that, in turn, are iterable,
+then, using the intermediate flatMap method, you can “shak out” the contents of these objects. In this case
+Then the contents of the objects will move along the conveyor.
+
+The terminal collect method can collect the contents of the stream into the structure we need. For this he needs
+pass an object implementing the Collector interface. In practice, implement the Collector interface yourself
+This is rarely necessary, because the Collectors class has many methods that return various collectors. For example,
+using Collectors.toList(), you can get a collector that collects stream elements into a list, and using
+Collectors.toSet() - to set.
+
+Collectors.groupingBy allows you to group stream elements into a map according to a key that is determined
+corresponding function. In this case, elements corresponding to one key are collected by default into a sheet.
+
+Collectors.groupingBy has overloads. For example, instead of the default sheet, as value
+you can use the result of the work of some collector.
+
+For details about the stream's operation scheme and basic operations, see the presentation.
+
+[Functional Programming in Java](https://github.com/ait-tr/cohort34.3/blob/main/basic_programming/lesson_58/FP.pdf)
+
+Useful articles:
+https://javarush.com/groups/posts/2203-stream-api
+https://metanit.com/java/tutorial/10.1.php
 
 _______________________________________________________________
 
