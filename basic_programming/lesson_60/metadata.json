@@ -5,10 +5,6 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/consultation/supermarket_2/dao/SuperMarket.java",
-    "code/consultation/supermarket_2/dao/SuperMarketSetImpl.java",
-    "code/consultation/supermarket_2/model/Product.java",
-    "code/consultation/supermarket_2/test/SuperMarketSetImplTest.java",
     "code/homework/car_garage/dao/Garage.java",
     "code/homework/car_garage/dao/GarageImpl.java",
     "code/homework/car_garage/dao/GarageImplTest.java",
@@ -23,7 +19,11 @@
     "code/homework/company_stream/test/CompanyImplTest.java",
     "code/practice/prime_numbers/PrimeNumbers.java",
     "code/practice/users/User.java",
-    "code/practice/users/UserAppl.java"
+    "code/practice/users/UserAppl.java",
+    "code/consultation/supermarket_2/dao/SuperMarket.java",
+    "code/consultation/supermarket_2/dao/SuperMarketSetImpl.java",
+    "code/consultation/supermarket_2/model/Product.java",
+    "code/consultation/supermarket_2/test/SuperMarketSetImplTest.java"
 
   ],
   "video": ""
