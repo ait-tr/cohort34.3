@@ -8,36 +8,36 @@ import java.util.stream.Stream;
 public class PrimeNumbers {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>(List.of(
-                10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20));
-
+                10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+        ));
+        // отобрать только простые числа из этого списка
         System.out.println("Numbers: ");
         numbers.stream()
-                        .forEach(n -> System.out.print(n + " | "));
+                .forEach(n -> System.out.print(n + " ")); // терминальная операция
         System.out.println();
 
         System.out.println("Prime numbers: ");
-        numbers.stream() // открыли поток
-                .filter(n -> isPrime(n)) // отобрали простые числа
-                .forEach(n -> System.out.print(n + " | "));
+        numbers.stream()
+                .filter(n -> isPrime(n)) // фильтр
+                .forEach(n -> System.out.print(n + " "));
         System.out.println();
 
-        // Other method
-        System.out.println("Prime numbers 2: ");
-        Stream<Integer> numbers1 = Stream.of(10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-
-        numbers1.map(n -> isPrime(n))
-                .forEach(n-> System.out.print(n + " | "));
-
+        // другой способ
+        System.out.println("Prime numbers - 2 : ");
+        numbers.stream()
+                .map(n -> isPrime(n))
+                .forEach(n -> System.out.print(n + " "));
     }
 
-    private static boolean isPrime(Integer n) {
+    public static boolean isPrime(int n){
         int i = 2;
-        while(i < n){
-            if(n % i == 0){
+        while( i < n ) {
+            if (n % i == 0) {
                 return false;
             }
             i++;
         }
         return true;
     }
+
 }
