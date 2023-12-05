@@ -1,28 +1,43 @@
-**Task 1.**
-By analogy with the User class, create a Student class with the following fields: id, firstName, lastName, birtDay, course, groupNum
-(group number), country, gender (gender).
-In the DekanatAppl application, create students from different countries who are studying in different courses, in different groups.
-Make lists of students by course, by group, sorted by last name and age.
-How many students are male? How many women? What is their average age for the course? For all students?
-Additional task (*): add an int[] marks field for each student with his grades and calculate the average score.
+**Exercise 1.**
+Create a Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
+Create a Pomegranate class with a field: ``List<Seed> seeds``.
+The Box and Pomegranate classes are iterable.
+Create a Seed class with a double weight field.
+Create a PomegranateAppl class with a main method. Create a random number of boxes (from 100 to 200).
+Each box contains a random number of grenades (from 10 to 20).
+Each pomegranate contains a random number of seeds (from 400 to 700).
+Each seed has weight = 2.
 
 **Task 2.**
-Make an implementation of Supermarket according to the UML diagram using stream and JCF structures (ArrayList,
-HashSet).
+Count the total number of seeds in all boxes.
+
+**Task 3.**
+Calculate the maximum number of seeds in one box.
+
+**Task 4.**
+Find the names of the boxes with the maximum number of seeds.
 
 ___________________________________________________
 
-**Задача 1.**
-По аналогии с классом User создать класс Student с полями: id, firstName, lastName, birtDay, course, groupNum
-(номер группы), country, gender(пол).
-В приложении DekanatAppl создать студентов из разных стран, которые учатся на разных курсах, в разных группах.
-Сделать списки студентов по курсам, по группам, отсортированные по фамилиям и возрасту.
-Сколько студентов мужчин? Сколько женщин? Какой у них средний возраст по курсу? По всем студентам?
-Дополнительное задание (**): добавить у каждого студента поле int[] marks с его оценками и рассчитать средний балл. 
+**Задание 1.**
+Создайте класс Container с полями: String label (маркировка) и List<Box> - список коробок с посылками.
+Создайте класс Box с полем: List<Parcel> - список посылок.
+Классы Container и Box являются итерируемыми.
+Создайте класс Parcel (посылка) с полем double weight - вес посылки.
+Создайте класс ShipmentAppl с методом main. 
+Задумайте случайное количество контейнеров (от 100 до 200).
+В каждом контейнере задумайте случайное количество коробок (от 10 до 20).
+В каждой коробке задумайте случайное количество посылок (от 5 до 10).
+Предположим, что каждая посылка в среднем имеет вес = 2 кг.
 
-**Задача 2.**
-Сделать реализацию Supermarket по UML-схеме на stream и JCF - структурах (ArrayList, 
-HashSet).
+**Задание 2.**
+Подсчитайте общее количество посылок во всех ящиках и их общий вес.
+
+**Задание 3.**
+Найдите label того из контейнеров, в котором оказалось максимальное количество посылок.
+
+**Задание 4.**
+Найдите все контейнеры с максимальным количеством посылок.
 
 
 

@@ -70,7 +70,7 @@ public class SuperMarketSetImpl implements SuperMarket {
     public Iterable<Product> findProductWithExpDate() {
         LocalDate currentDay = LocalDate.now(); // текущая дата
         return productSet.stream()
-                .filter(p -> p.getExpDate().isAfter(currentDay))
+                .filter(p -> p.getExpDate().isBefore(currentDay))
                 .toList();
     }
 

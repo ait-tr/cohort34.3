@@ -18,6 +18,7 @@ class SuperMarketSetImplTest {
     @BeforeEach
     void setUp() {
         now= LocalDate.now();
+
         rewe = new SuperMarketSetImpl();
         rewe.addProduct(new Product(10000000,"N1","C1","B1",1.10,now.minusDays(1)));
         rewe.addProduct(new Product(20000000,"N2","C1","B2",1.30,now.plusDays(0)));
