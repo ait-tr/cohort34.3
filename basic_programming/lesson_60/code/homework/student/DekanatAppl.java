@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+// Код Кирилла Ботта
+
 public class DekanatAppl {
     // В приложении DekanatAppl создать студентов из разных стран,
     // которые учатся на разных курсах, в разных группах.

@@ -6,7 +6,9 @@
   "homework": "homework.md",
   "code": [
     "code/homework/student/DekanatAppl.java",
-    "code/homework/student/dao/Student.java"
+    "code/homework/student/dao/Student.java",
+    "code/practice/programmers/Programmer.java",
+    "code/practice/programmers/ProgrammerAppl.java"
 
   ],
   "video": ""
