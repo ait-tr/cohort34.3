@@ -4,38 +4,39 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Box implements Iterable<Parcel>{
-    List<Parcel> parcelList;
+public class Box implements Iterable<Parcel>{ // перебираем посылки в ящике
+    // поле
+    List<Parcel> parcels; // список посылок (опись)
 
-    public Box() {
-        parcelList = new ArrayList<>();
+    // конструктор
+    public Box(List<Parcel> parcels){
+        this.parcels = new ArrayList<>();
     }
 
-    public Box(List<Parcel> parcelList){
-        this.parcelList = parcelList;
+    public List<Parcel> getParcels() {
+        return parcels;
     }
 
-    public void setParcelList(List<Parcel> parcelList) {
-        this.parcelList = parcelList;
-    }
+
     // в коробку надо будет добавить задуманное число посылок
     // этот метод добавляет посылку в список посылок
     public boolean addParcel(Parcel parcel){
-        return parcelList.add(parcel);
+        return parcels.add(new Parcel(2)); // добавляем посылку в Box
     }
 
     public int quantity(){
-        return parcelList.size();
+        return parcels.size();
     }
+
     // вес коробки = сумме весов всех посылок
     public double weightBox(){
-        return parcelList.stream()
+        return parcels.stream()
                 .mapToDouble(p -> p.getWeight())
                 .sum();
     }
 
     @Override
     public Iterator<Parcel> iterator() {
-        return parcelList.iterator();
+        return parcels.iterator();
     }
 }

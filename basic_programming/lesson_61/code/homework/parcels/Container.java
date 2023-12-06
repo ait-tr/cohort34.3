@@ -5,24 +5,22 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Container implements Iterable<Box>{
-    private String label;
+    //
+    private String label; // маркировка
     private List<Box> listBoxes;
 
+    //
     public Container(String label){
         this.label = label;
         listBoxes = new ArrayList<>();
-    }
-    public Container(String label, List<Box> listBoxes){
-        this.label = label;
-        this.listBoxes = listBoxes;
     }
 
     public String getLabel() {
         return label;
     }
 
-    public void setListBoxes(List<Box> listBoxes) {
-        this.listBoxes = listBoxes;
+    public List<Box> getListBoxes() {
+        return listBoxes;
     }
 
     // в контейнер надо будет добавить задуманное число коробок с посылками
@@ -31,11 +29,11 @@ public class Container implements Iterable<Box>{
         return listBoxes.add(box);
     }
 
-    public double weight() {
-        return listBoxes.stream()
-                .mapToDouble(b -> b.weightBox())
-                .sum();
-    }
+//    public double weightContainer() {
+//        return listBoxes.stream()
+//                .mapToDouble(b -> b.weightBox())
+//                .sum();
+//    }
 
     public int quantity(){
         return listBoxes.size();

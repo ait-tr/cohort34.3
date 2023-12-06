@@ -3,7 +3,7 @@ package homework.parcels;
 import java.util.Objects;
 
 public class Parcel {
-    private double weight;
+    private double weight; // вес посылки
 
     public Parcel(double weight) {
         this.weight = weight;
@@ -32,8 +32,6 @@ public class Parcel {
 
     @Override
     public String toString() {
-        return "Parcel{" +
-                "weight=" + weight +
-                '}';
+        return "Parcel{" + "weight=" + weight + '}';
     }
 }
