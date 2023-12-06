@@ -1,38 +1,58 @@
 # Lesson plan No. 61 12/06/2023
 
 1. Checking homework:
-- Student class and lists of students;
-- SuperMarket - implementation on HashSet and streams instead of loops;
--------------------------------------------------- ---------------
-- Garage: replacing the methods of searching for cars by cycle criteria with streams;
-- Company: implementation on HashSet, replace all loops with stream.
+- Container, Box and Parcel
 
 2. Topic:
-- flatMap method
-- Terminal methods collect. Collectors.toList, Collectors.toSet, Collectors.groupingBy
-- Streams of Integer, Double primitives
+- Streams of primitives Integer, Long, Double
 
 3. Practice:
-- solving the problem of Programmers and Technologies (programming languages)
 - tasks for streams of primitives.
+
+4. Problem about boxes (box), pomegranates (pomegranate) and grains in pomegranates (seed).
+
+**Exercise 1.**
+Create a Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
+Create a Pomegranate class with a field: ``List<Seed> seeds``.
+The Box and Pomegranate classes are iterable.
+Create a Seed class with a double weight field.
+Create a PomegranateAppl class with a main method.
+Create a random number of boxes (from 100 to 200).
+Each box contains a random number of grenades (from 10 to 20).
+Each pomegranate contains a random number of seeds (from 400 to 700).
+Each seed has weight = 2.
+
+**Task 2.**
+Count the total number of seeds in all boxes.
+
+**Task 3.**
+Calculate the maximum number of seeds in one box.
+
+**Task 4.**
+Find the names of the boxes with the maximum number of seeds.
 
 ___________________________________________
 
 # План занятия №61 06.12.2023
 
 1. Проверка домашнего задания:
-- Container, Box и Parcel.
------------------------------------------------------------------
-- Garage: замена в методах поиска машин по критериям циклов на стримы;
-- Company: реализация на HashSet, заменить все циклы на stream.
+- Container, Box и Parcel
+
+-------------------------------------------------------
+Как продвигаться в решении сложной задачи:
+1. Еще раз перечитать теорию.
+2. Поискать аналогичные задачи и их решение.
+3. Делать таким способом, каким уже знаем. А потом это решение улучшать.
+
+-------------------------------------------------------
 
 2. Тема:
-- Стримы примитивов Integer, Double
+- Стримы примитивов Integer, Long, Double
 
 3. Практика:
 - задачи на стримы примитивов.
 
-4. Задача о ящиках (box), гранатах (pomegranat) и зернах(seed) в гранатах.
+4. Задача о ящиках (box), гранатах (pomegranate) и зернах в гранатах (seed).
 
 **Задание 1.**
 Создайте класс Box с полями: ``String name`` и ``List<Pomegranate> granates``.
