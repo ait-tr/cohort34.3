@@ -3,14 +3,20 @@ package homework.parcels;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Box implements Iterable<Parcel>{ // перебираем посылки в ящике
     // поле
     List<Parcel> parcels; // список посылок (опись)
 
     // конструктор
-    public Box(List<Parcel> parcels){
-        this.parcels = new ArrayList<>();
+    public Box(int numParcels){
+        Random random = new Random();
+        this.parcels = Stream.generate(() -> new Parcel(random.nextDouble(0,2)))
+                .limit(numParcels)
+                .collect(Collectors.toList());
     }
 
     public List<Parcel> getParcels() {

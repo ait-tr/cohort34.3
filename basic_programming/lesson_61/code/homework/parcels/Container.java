@@ -3,44 +3,57 @@ package homework.parcels;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Container implements Iterable<Box>{
     //
     private String label; // маркировка
-    private List<Box> listBoxes;
+    private List<Box> boxes;
 
     //
-    public Container(String label){
+    public Container(String label, int numBoxes){
         this.label = label;
-        listBoxes = new ArrayList<>();
+        Random random = new Random();
+        this.boxes = IntStream.range(0, numBoxes)
+                .mapToObj(i -> new Box(random.nextInt(5, 11)))
+                .collect(Collectors.toList());
+    }
+
+    // кол-во посылок в контейнере
+    public int getTotalParcels(){
+        return boxes.stream()
+                .mapToInt(box -> box.parcels.size())
+                .sum();
     }
 
     public String getLabel() {
         return label;
     }
 
-    public List<Box> getListBoxes() {
-        return listBoxes;
+    public List<Box> getBoxes() {
+        return boxes;
     }
 
     // в контейнер надо будет добавить задуманное число коробок с посылками
     // этот метод добавляет коробку в список коробок, который есть в контейнере
     public boolean addBox(Box box){
-        return listBoxes.add(box);
+        return boxes.add(box);
     }
 
 //    public double weightContainer() {
-//        return listBoxes.stream()
+//        return boxes.stream()
 //                .mapToDouble(b -> b.weightBox())
 //                .sum();
 //    }
 
     public int quantity(){
-        return listBoxes.size();
+        return boxes.size();
     }
 
     public int countParcels(){
-        return listBoxes.stream()
+        return boxes.stream()
                 .mapToInt(p -> p.quantity())
                 .sum();
     }
@@ -52,6 +65,6 @@ public class Container implements Iterable<Box>{
 
     @Override
     public Iterator<Box> iterator() {
-        return listBoxes.iterator();
+        return boxes.iterator();
     }
 }
