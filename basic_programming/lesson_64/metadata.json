@@ -5,15 +5,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework/granates/Box.java",
-    "code/homework/granates/Pomegranate.java",
-    "code/homework/granates/PomegranateAppl.java",
-    "code/homework/granates/Seed.java",
-    "code/homework/parcels/Box.java",
-    "code/homework/parcels/Container.java",
-    "code/homework/parcels/Parcel.java",
-    "code/homework/parcels/ShipmentAppl.java",
-    "code/practice/StreamPrimitivesAppl.java"
+    "code/practice/library/model/Book.java",
+    "code/practice/library/model/Email.java",
+    "code/practice/library/model/Library.java",
+    "code/practice/library/model/Reader.java",
+    "code/practice/library/LibAppl.java"
 
   ],
   "video": ""
