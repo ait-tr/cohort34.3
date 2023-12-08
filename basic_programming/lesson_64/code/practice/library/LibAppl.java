@@ -9,8 +9,7 @@ import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.*;
 
 public class LibAppl {
     public static void main(String[] args) {
@@ -123,19 +122,19 @@ public class LibAppl {
                 .collect(groupingBy(r -> r.getBooks().size() > 2 ? "TOO_MUCH" : "OK",
                         mapping(r -> new Email(r.getEmail()), Collectors.toList())));
         System.out.println(map.entrySet());
-        System.out.println("------------------------------------------------------");
+        System.out.println("-------------------- Check Book ----------------------------------");
         // Проверить, взял ли кто-то из читателей библиотеки какие-нибудь книги Л. Толстого.
         boolean check = checkBook(library, "Harper Lee");
         System.out.println(check);
 
         System.out.println("-------------------- Groups of Users II ----------------------------");
-//        Map<Integer, String> readersMap = library.getReaders().stream()
-//                .filter(Reader::isSubscriber)
-//                .collect(groupingBy(r -> r.getBooks().size(),
-//                        mapping(Reader::getFio, joining(", ", "{", "}"))));
-//        System.out.println(readersMap.entrySet());
+        Map<Integer, String> readersMap = library.getReaders().stream()
+                .filter(Reader::isSubscriber)
+                .collect(groupingBy(r -> r.getBooks().size(),
+                        mapping(Reader::getFio, joining(", ", "{", "}"))));
+        System.out.println(readersMap.entrySet());
 
-
+        System.out.println("-------------------- Groups of Users III (from Yurii Koval) ----------------------------");
         Map<Integer, Reader> mapReader = library.getReaders().stream()
                 .collect(Collectors.toMap(
                         reader -> reader.getBooks().size(),
