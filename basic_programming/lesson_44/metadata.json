@@ -1,0 +1,17 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/fibonacci_hw/Fibonacci.java",
+    "code/homework/fibonacci_hw/FibonacciAppl.java",
+    "code/homework/fibonacci_hw/FibonacciIterator.java",
+    "code/practice/complexity/ComplexityAppl.java",
+    "code/practice/ilist/IList.java",
+    "code/consultation/BinarySearchEx.java"
+
+  ],
+  "video": ""
+}

@@ -1,0 +1,29 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/digits_freq/DigitsFreqApp.java",
+    "code/homework/sentence_map/SentenceMap.java",
+    "code/practice/car_garage/dao/Garage.java",
+    "code/practice/car_garage/dao/GarageImpl.java",
+    "code/practice/car_garage/dao/GarageSetImpl.java",
+    "code/practice/car_garage/model/Car.java",
+    "code/practice/car_garage/tests/GarageImplTest.java",
+    "code/practice/collections/CollectionsMethods.java",
+    "code/practice/company_stream/dao/Company.java",
+    "code/practice/company_stream/dao/CompanySetImpl.java",
+    "code/practice/company_stream/model/Employee.java",
+    "code/practice/company_stream/model/Manager.java",
+    "code/practice/company_stream/model/SalesManager.java",
+    "code/practice/company_stream/model/Worker.java",
+    "code/practice/company_stream/tests/CompanyImplTest.java",
+    "code/practice/stream_intro/StreamAppl.java",
+    "code/practice/user/User.java",
+    "code/practice/UserAppl/UserAppl.java"
+
+  ],
+  "video": ""
+}

@@ -1,0 +1,16 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/practice/library/model/Book.java",
+    "code/practice/library/model/Email.java",
+    "code/practice/library/model/Library.java",
+    "code/practice/library/model/Reader.java",
+    "code/practice/library/LibAppl.java"
+
+  ],
+  "video": ""
+}

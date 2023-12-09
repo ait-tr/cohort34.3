@@ -1,0 +1,20 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/granates/Box.java",
+    "code/homework/granates/Pomegranate.java",
+    "code/homework/granates/PomegranateAppl.java",
+    "code/homework/granates/Seed.java",
+    "code/homework/parcels/Box.java",
+    "code/homework/parcels/Container.java",
+    "code/homework/parcels/Parcel.java",
+    "code/homework/parcels/ShipmentAppl.java",
+    "code/practice/StreamPrimitivesAppl.java"
+
+  ],
+  "video": ""
+}

@@ -1,0 +1,17 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework/PrintString.java",
+    "code/homework/Runner.java",
+    "code/homework/SumOfDigits.java",
+    "code/practice/Multiply.java",
+    "code/practice/NumberBy5.java",
+    "code/practice/PrimeNumber.java"
+
+  ],
+  "video": ""
+}
