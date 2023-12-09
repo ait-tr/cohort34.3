@@ -53,7 +53,7 @@ public class Box implements Iterable<Pomegranate>{
 
 	@Override
 	public String toString() {
-		return "Box {name=" + name + ", seeds= " + countSeeds() + "}";
+		return "pomegranate.Box {name=" + name + ", seeds= " + countSeeds() + "}";
 	}
 
 }

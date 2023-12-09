@@ -1,7 +1,7 @@
 **Exercise 1.**
-Create a Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
+Create a pomegranate.Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
 Create a Pomegranate class with a field: ``List<Seed> seeds``.
-The Box and Pomegranate classes are iterable.
+The pomegranate.Box and Pomegranate classes are iterable.
 Create a Seed class with a double weight field.
 Create a PomegranateAppl class with a main method. Create a random number of boxes (from 100 to 200).
 Each box contains a random number of grenades (from 10 to 20).
@@ -20,9 +20,9 @@ Find the names of the boxes with the maximum number of seeds.
 ___________________________________________________
 
 **Задание 1.**
-Создайте класс Container с полями: String label (маркировка) и List<Box> - список коробок с посылками.
-Создайте класс Box с полем: List<Parcel> - список посылок.
-Классы Container и Box являются итерируемыми.
+Создайте класс Container с полями: String label (маркировка) и List<pomegranate.Box> - список коробок с посылками.
+Создайте класс pomegranate.Box с полем: List<Parcel> - список посылок.
+Классы Container и pomegranate.Box являются итерируемыми.
 Создайте класс Parcel (посылка) с полем double weight - вес посылки.
 Создайте класс ShipmentAppl с методом main. 
 Задумайте случайное количество контейнеров (от 10 до 20).

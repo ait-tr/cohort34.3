@@ -27,7 +27,7 @@ public class Box implements Iterable<Parcel>{
 
     @Override
     public String toString() {
-        return "Box with parcels: " + parcels;
+        return "pomegranate.Box with parcels: " + parcels;
     }
 
     @Override

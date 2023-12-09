@@ -35,7 +35,7 @@ public class ShipmentAppl {
             Container container = containers.get(index);
             System.out.println("Container " + contNumbers.get(index) + " : " + container.getLabel());
             container.getBoxes().forEach(box -> {
-                System.out.println("  Box with " + box.parcels.size() + " parcels");
+                System.out.println("  pomegranate.Box with " + box.parcels.size() + " parcels");
                 box.parcels.forEach(parcel ->
                         System.out.println("    Parcel with weight: " + parcel.getWeight() + " kg"));
             });

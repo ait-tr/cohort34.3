@@ -27,7 +27,7 @@ public class Box implements Iterable<Parcel>{ // перебираем посыл
     // в коробку надо будет добавить задуманное число посылок
     // этот метод добавляет посылку в список посылок
     public boolean addParcel(Parcel parcel){
-        return parcels.add(new Parcel(2)); // добавляем посылку в Box
+        return parcels.add(new Parcel(2)); // добавляем посылку в pomegranate.Box
     }
 
     public int quantity(){

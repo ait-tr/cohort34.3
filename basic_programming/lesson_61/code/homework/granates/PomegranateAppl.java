@@ -30,7 +30,7 @@ public class PomegranateAppl {
 							.sum();
 		
 //		int totalSeeds = boxes.stream()
-//							.map(Box::countSeeds)
+//							.map(pomegranate.Box::countSeeds)
 //							.reduce(0, (a,b) -> a + b);
 		
 //		long totalSeeds = boxes.stream()
@@ -50,10 +50,10 @@ public class PomegranateAppl {
 
 	}
 
-// ----Box -- Container---
+// ----pomegranate.Box -- Container---
 	private static List<Box> getRandomBoxes() {
 		int size = MIN + random.nextInt(MAX - MIN + 1);
-//		List<Box> res = new ArrayList<>();
+//		List<pomegranate.Box> res = new ArrayList<>();
 //		for (int i = 0; i < size; i++) {
 //			res.add(getBox(i + 1));
 //		}

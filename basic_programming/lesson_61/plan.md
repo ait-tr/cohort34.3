@@ -1,7 +1,7 @@
 # Lesson plan No. 61 12/06/2023
 
 1. Checking homework:
-- Container, Box and Parcel
+- Container, pomegranate.Box and Parcel
 
 2. Topic:
 - Streams of primitives Integer, Long, Double
@@ -12,9 +12,9 @@
 4. Problem about boxes (box), pomegranates (pomegranate) and grains in pomegranates (seed).
 
 **Exercise 1.**
-Create a Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
+Create a pomegranate.Box class with the fields: ``String name`` and ``List<Pomegranate> granates``.
 Create a Pomegranate class with a field: ``List<Seed> seeds``.
-The Box and Pomegranate classes are iterable.
+The pomegranate.Box and Pomegranate classes are iterable.
 Create a Seed class with a double weight field.
 Create a PomegranateAppl class with a main method.
 Create a random number of boxes (from 100 to 200).
@@ -36,7 +36,7 @@ ___________________________________________
 # План занятия №61 06.12.2023
 
 1. Проверка домашнего задания:
-- Container, Box и Parcel
+- Container, pomegranate.Box и Parcel
 
 -------------------------------------------------------
 Как продвигаться в решении сложной задачи:
@@ -55,9 +55,9 @@ ___________________________________________
 4. Задача о ящиках (box), гранатах (pomegranate) и зернах в гранатах (seed).
 
 **Задание 1.**
-Создайте класс Box с полями: ``String name`` и ``List<Pomegranate> granates``.
+Создайте класс pomegranate.Box с полями: ``String name`` и ``List<Pomegranate> granates``.
 Создайте класс Pomegranate с полем: ``List<Seed> seeds``.
-Классы Box и Pomegranate являются итерируемыми.
+Классы pomegranate.Box и Pomegranate являются итерируемыми.
 Создайте класс Seed с полем double weight.
 Создайте класс PomegranateAppl с методом main.
 Создать случайное количество коробок (от 100 до 200).
