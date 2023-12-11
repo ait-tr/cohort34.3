@@ -1,35 +1,23 @@
 **Exercise 1.**
+In the CompareFileAppl class, implement the logic for comparing two files in the main method.
+File names are accepted through the args array. We consider two files to be identical,
+if they have the same length and the same bytes are in the same positions.
+The result should be printed to the console as a message.
 
-The library decided to collect reviews from its readers about the books they read.
-In a reader review of the book:
-- rates the book from 1 to 5 (1 - didn’t like it, 5 - really liked it);
-- writes a text review about the book he read.
+**Task 2. (*)**
+In the ToDoList application, save/read tasks to a file.
 
-Readers also have the opportunity to like the review of another reader that they liked.
-
-Calculate book ratings based on reader ratings.
-
-Get also:
-- a list of books sorted by their rating;
-- a list of books sorted by the number of reviews on them;
-- a list of readers - review authors, sorted by the number of likes under their reviews.
 
 ___________________________________________________
 
 **Задание 1.**
-Библиотека решила собирать отзывы от своих читателей о прочитанных книгах.
-В отзыве о книге читатель:
-- ставит оценку книге от 1 до 5 (1 - не понравилась, 5 - очень понравилась);
-- пишет текстовый отзыв о прочитанной книге.
+В классе CompareFileAppl реализовать логику сравнения двух файлов в методе main.
+Имена файлов принимать через массив args. Два файла считаем одинаковыми,
+если у них одинаковая длина, и на тех же позициях стоят те же байты.
+Результат должен быть выведен на консоль в виде сообщения.
 
-Также читатели имеют возможность поставить лайк под отзывом другого читателя, который им понравился.
-
-Рассчитайте рейтинг книг на основании оценок читателей.
-
-Получите также:
-- список книг, отсортированный по их рейтингу;
-- список книг, отсортированный по количеству отзывов на них;
-- список читателей - авторов отзывов, отсортированный по количеству лайков под их отзывами.
+**Задание 2. (*)**
+В приложении ToDoList сделать сохранение/чтение задач в файл.
 
 
 
