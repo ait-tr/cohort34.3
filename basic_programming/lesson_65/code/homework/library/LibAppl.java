@@ -154,7 +154,6 @@ public class LibAppl {
         System.out.printf("Rating : %.2f", bookAvgRating);
         System.out.println();
 
-
     } // end of main
 
     private static double getBookAvgRating(List<Review> reviews, String bookName) {
@@ -162,7 +161,7 @@ public class LibAppl {
                  .filter(r->r.getBook().getName().equals(bookName))
                  .mapToDouble(r -> r.getRating())
                  .sum();
-        return sum / reviews.size();
+        return sum / reviews.size(); // Ошибка, надо делить на кол-во ревью именно этой книги!
     }
 
     public static List<Review> getgListReviewsOfBook(Library library, String bookName){

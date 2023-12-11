@@ -14,7 +14,20 @@
     "code/pomegranate/Box.java",
     "code/pomegranate/Pomegranate.java",
     "code/pomegranate/PomegranateAppl.java",
-    "code/pomegranate/Seed.java"
+    "code/pomegranate/Seed.java",
+    "code/homework/todolist_file/dao/ToDoList.java",
+    "code/homework/todolist_file/dao/ToDoListImpl.java",
+    "code/homework/todolist_file/model/Menu.java",
+    "code/homework/todolist_file/model/Task.java",
+    "code/homework/todolist_file/test/ToDoListImplTest.java",
+    "code/homework/todolist_file/ToDoListAppl.java",
+    "code/practice/employee_save_read/Address.java",
+    "code/practice/employee_save_read/Employee.java",
+    "code/practice/employee_save_read/RestoreEmployeeAppl.java",
+    "code/practice/employee_save_read/SaveEmployeeAppl.java",
+    "code/practice/file_copy/CopyPicAppl.java",
+    "code/practice/io_stream/ByteInputAppl.java",
+    "code/practice/io_stream/ByteOutputAppl.java"
 
   ],
   "video": ""
