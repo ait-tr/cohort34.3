@@ -1,11 +1,9 @@
-package pomegranate;
+package homework.pomegranate;
 
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.StreamSupport;
 
 public class PomegranateAppl {
     private static final int MIN = 100;

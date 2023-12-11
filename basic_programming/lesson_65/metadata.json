@@ -5,6 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/homework/library/model/Book.java",
+    "code/homework/library/model/Email.java",
+    "code/homework/library/model/Library.java",
+    "code/homework/library/model/Reader.java",
+    "code/homework/library/model/Review.java",
+    "code/homework/library/LibAppl.java,",
     "code/pomegranate/Box.java",
     "code/pomegranate/Pomegranate.java",
     "code/pomegranate/PomegranateAppl.java",

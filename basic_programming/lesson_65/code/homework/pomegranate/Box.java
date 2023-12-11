@@ -1,6 +1,4 @@
-package pomegranate;
-
-import pomegranate.Pomegranate;
+package homework.pomegranate;
 
 import java.util.ArrayList;
 import java.util.Iterator;

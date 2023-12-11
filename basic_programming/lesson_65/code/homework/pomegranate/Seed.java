@@ -1,4 +1,4 @@
-package pomegranate;
+package homework.pomegranate;
 
 public class Seed {
 	double weight = 2;
