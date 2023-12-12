@@ -13,6 +13,7 @@ public class ToDoListAppl implements Serializable{
     public static void main(String[] args) {
         // greeting
         System.out.println("Welcome to ToDo Application!");
+
         ToDoListImpl toDoList = new ToDoListImpl();
 
         // начало цикла
@@ -51,9 +52,9 @@ public class ToDoListAppl implements Serializable{
                 case 4: {
                     System.out.println("Saving... ");
                     List<Task> tasks = toDoList.getAllTasks();
-                    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./basic_programming/lesson_64/dest/todolist.dat"))) {
+                    try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./basic_programming/lesson_65/code/homework/todolist_file/dest/todolist.dat"))) {
                         oos.writeObject(tasks);
-                        System.out.println("ArrayList записан в файл");
+                        System.out.println("Список задач записан в файл");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -61,7 +62,7 @@ public class ToDoListAppl implements Serializable{
                 }
                 case 5:{
                     System.out.println("Loading... ");
-                    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./basic_programming/lesson_64/dest/todolist.dat"))) {
+                    try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./basic_programming/lesson_65/code/homework/todolist_file/dest/todolist.dat"))) {
                         List<Task> readTasks = (List<Task>) ois.readObject();
                         System.out.println("Прочитанный список: " + readTasks);
                     } catch (IOException | ClassNotFoundException e) {

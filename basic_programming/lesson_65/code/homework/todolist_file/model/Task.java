@@ -2,7 +2,7 @@ package homework.todolist_file.model;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Task implements Comparable<Task>, Serializable {
+public class Task implements Comparable<Task>, Serializable { // нужен для использования байтового потока IO
     private String task; // содержание задачи
     private LocalDate date; // дата создания задачи
 

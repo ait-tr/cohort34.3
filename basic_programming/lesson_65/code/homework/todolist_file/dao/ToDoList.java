@@ -11,7 +11,7 @@ public interface ToDoList {
     Task removeTask(int taskNumber);
     // print list of Tasks
     void viewTasks();
-    List<Task> getAllTasks();
+    List<Task> getAllTasks(); // взять весь список
     // quantity of tasks
     int quantity();
 }
