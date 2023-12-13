@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class StatisticsImpl implements Statistics {
 
     File file;
-    String delimeter;
+    String delimeter; // это разделитель
 
     public StatisticsImpl(File file, String delimeter) {
         this.file = new File(String.valueOf(file));
