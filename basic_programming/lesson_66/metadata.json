@@ -5,14 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "/code/homework/compare_files/CompareFilesAppl.java",
-    "/code/homework/todolist_file/dao/ToDoList.java",
-    "/code/homework/todolist_file/dao/ToDoListImpl.java",
-    "/code/homework/todolist_file/model/Menu.java",
-    "/code/homework/todolist_file/model/Task.java",
-    "/code/homework/todolist_file/ToDoListAppl.java",
-    "/code/practice/ConsoleIOAppl.java",
-    "/code/practice/EmployeeDataAppl.java"
+
+    "code/homework/passengers/Statistics.java",
+    "code/homework/passengers/StatisticsImpl.java",
+    "code/homework/passengers/TitanicAppl.java"
 
   ],
   "video": ""
