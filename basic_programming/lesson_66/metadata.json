@@ -8,7 +8,9 @@
 
     "code/homework/passengers/Statistics.java",
     "code/homework/passengers/StatisticsImpl.java",
-    "code/homework/passengers/TitanicAppl.java"
+    "code/homework/passengers/TitanicAppl.java",
+    "code/practice/MultiThreadAppl.java",
+    "code/practice/MyTaskImplements.java"
 
   ],
   "video": ""
