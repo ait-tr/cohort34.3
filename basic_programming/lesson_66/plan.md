@@ -1,6 +1,14 @@
 # Lesson plan No. 66 12/13/2023
 
+1. Discussion of homework:
+- Processing data from a file.
 
+2. New topic: Multithreading.
+   Runnable interface and Thread class.
+   The thread's join method.
+
+3. Practice:
+- create and launch parallel tasks.
 
 ___________________________________________
 
