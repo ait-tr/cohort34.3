@@ -1,13 +1,11 @@
 package practice.parallel_tasks;
 
-public class MyTaskImplements implements Runnable {
+public class MyTaskExtends extends Thread {
 
-    // fields
-    String name; // имя задачи
-    int max; // до скольки доситать
+    String name;
+    int max;
 
-    // constructor
-    public MyTaskImplements(String name, int max) {
+    public MyTaskExtends(String name, int max) {
         this.name = name;
         this.max = max;
     }
