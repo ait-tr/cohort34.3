@@ -10,7 +10,10 @@
     "code/homework/passengers/StatisticsImpl.java",
     "code/homework/passengers/TitanicAppl.java",
     "code/practice/MultiThreadAppl.java",
-    "code/practice/MyTaskImplements.java"
+    "code/practice/MyTaskImplements.java",
+    "code/practice/MyTaskExtends.java",
+    "/practice/tarakan_race/Tarakan.java",
+    "/practice/tarakan_race/TarakanRaceAppl.java"
 
   ],
   "video": ""
