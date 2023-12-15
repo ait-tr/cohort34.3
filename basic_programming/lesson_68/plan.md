@@ -1,4 +1,4 @@
-# Lesson plan No. 67 12/14/2023
+# Lesson plan No. 67 12/15/2023
 
 1. Project - implementation of Java-based information technologies in the family.
    Problematic: the need to track expenses, control expenses.
@@ -58,7 +58,7 @@ Stream API methods for obtaining answers to posed questions.
 
 ___________________________________________
 
-# План занятия №67 14.12.2023
+# План занятия №67 15.12.2023
 
 1. Проект - внедрение информационных технологий на базе Java в семье.
 Проблематика: необходимость отслеживания трат, контроль за расходами.
