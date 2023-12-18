@@ -45,6 +45,7 @@ public class HomeAppl {
                     .forEach(s-> System.out.println(s));
             System.out.println("----------------------------------------------------");
 
+            // ключ - номер квартиры, величина - кол-во жильцов
             Map<Integer,Long>map= list.stream()
                     .collect(Collectors.groupingBy(Resident::getApartNum,Collectors.counting()));
 
@@ -70,6 +71,8 @@ public class HomeAppl {
             System.out.println("Min number of residents living in apartments: " + listMin);
             System.out.println("----------------------------------------------------");
 
+            // ключ - это номер этажа, величина - это кол-во жильцов на этаже
+            // использовать тип Long - обязательно!
             Map<Integer,Long>map1= list.stream()
                     .collect(Collectors.groupingBy(Resident::getFloor,Collectors.counting()));
 
