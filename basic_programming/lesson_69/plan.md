@@ -1,60 +1,48 @@
 # Lesson plan No. 68 12/15/2023
 
-1. Project - implementation of Java-based information technologies in the family.
-   Problematic: the need to track expenses, control expenses.
+1. Discussion of homework:
+- yachts;
+- night temperature;
+- residents of the house.
 
-2. Practice - project implementation:
-- conducting a survey of the informatization object:
-  - primary information (data) - how is it done?
-  - collection and input of information - how does it happen?
-  - the final consumer of the project result?
-- development of an information model:
-  - classes
-  - interfaces
-- thinking and designing UX/UI
-- writing code:
-  - implementation of classes
-  - test design
-  - application development
-
-3. Tasks for independent solution:
-
-**Exercise 1.**
-Create a class "Yacht". The class must store the following information:
-- manufacturer (shipyard);
-- year of issue;
-- length;
-- body material (wood, plastic, metal);
-- price.
-
-You need to create a set of yachts and complete the following tasks:
-- display all yachts;
-- display yachts made from the specified hull material;
-- display yachts more expensive than the specified price;
-- display yachts whose year of manufacture is in a given range;
-- sort yachts in descending order of cost;
-- get the average cost of a yacht from the created set.
+2. Practice using the Stream API
+   **Exercise 1.**
+- create a stream of random integers using stream;
+- print flow elements;
+- How many positive numbers were there in the stream? how many negative?
+- sum all odd elements of the stream;
+- find the maximum number, minimum number;
+- print the values of the summaryStatistic method.
 
 **Task 2.**
-In an array with night temperatures over the past 2 weeks, find out how many times the temperature was below freezing at night.
-On which observation day did the first frost occur? When was the last day like this?
-What was the maximum temperature during the observation period? What day was this?
-What was the minimum temperature during the observation period? What day was this?
-What was the average night temperature during the observation period?
-Were there periods when the minus at night lasted for several days in a row?
+The travel agency specializes in Mediterranean countries - Spain, France, Italy, Greece, Turkey, Tunisia.
+There is a table with data on customer travel during 2020-2023 to the listed countries.
+Each client visited from one to 3 countries, some countries 2 or more times.
+You need to answer the following questions:
+1. Which countries are the most popular?
+2. Which client has visited the most countries?
 
-**Task 3.**
-There is a list of all registered residents of an apartment building in the format:
-Last name, first name, gender, date of birth, floor, apartment number.
-You need to get answers to the following questions:
-- which apartment(s) have the largest number of residents registered?
-- which apartment(s) have the smallest number of residents registered?
-- on which floor(s) are there the largest number of residents?
-- what is the number of minor residents registered in the house?
 
-Create a list of residents in a table editor, export it in csv format,
-import it into objects, create a collection based on these objects, use
-Stream API methods for obtaining answers to posed questions.
+3. Practice - implementation of mini-projects:
+- currency converter:
+  - loads a list of available currencies with rates from a file (the list of currencies is a lot!);
+  - asks the client for the desired currency and how much money he has to exchange;
+  - reports the amount to be issued;
+  - at the end of the session, saves all transactions made to a file, provides a report on the amount
+    exchanges made for each currency separately for purchase and sale.
+
+- documents - archive:
+  - refactoring for new knowledge (JCF, stream).
+
+
+**For independent work:**
+- library:
+  - records the issuance of the book and its return;
+  - collects reviews and ratings of books read from readers.
+
+- family budget;
+
+- calculator of calories eaten per day.
 
 ___________________________________________
 
