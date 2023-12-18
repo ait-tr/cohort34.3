@@ -3,18 +3,18 @@ package family_budget.model;
 import java.util.Objects;
 
 public class Product {
-    private String product;
+    private String prod;
     private double price;
     private int quantity;
 
-    public Product(String product, double price, int quantity) {
-        this.product = product;
+    public Product(String prod, double price, int quantity) {
+        this.prod = prod;
         this.price = price;
         this.quantity = quantity;
     }
 
     public String getProduct() {
-        return product;
+        return prod;
     }
 
     public double getPrice() {
@@ -36,7 +36,7 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "product='" + product + '\'' +
+                "product='" + prod + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
                 '}';
@@ -47,11 +47,11 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product1 = (Product) o;
-        return Double.compare(price, product1.price) == 0 && Objects.equals(product, product1.product);
+        return Double.compare(price, product1.price) == 0 && Objects.equals(prod, product1.prod);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(product, price);
+        return Objects.hash(prod, price);
     }
 }

@@ -1,8 +1,8 @@
 package family_budget.model;
 
 public enum Menu {
-    BUDGET(1, "Budget"),
-    LOAD(2, "Load data"),
+    BUDGET(1, "Add budget"),
+    LOAD(2, "Purchases"),
     STORES(3, "Stores"),
     PERSONS (4, "Persons"),
     PERIOD(5, "Period"),

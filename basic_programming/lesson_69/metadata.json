@@ -1,0 +1,18 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+
+    "code/family_budget/dao/Budget.java",
+    "code/family_budget/dao/BudgetImpl.java",
+    "code/family_budget/model/Menu.java",
+    "code/family_budget/model/Product.java",
+    "code/family_budget/model/Purchase.java",
+    "code/family_budget/BudgetAppl.java"
+
+  ],
+  "video": ""
+}

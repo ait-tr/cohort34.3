@@ -10,15 +10,15 @@ public class Purchase implements Comparable<Purchase>{
     private double totalCost;
     private String store; // поставщик
     private String person;
-    private List<Product> products;
+    // private List<Product> products;
 
-    public Purchase(int id, LocalDate date, double totalCost, String store, String person, List<Product> products) {
+    public Purchase(int id, LocalDate date, double totalCost, String store, String person) {
         this.id = id;
         this.date = date;
         this.totalCost = totalCost;
         this.store = store;
         this.person = person;
-        this.products = products;
+        // this.products = products;
     }
 
     public int getId() {
@@ -41,9 +41,9 @@ public class Purchase implements Comparable<Purchase>{
         return person;
     }
 
-    public List<Product> getProducts() {
-        return products;
-    }
+//    public List<Product> getProducts() {
+//        return products;
+//    }
 
     @Override
     public boolean equals(Object o) {
@@ -66,12 +66,12 @@ public class Purchase implements Comparable<Purchase>{
                 ", totalCost=" + totalCost +
                 ", store='" + store + '\'' +
                 ", person='" + person + '\'' +
-                ", products=" + products +
+                //  ", products=" + products +
                 '}';
     }
 
     @Override
     public int compareTo(Purchase o) {
-        return this.date.compareTo(o.getDate()); // cортировка по дате
+        return this.date.compareTo(o.getDate()); // Сортировка списка покупок по дате
     }
 }

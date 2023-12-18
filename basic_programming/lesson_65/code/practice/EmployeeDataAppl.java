@@ -52,6 +52,4 @@ public class EmployeeDataAppl {
         }
         System.out.println();
     }
-
-
 }
