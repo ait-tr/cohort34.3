@@ -7,80 +7,74 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BudgetImpl implements Budget{
+public class BudgetImpl implements Budget {
     // поля
-    private List<Purchase> purchaseList;
-    private List<Product> productList;
-    private double budget;
+    List<Purchase> purchaseList;
+    double budget;
 
-    public BudgetImpl(List<Purchase> purchaseList, List<Product> productList, double budget) {
-        this.purchaseList = new ArrayList<>(); // HashSet, TreeSet - тоже надо подумать!!!
-        this.productList = new ArrayList<>();
+    public BudgetImpl(List<Purchase> purchaseList, double budget) {
+        this.purchaseList = new ArrayList<>(); // возможен HashSet, ThreeSet
         this.budget = budget;
     }
 
     @Override
     public boolean addPurchase(Purchase purchase) {
-        // нельзя добавить пустую покупку
-        // проверка на уникальность - может быть такой чек был введен?
-        if(purchase == null || purchaseList.contains(purchase)){
-            System.out.println("This purchase already exists.");
+        //проверка на уникальность
+        // не добавлять пустую покупку
+        if (purchase == null || purchaseList.contains(purchase)) {
             return false;
         }
         return purchaseList.add(purchase);
     }
 
     @Override
-    public double calcBudget(List<Purchase> purchaseList) {
+    public double calcBudget() {
         return purchaseList.stream()
-                .mapToDouble(Purchase::getTotalCost)
+                .mapToDouble(Purchase::getCost)
                 .sum();
     }
 
     @Override
-    public double budgetByPerson(List<Purchase> purchaseList, String person) {
+    public double budgetByPerson(String person) {
         return purchaseList.stream()
-                .filter(p -> p.getPerson().equalsIgnoreCase(person))
-                .mapToDouble(Purchase::getTotalCost)
+                .filter(purchase -> purchase.getPerson().equals(person))
+                .mapToDouble(Purchase::getCost)
                 .sum();
-
-         // .peek(n -> System.out.println("peek befor sort: " + n)) // для отлаживания
     }
 
     @Override
-    public double budgetByStore(List<Purchase> purchaseList, String store) {
+    public double budgetByStore(String store) {
         return purchaseList.stream()
-                .filter(p -> p.getStore().equalsIgnoreCase(store))
-                .mapToDouble(Purchase::getTotalCost)
+                .filter(purchase -> purchase.getStore().equals(store))
+                .mapToDouble(Purchase::getCost)
                 .sum();
     }
 
     @Override
     public double budgetByPeriod(LocalDate from, LocalDate to) {
         return purchaseList.stream()
-                .filter(p -> p.getDate().isAfter(from)&&p.getDate().isBefore(to))
-                .mapToDouble(Purchase::getTotalCost)
+                .filter(purchase -> purchase.getDate().isAfter(from) && purchase.getDate().isBefore(to))
+                .mapToDouble(Purchase::getCost)
                 .sum();
     }
 
     @Override
     public double addMoney(double money) {
-        budget = budget + money;
-        return budget;
+        return budget + money;
     }
 
     @Override
-    public boolean checkBudget(List<Purchase> purchaseList) {
-        return budget >= calcBudget(purchaseList);
+    public boolean checkBudget(Purchase purchase) {
+        return budget >= calcBudget();
     }
 
     @Override
-    public double checkMoney(List<Purchase> purchaseList) {
-        return budget - calcBudget(purchaseList);
+    public double checkMoney(Purchase purchase) {
+        return budget - calcBudget();
     }
 
     @Override
     public void printBudget() {
-        System.out.println("Current month budget is: " + budget);
+
     }
 }

@@ -1,0 +1,21 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+
+    "code/homework/home/HomeAppl.java",
+    "code/homework/home/Resident.java",
+    "code/homework/night_temp/NightTemp.java",
+    "code/homework/yachts/NightTemp.java",
+    "code/homework/yachts/Yacht.java",
+    "code/homework/yachts/YachtAppl.java",
+    "/code/practice/numbers_stream/RandomIntStream.java",
+    "/code/practice/tourists/Tourist.java",
+    "/code/practice/tourists/TouristAppl.java"
+
+  ],
+  "video": ""
+}

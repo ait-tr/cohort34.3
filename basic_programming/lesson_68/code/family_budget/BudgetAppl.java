@@ -24,7 +24,7 @@ public class BudgetAppl {
         List<Purchase> purchaseList = new ArrayList<>(); // может лучше HashSet ???
         List<Product> productList = new ArrayList<>(); // - ОК
 
-        BudgetImpl monthBudget = new BudgetImpl(purchaseList, productList, 0);
+        BudgetImpl monthBudget = new BudgetImpl(purchaseList, 0);
         LocalDate now = LocalDate.now();
         String fileName = PATH + "family budget - 2023 - 12.csv";
         int id = 0;
@@ -67,8 +67,8 @@ public class BudgetAppl {
                                 cost = Double.parseDouble(cells[2]);
                                 store = cells[3];
                                 person = cells[4];
-                            Purchase purchase = new Purchase(id, date, cost, store, person);
-                            purchaseList.add(purchase);
+                        //    Purchase purchase = new Purchase(id, date, cost, store, person);
+                        //    purchaseList.add(purchase);
                             str = br.readLine();
                         }
 
@@ -77,8 +77,6 @@ public class BudgetAppl {
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                    double m = monthBudget.calcBudget(purchaseList);
-                    System.out.printf("Total spent in current month: %.2f", m);
                     System.out.println();
                 }
                 case 3 -> {
@@ -87,7 +85,7 @@ public class BudgetAppl {
                     scanner.nextLine();
                     System.out.println("Input store: ");
                     store = scanner.nextLine();
-                    double storeBudget = monthBudget.budgetByStore(purchaseList, store);
+                    double storeBudget = monthBudget.budgetByStore(store);
                     System.out.println("In " + store + " spent: " + storeBudget + " euro.");
                 }
                 case 4 -> {
@@ -97,7 +95,7 @@ public class BudgetAppl {
                     scanner.nextLine();
                     person = scanner.nextLine();
                     System.out.println(person);
-                    double personBudget = monthBudget.budgetByPerson(purchaseList, person);
+                    double personBudget = monthBudget.budgetByPerson(person);
                     System.out.println("The person " + person + " spent: " + personBudget + " euro.");
 
                 }
@@ -121,11 +119,11 @@ public class BudgetAppl {
                 case 6 -> {
                     System.out.println("Cheking...");
                     // вызывать метод и распечатать
-                    boolean isEnough = monthBudget.checkBudget(purchaseList);
-                    System.out.println("Budget enough: " + isEnough);
-
-                    double money = monthBudget.checkMoney(purchaseList);
-                    System.out.printf("Rest of money: %.2f ", money);
+//                    boolean isEnough = monthBudget.checkBudget();
+//                    System.out.println("Budget enough: " + isEnough);
+//
+//                    double money = monthBudget.checkMoney();
+//                    System.out.printf("Rest of money: %.2f ", money);
                     System.out.println();
 
                 }

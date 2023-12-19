@@ -7,18 +7,18 @@ import java.util.Objects;
 public class Purchase implements Comparable<Purchase>{
     private int id;
     private LocalDate date;
-    private double totalCost;
-    private String store; // поставщик
+    private double cost;
+    private String store; // поствщик
     private String person;
-    // private List<Product> products;
+    private List<Product> products;
 
-    public Purchase(int id, LocalDate date, double totalCost, String store, String person) {
+    public Purchase(int id, LocalDate date, double cost, String store, String person, List<Product> products) {
         this.id = id;
         this.date = date;
-        this.totalCost = totalCost;
+        this.cost = calculatePurchaseCost(products);
         this.store = store;
         this.person = person;
-        // this.products = products;
+        this.products = products;
     }
 
     public int getId() {
@@ -29,8 +29,8 @@ public class Purchase implements Comparable<Purchase>{
         return date;
     }
 
-    public double getTotalCost() {
-        return totalCost;
+    public double getCost() {
+        return calculatePurchaseCost(products);
     }
 
     public String getStore() {
@@ -41,21 +41,27 @@ public class Purchase implements Comparable<Purchase>{
         return person;
     }
 
-//    public List<Product> getProducts() {
-//        return products;
-//    }
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public double calculatePurchaseCost(List<Product> productList) {
+        return productList.stream()
+                .mapToDouble(p -> p.getPrice() * p.getQuantity())
+                .sum();
+    }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Purchase purchase = (Purchase) o;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (!(object instanceof Purchase purchase)) return false;
+
         return id == purchase.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return id;
     }
 
     @Override
@@ -63,15 +69,15 @@ public class Purchase implements Comparable<Purchase>{
         return "Purchase{" +
                 "id=" + id +
                 ", date=" + date +
-                ", totalCost=" + totalCost +
+                ", totalCost=" + cost +
                 ", store='" + store + '\'' +
                 ", person='" + person + '\'' +
-                //  ", products=" + products +
+                ", products=" + products +
                 '}';
     }
 
     @Override
     public int compareTo(Purchase o) {
-        return this.date.compareTo(o.getDate()); // Сортировка списка покупок по дате
+        return this.date.compareTo(o.getDate()); // сортировка по датам
     }
 }
