@@ -6,15 +6,8 @@
   "homework": "homework.md",
   "code": [
 
-    "code/homework/home/HomeAppl.java",
-    "code/homework/home/Resident.java",
-    "code/homework/night_temp/NightTemp.java",
-    "code/homework/yachts/NightTemp.java",
-    "code/homework/yachts/Yacht.java",
-    "code/homework/yachts/YachtAppl.java",
-    "/code/practice/numbers_stream/RandomIntStream.java",
-    "/code/practice/tourists/Tourist.java",
-    "/code/practice/tourists/TouristAppl.java"
+    "code/homework/tourists_finished/Tourist.java",
+    "code/homework/tourists_finished/TouristAppl.java"
 
   ],
   "video": ""
