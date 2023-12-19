@@ -1,9 +1,23 @@
-# Lesson plan No. 68 12/15/2023
+# Lesson plan No. 70 12/19/2023
+
+1. Discussion of homework:
+- tourists and countries.
 
 
+2. **Large repetition of THEORY**
+- see the theory section.
+
+
+3. Practice River class:
+- what rivers look like in massifs;
+- how rivers look in ArrayList;
+- how rivers look in HashSet;
+- how rivers look in TreeSet;
+- rivers and Map.
+- 
 ___________________________________________
 
-# План занятия №69 18.12.2023
+# План занятия №70 19.12.2023
 
 1. Обсуждение домашнего задания:
 - туристы и страны.
