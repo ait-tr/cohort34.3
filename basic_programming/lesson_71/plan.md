@@ -48,7 +48,7 @@
 
 - family budget;
 
-- calculator of calories eaten per day.
+- calculator of calories eaten per day food.
 
 ___________________________________________
 
