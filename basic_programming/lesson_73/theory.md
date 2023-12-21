@@ -1,8 +1,47 @@
 
+# Recursion
 
+Recursion is the behavior of a function in which it calls itself.
+In Java, function = method.
+
+A famous joke goes: “To understand recursion, you need to understand recursion.”
+
+To run recursion, you need to get the result when calling a method internally with a different value for the argument(s).
+
+Intuitively, a recursive call is easy to confuse with a loop. Both concepts imply that something is executed several times. But there is a fundamental difference:
+
+in a loop, methods are not called inside previously called ones;
+Recursion is a method that calls itself with other arguments.
+
+In simple words: an instruction with the item “Return to point 1” is a cycle, an instruction with the item “Repeat the instruction again on the next line.” step" - recursion.
+
+Useful article:
+https://blog.skillfactory.ru/glossary/rekursiya/
 
 
 ---------------------------------------------------------------
+
+# Recursion
+
+Рекурсия (recursion) — это поведение функции, при котором она вызывает сама себя.
+В Java функция = метод.
+
+Известная шутка гласит: «Чтобы понять рекурсию, надо понять рекурсию».
+
+Чтобы запустить рекурсию, нужно получить результат при вызове метода внутри себя с другим значением аргумента(ов).
+
+На интуитивном уровне рекурсивный вызов легко перепутать с циклом. И то, и другое понятие подразумевает что что-то выполняется несколько раз. Но есть принципиальное различие:
+
+в цикле методы не вызываются внутри вызванных ранее;
+рекурсия же — это метод, вызывающий сам себя с другими аргументами.
+
+Простыми словами: инструкция с пунктом «Вернись к пункту 1» — это цикл, инструкция с пунктом «Повторяй выполнять инструкцию заново на сл. шаге» — рекурсия.
+
+Полезная статья:
+https://blog.skillfactory.ru/glossary/rekursiya/
+
+===================================================================================
+
 # Теория за весь курс - повторение
 
 ## Системы счисления
@@ -15,7 +54,7 @@
 
 8 - ая:
 восьмиричная, 8, остатки от деления: 0, 1, 2, ... , 7
-8 = 10
+8(10) = 10(8)
 
 16 - ая:
 шеснадцатиричная, 16, 0, 1, 2, ... , 9 , A, B, С, D..., F
@@ -28,7 +67,7 @@
 ## Примитивные типы данных
 int, byte, short, long, float, double, char, boolean
 
-При объявлении каждой переменной, метод необходимо объявить ТИП.
+При объявлении каждой переменной, метод необходимо объявить ее ТИП.
 
 ## Методы
 - СИГНАТУРА метода
@@ -43,13 +82,12 @@ int, byte, short, long, float, double, char, boolean
 
 ## Условие, тернарный оператор, switch case
 if(),if() {} else {}
-помогает очень сильно сократить код и простое условие
+помогает сильно сократить код и должно быть простое условие
 пример: ...
 
 switch case - организует код, когда множественный выбор  
 
 ## Циклы - while, do while, for
-
 
 
 ## Массивы 
@@ -80,16 +118,15 @@ arr.length - длина, кол-во элементов
 - абстракция (абстрагируемся от конкретики, выделяем общие свойства объектов, берем только то, что нам надо...)
 
 
-## Что такое класс и т.д.
-
+## Что такое класс, объекты, конструктор и т.д.
 
 
 ## Абстрактные классы
-- на базе абстрактного класса нельзя создавать конкретные объекты, объекты - только в дочерних классах 
+- на базе абстрактного класса нельзя создавать объекты, объекты создаются - в дочерних классах. 
 
 
 ## Интерфейсы
-- только абстрактные методы (нет тела).
+- содержат только абстрактные методы (нет тела).
 
 
 ## Классы-обертки

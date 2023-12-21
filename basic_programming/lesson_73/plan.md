@@ -1,35 +1,30 @@
-# Lesson plan No. 70 12/19/2023
+# Lesson plan No. 73 12/22/2023
 
-1. Discussion of homework:
-- tourists and countries.
-
-
-2. **Large repetition of THEORY**
+1. **Large repetition of THEORY**
 - see the theory section.
 
+2.Recursion:
 
-3. Practice River class:
-- what rivers look like in massifs;
-- how rivers look in ArrayList;
-- how rivers look in HashSet;
-- how rivers look in TreeSet;
-- rivers and Map.
-- 
+- the robot walks;
+- GCD using the Euclidean algorithm;
+- Square root;
+- we calculate the factorial;
+- expand the array;
+- calculate the sum of the array.
+
 ___________________________________________
 
-# План занятия №70 19.12.2023
+# План занятия №73 22.12.2023
 
-1. Обсуждение домашнего задания:
-- туристы и страны.
-
-
-2. **Большое повторение ТЕОРИИ**
+1. **Большое повторение ТЕОРИИ**
 - см. раздел теория.
 
 
-3. Практика класс River:
- - как реки выглядят в массивах;
- - как реки выглядят в ArrayList;
- - как реки выглядят в HashSet;
- - как реки выглядят в TreeSet;
- - реки и Map'ы.
+2. **Recursion:**
+
+ - робот шагает;
+ - НОД по алгоритму Евклида;
+ - квадратный корень;
+ - считаем факториал;
+ - разворачиваем массив;
+ - считаем сумму массива.
