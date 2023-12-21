@@ -6,19 +6,6 @@
   "homework": "homework.md",
   "code": [
 
-    "code/practice/DrawAppl.java",
-    "code/projects/group1_archive/dao/Archive.java",
-    "code/projects/group1_archive/dao/ArchiveImpl.java",
-    "code/projects/group1_archive/model/Documents.java",
-    "code/projects/group1_archive/model/Menu.java",
-    "code/projects/group1_archive/tests/ArchiveImplTest.java",
-    "code/projects/group1_archive/ArchiveAppl.java",
-    "code/projects/group5_archive/dao/Archive.java",
-    "code/projects/group5_archive/dao/ArchiveImpl.java",
-    "code/projects/group5_archive/model/Document.java",
-    "code/projects/group5_archive/model/Menu.java",
-    "code/projects/group5_archive/test/ArchiveImplTest.java",
-    "code/projects/group5_archive/ArchiveAppl.java"
 
   ],
   "video": ""
