@@ -1,0 +1,3 @@
+Currency Code,Amount in Euro
+BTC,37170.18
+GBP,-1367.9999999999998

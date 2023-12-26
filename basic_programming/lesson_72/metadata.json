@@ -24,7 +24,24 @@
     "code/projects/group2_calorie/сalorie/model/CalorieEntry.java",
     "code/projects/group2_calorie/сalorie/model/Menu.java",
     "code/projects/group2_calorie/сalorie/model/Product.java",
-    "code/projects/group2_calorie/сalorie/CalcCalorieAppl.java"
+    "code/projects/group2_calorie/сalorie/CalcCalorieAppl.java",
+    "code/projects/group3_currency_exchange/dao/CurrencyConverter.java",
+    "code/projects/group3_currency_exchange/dao/CurrencyConverterImpl.java",
+    "code/projects/group3_currency_exchange/model/Currency.java",
+    "code/projects/group3_currency_exchange/model/Menu.java",
+    "code/projects/group3_currency_exchange/tests/CurrencyConverterTest.java",
+    "code/projects/group3_currency_exchange/Currency .csv",
+    "code/projects/group3_currency_exchange/CurrencyAppl.java",
+    "code/projects/group3_currency_exchange/test_transactions.txt",
+    "code/projects/group3_currency_exchange/transaktion.txt",
+    "code/projects/group4_family_budget/dao/Budget.java",
+    "code/projects/group4_family_budget/dao/BudgetImpl.java",
+    "code/projects/group4_family_budget/model/Menu.java",
+    "code/projects/group4_family_budget/model/Product.java",
+    "code/projects/group4_family_budget/model/Purchase.java",
+    "code/projects/group4_family_budget/BudgetAppl.java",
+    "code/projects/group4_family_budget/Family-budget.csv",
+    "code/projects/group4_family_budget/products.csv"
 
   ],
   "video": ""

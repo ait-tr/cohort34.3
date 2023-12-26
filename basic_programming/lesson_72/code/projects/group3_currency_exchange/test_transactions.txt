@@ -1,0 +1,3 @@
+Currency Code,Amount in Euro
+BTC,4127.844
+ETH,-11001.0
