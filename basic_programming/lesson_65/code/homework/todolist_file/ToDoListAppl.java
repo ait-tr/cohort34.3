@@ -65,6 +65,9 @@ public class ToDoListAppl implements Serializable{
                     try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("./basic_programming/lesson_65/code/homework/todolist_file/dest/todolist.dat"))) {
                         List<Task> readTasks = (List<Task>) ois.readObject();
                         System.out.println("Прочитанный список: " + readTasks);
+                        for (Task t: readTasks) {
+                            toDoList.addTask(t);
+                        }
                     } catch (IOException | ClassNotFoundException e) {
                         e.printStackTrace();
                     }
