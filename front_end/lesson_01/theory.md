@@ -1,4 +1,4 @@
-[Ссылка на презентацию](https://github.com/ait-tr/cohort34.3/blob/main/front-end/lesson_1/presentation.pdf)
+[Ссылка на презентацию](https://github.com/ait-tr/cohort34.3/blob/main/front_end/lesson_01/presentation.pdf)<br />
 **HTML, tags, elements**
 
 
