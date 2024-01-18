@@ -3,8 +3,9 @@
   "homework": "homework.md",
   "theory": "theory.md",
   "code": [
-    "./code/lesson_7_hw/index.html",
-    "./code/lesson_7_hw/style/style.css",
+    "./code/lesson_8_hw/index.html",
+    "./code/lesson_8_hw/style/style.css",
+    "./code/lesson_8_hw/script/script.css",
     "./code/index.html",
     "./code/style/style.css",
     "./code/script/script.css"
