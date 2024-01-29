@@ -1,0 +1,91 @@
+.target{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    /* transition - стили, которые анимируем */
+    transition: background-color, 
+                width;
+    /* transition-duration - продолжительность анимации */
+    transition-duration: 0.5s;
+    /* transition-timing-function - функция анимации */
+    transition-timing-function: cubic-bezier(0.74, -0.75, 0, 2.22);
+}
+
+/* 
+    указание псевдокласса hover
+    отрабатывает при наведении на элемент курсора
+*/
+
+.target:hover{
+    background-color: darkblue;
+    width: 400px;
+}
+
+/* 
+    реализуйте процесс, который при наведении на target 
+    изменит его ширину на 400px
+
+*/
+
+
+/* 0.0     0.1     0.2     0.3     0.4     0.5     0.6     0.7     0.8     0.9     1.0
+
+0       5      10      16      22      35      45      75      88      99      100 */
+
+
+.topic{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+    /* скрывать все выходящие дочерние элементы по "y" */
+    overflow-y: hidden;
+    /* указание тени  */
+    box-shadow: 5px 5px 15px black;
+    transition: box-shadow 0.5s;
+}
+
+.topic:hover{
+    /* указание тени  */
+    box-shadow: 5px 5px 25px black;
+}
+
+.topic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topic .description{
+    /* распологаем элемент относительно .topic*/
+    position: absolute;
+    /* цвет заднего фона */
+    background-color: rgba(236, 240, 241,0.8);
+    /* прижимаем к нижнему краю */
+    bottom: 0;
+    /* прижимаем к левому краю */
+    left: 0;
+    /* обнуление отступа для .description */
+    margin: 0;
+    /* внутренний отступ */
+    padding: 5px;
+    /* сдвигаем текст на корпус вниз */
+    transform: translateY(100%);  
+    /* анимация процесса */
+    transition: transform 0.5s;
+    /* задержка анимации */
+    transition-delay: 1.2s;
+}
+
+/* 
+стили применяться к .description, который находится
+в .topic, на который навели курсор
+*/
+.topic:hover .description{
+    /* 
+    возвращаем текст в исходное положение
+    */
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
