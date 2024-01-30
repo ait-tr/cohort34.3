@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+}
+
+.product{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 40px 10px;
+    position: relative;
+}
+
+.product.new::after{
+    content: "NEW";
+    position: absolute;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.product.info::before{
+    content: "INFO";
+    position: absolute;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+.hidden_image{
+    width: 350px;
+    height: 350px;
+    box-shadow: 5px 5px 15px black;
+    position: relative;
+    margin: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hidden_image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.hidden_image::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width, height;
+    transition-duration: 2s;
+    background-color: #487eb0;
+}
+
+.hidden_image:hover::after{
+    width: 0;
+    height: 0;
+}
+
+.field input{
+    width: 100px;
+    height: 100px;
+}
+
+.field input{
+    display: none;
+}
+
+
+
+.field label{
+    display: block;
+    width: 80px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #dddddd;
+    transition: background 0.5s;
+    position: relative;
+}
+
+.field label::after{
+    content: "";
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    transition: left 0.5s;
+    left: 4px;
+    top: 4px;
+}
+
+
+.field input:checked+label{
+    background-color: #6fde5f;
+}
+
+.field input:checked+label::after{
+    left: 34px;
+}
+
+/* 
+ссылка на label, который идет после 
+чекбокса, у которого стоит галочка
+*/
+
+/* .field input:checked+label{
+    background-color: darkred;
+} */
+
+/* .target{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.target p{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+} */
+
+
+/* .target a+p{
+    background-color: aquamarine;
+} */
