@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img_container{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 100px;
+}
+
+.img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 
+класс, который отработает
+при нажатии на элемент
+*/
+.img_container{
+    position: relative;
+}
+/* указали псевдоэлемент вне зависимости от класса clicked */
+.img_container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* полная прозрачность */
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: #95afc0;
+}
+
+/* когда у элемента есть класс clicked, то элемент не прозрачный*/
+.img_container.clicked::after{
+    opacity: 1;
+}
+
+
+.photos{
+    width: 500px;
+    margin: 50px auto;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small_cards img{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+    border-radius: 30px;
+    transition: border-radius 0.5s;
+}
+
+.small_cards img.selected{
+    border-radius: 0;
+}
+
+/* 
+CSS: добавить класс  selected, который обнуляет border-radius
+JS: при нажатии на маленькую картинку присвоить этот класс этой картинке
+*/
+
+
+.small_cards img:hover{
+    opacity: 1;
+}
+
+.small_cards img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.big_card{
+    border: 2px solid black;
+    height: 340px;
+    width: 340px;
+}
+
+/* 
+все картинки по умолчанию должны быть с прозрачностью 0.7
+когда мы наводим курсором на картинку прозрачность должна стать 1
+*/
