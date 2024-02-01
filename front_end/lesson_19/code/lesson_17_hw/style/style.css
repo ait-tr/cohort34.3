@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.checkbox_1{
+    margin: 50px;
+}
+
+.checkbox_1 #chb_1{
+    display: none;
+}
+
+.checkbox_1 .label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 10px;
+    color: #B5B5B5;
+}
+
+#chb_1:checked+label .label{
+    color: #9FE1A1;
+}
+
+.checkbox_1 .label.left{
+    left: 5px;
+}
+.checkbox_1 .label.right{
+    right: 5px;
+}
+
+
+.checkbox_1 label{
+    display: block;
+    width: 60px;
+    height: 20px;
+    border: 2px solid #848484;
+    position: relative;
+    transition: border-color 0.5s;
+}
+
+.checkbox_1 label::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #848484;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: background-color, left;
+    transition-duration: 0.5s;
+}
+
+#chb_1:checked+label::after{
+    left: 50%;
+    background-color: #4BCA59;
+}
+
+#chb_1:checked+label{
+    border-color: #4BCA59;
+}
+
+
+/* 
+    1) ссылается на псевдоэлемент after у label
+    2) который идет после чекбокса chb_1
+    3) у которого статус checked  
+*/

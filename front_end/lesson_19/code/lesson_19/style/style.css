@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text_container{
+    width: 700px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.current_text{
+    min-height: 400px;
+    border: 2px solid black;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
