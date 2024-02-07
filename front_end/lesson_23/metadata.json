@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "theory": "theory.md",
+  "code": [
+    "./code/lesson_21_hw/index.html",
+    "./code/lesson_21_hw/script/script.js",
+    "./code/lesson_21_hw/style/style.css",
+    "./code/lesson_22_hw/index.html",
+    "./code/lesson_22_hw/public/script.js",
+    "./code/lesson_22_hw/src/script.ts",
+    "./code/lesson_22_hw/tsconfig.json",
+    "./code/lesson_23/index.html",
+    "./code/lesson_23/public/script.js",
+    "./code/lesson_23/src/script.ts",
+    "./code/lesson_23/tsconfig.json"
+  ],
+  "video": "",
+  "etc": ""
+}
