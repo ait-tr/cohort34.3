@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "theory": "theory.md",
+  "code": [
+    "./code/lesson_23_hw/index.html",
+    "./code/lesson_23_hw/public/script.js",
+    "./code/lesson_23_hw/src/script.ts",
+    "./code/lesson_23_hw/tsconfig.json",
+    "./code/lesson_24/app/public/index.html",
+    "./code/lesson_24/app/src/App.tsx",
+    "./code/lesson_24/app/src/index.tsx",
+    "./code/lesson_24/app/.gitignore",
+    "./code/lesson_24/app/package.json",
+    "./code/lesson_24/app/.tsconfig.json"
+  ],
+  "video": "",
+  "etc": ""
+}
