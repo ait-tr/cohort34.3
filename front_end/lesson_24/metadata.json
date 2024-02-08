@@ -10,9 +10,7 @@
     "./code/lesson_24/app/public/index.html",
     "./code/lesson_24/app/src/App.tsx",
     "./code/lesson_24/app/src/index.tsx",
-    "./code/lesson_24/app/.gitignore",
-    "./code/lesson_24/app/package.json",
-    "./code/lesson_24/app/.tsconfig.json"
+    "./code/lesson_24/app/tsconfig.json"
   ],
   "video": "",
   "etc": ""
