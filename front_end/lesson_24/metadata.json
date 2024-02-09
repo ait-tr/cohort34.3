@@ -7,10 +7,10 @@
     "./code/lesson_23_hw/public/script.js",
     "./code/lesson_23_hw/src/script.ts",
     "./code/lesson_23_hw/tsconfig.json",
-    "./code/lesson_24/app/public/index.html",
-    "./code/lesson_24/app/src/App.tsx",
-    "./code/lesson_24/app/src/index.tsx",
-    "./code/lesson_24/app/tsconfig.json"
+    "./code/app/public/index.html",
+    "./code/app/src/App.tsx",
+    "./code/app/src/index.tsx",
+    "./code/app/tsconfig.json"
   ],
   "video": "",
   "etc": ""
