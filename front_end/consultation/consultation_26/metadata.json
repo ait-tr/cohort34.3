@@ -1,0 +1,7 @@
+{
+  "code": [
+    "./code/name-surname-vanilla/index.html",
+    "./code/name-surname-vanilla/public/script.js",
+    "./code/name-surname-react/src/App.tsx"
+  ]
+}
