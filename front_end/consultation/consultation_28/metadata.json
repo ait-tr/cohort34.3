@@ -1,0 +1,8 @@
+{
+  "code": [
+    "./code/src/App.tsx",
+    "./code/src/components/PicturesList/PicturesList.tsx",
+    "./code/src/components/PictureItem/PictureItem.tsx",
+    "./code/src/components/PictureForm/PictureForm.tsx"
+  ]
+}
