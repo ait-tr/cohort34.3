@@ -1,0 +1,21 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "theory": "theory.md",
+  "code": [
+    "./code/app/public/index.html",
+    "./code/app/src/components/AddStudent/AddStudent.tsx",
+    "./code/app/src/components/AddStudent/style.module.css",
+    "./code/app/src/components/StudentList/StudentList.tsx",
+    "./code/app/src/components/StudentList/style.module.css",
+    "./code/app/src/components/StudentItem/StudentItem.tsx",
+    "./code/app/src/components/StudentItem/style.module.css",
+    "./code/app/src/types/index.d.ts",
+    "./code/app/src/types/Student.ts",
+    "./code/app/src/App.tsx",
+    "./code/app/src/index.tsx",
+    "./code/app/src/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}
