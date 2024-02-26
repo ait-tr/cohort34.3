@@ -70,4 +70,4 @@ StudentID  Name   Tel   Course1  Date1       TeacherId1  TeachersName1  Course2 
 1          John          Java   20/02/2024   1           Black           JavaScript   23/02/2024  2     White
 2          Sam    12345  DBase  21/02/2024   2           White
                   98765         22/02/2024
-3          Bill          Java                1           Black                  
+3          Bill          Java                1           Black
