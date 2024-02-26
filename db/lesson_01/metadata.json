@@ -3,7 +3,6 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "./code/lesson1.txt"
-
+    "lesson1.txt"
   ]
 }
