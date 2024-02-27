@@ -2,7 +2,7 @@
 
 1. Homework:
 - volume and surface area of the cube;
-- area of ​​a triangle;
+- area of a triangle;
 - natural and prime numbers - what are they?
 
 2. New theme:
