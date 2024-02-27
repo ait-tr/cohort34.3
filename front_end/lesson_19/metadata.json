@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/lesson_17_hw/index.html",
+    "./code/lesson_17_hw/style/style.css",
+    "./code/lesson_17_hw/script/script.js",
+    "./code/lesson_18_hw/index.html",
+    "./code/lesson_18_hw/style/style.css",
+    "./code/lesson_18_hw/script/script.js",
+    "./code/lesson_19/index.html",
+    "./code/lesson_19/style/style.css",
+    "./code/lesson_19/script/script.js"
+  ],
+  "video": "",
+  "etc": ""
+}

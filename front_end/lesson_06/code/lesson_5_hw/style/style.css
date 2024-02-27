@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.posts{
+    margin: 100px 0;
+}
+
+.post{
+    border: 2px solid black;
+    margin: 40px;
+    padding: 40px;
+    position: relative;
+}
+
+.post h2{
+    margin-bottom: 20px;
+}
+
+.post .text{
+    max-width: 700px;
+}
+
+.post .close{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.post .mark{
+    padding: 5px 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+.up-btn{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}

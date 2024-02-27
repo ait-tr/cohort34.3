@@ -1,0 +1,73 @@
+Реляционные базы данных
+
+Данные в реляционных базах организованы в виде взаимосвязанных таблиц.
+Данные должны удовлетворять следующим критериям:
+1. Отсутствие дубликатов ( не может быть двух одинаковых строчек)
+2. Данные для данной колонки должны быть типа, формата и диапазона соответствующего этому
+    типу данных
+3. Данные из строк, которые используются другими записями не могут быть просто так удалены
+
+Отношения между сущностями в реляционной базе данных могут быть такими :
+
+1. One-to-One Relationship
+Одна запись из таблицы слева соответствует одной записи таблицы справа
+
+2. One-to-Many Relationship
+3.Many-to-One
+4.Many-to-Many
+
+Язык управления базой данных состоит из след частей:
+DDL (Data Definition Language) - используется для создания таблиц, индексов, ограничений и т.д.
+DML ( Data Manipulation Language) - используется для доступа и обработки данных в базе
+DCL (Data Control Language) -для извлечения данных
+
+Принципы проектирования баз данных
+1. Определить сущностей и атрибутов, хранящихся в базе данных и составление таблиц
+2. Разделение сложных атрибутов на простые
+3. Определить уникальные идентификаторы в строках
+4. Определить отношения между таблицами
+5. Нормализация базы данных
+
+Пусть есть такая и информация:
+John attends Java course, which is taught by teacher Black
+Sam attends Java course, which is taugth by teacher Black
+John attends JavaScript course taught by assistant teacher White
+Sam's email sam@email.com and phone number +499876509
+
+Student: name, course, email, tel
+Teacher: name, position, course
+Course:  course name, teacher name, student name
+
+Ключи (Keys) -  способ идентифицировать строку  в таблице
+Виды ключей:
+Superkey -  несколько (либо один) столбцов, которые/который однозначно определяет строку таблицы
+
+Employee: name, secondName, year, phone
+
+primary key ( первичный ключ) -  непосредственно применяется для идентификации строк в таблице.
+Он должен:
+1. быть уникальным
+2. должен всегда присутствовать и иметь значение
+3. Лучше всего если его значение не меняется
+
+Внешний ключ ( foreign key) -  один (или несколько) столбцов из одной таблицы, который также
+присутствует в другой таблице
+
+Нормализация :
+1ая(1NF) нормальная форма означает что сохраняемые данные в ячейках не должны быть множественными, а таблицы
+не должны содержать повторяющиеся строчки
+2(2NF) норм. форма означает, что кажды столбец, который не является ключом должен зависеть от первичного ключа
+3 (3NF) норм.форма означает, что каждый столбец должен зависеть только от певичного ключа
+
+John attends Java course, taught by Black. Date 20/02/2024
+Sam attends  DBase course, taught by White. Date 21/02/2024
+Bill attends Java course, taught by Black. Date 22/02/2024
+John attends JavaScript course, taught by White. Date 23/02/2024
+Sam has two phone numbers 12345 and 98765
+
+Tab1 StudentsAndCourses
+StudentID  Name   Tel   Course1  Date1       TeacherId1  TeachersName1  Course2       Date       TId2 TeacherName2
+1          John          Java   20/02/2024   1           Black           JavaScript   23/02/2024  2     White
+2          Sam    12345  DBase  21/02/2024   2           White
+                  98765         22/02/2024
+3          Bill          Java                1           Black

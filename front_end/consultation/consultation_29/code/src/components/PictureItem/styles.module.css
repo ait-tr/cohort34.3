@@ -1,0 +1,10 @@
+.pictureCard {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlighted {
+  border: 1px solid gold;
+}

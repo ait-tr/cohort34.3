@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    padding: 60px 30px;
+}
+
+#main-info{
+    background-color: #ecf0f1;
+}
+
+#main-info h1{
+    margin-bottom: 50px;
+}
+
+#main-info .images{
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    width: 500px;
+    background-color: white;
+}
+
+#main-info .images img{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    object-fit: contain;
+}
+
+#health{
+    background-color: #16a085;
+}
+
+#health img{
+    height: 300px;
+    margin: 50px 0;
+}
+
+#health p{
+    width: 400px;
+}
+
+#types{
+    background-color: #c7ecee;
+}
+
+#types ul{
+    margin: 40px 0;
+    padding-left: 40px;
+    list-style-image: url("../media/fire.png");
+}
+
+#types li{
+    margin: 10px 0;
+}

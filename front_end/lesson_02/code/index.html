@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Добавление нового продукта</h2>
+    <form method="post">
+        <label>
+            <p>Название продукта:</p>
+            <input type="text" name="name" placeholder="Велосипед...">
+        </label>
+        <label>
+            <p>Цена:</p>
+            <input type="number" min="0" step="0.1" name="price" placeholder="10 000">
+        </label>
+        <label>
+            <p>Кол-во:</p>
+            <input type="number" min="0" max="10" name="count" placeholder="Не более 10">
+        </label>
+        <label>
+            <p>Категория:</p>
+            <select name="category">
+                <option value="sport">спорт</option>
+                <option value="house">дача</option>
+                <option value="home">дом</option>
+                <option value="hobby">хобби</option>
+                <option value="gift">подарки</option>
+            </select>
+        </label>
+
+        <label>
+            <p>Описание:</p>
+            <textarea name="description" placeholder="Расскажите про товар"></textarea>
+        </label>
+        <button>Отправить</button>
+    </form>
+    
+    <h2>Форма аутентификации</h2>
+    <form>
+        <label>
+            <p>Имя пользователя:</p>
+            <input type="text" name="name" placeholder="Укажите имя">
+        </label>
+        <label>
+            <p>Пароль пользователя:</p>
+            <input type="password" name="password" placeholder="Укажите пароль">
+        </label>
+        <button>Войти</button>
+    </form>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="body" placeholder="body">
+        <input type="number" name="userId" placeholder="userId">
+        <button>Отправить</button>
+    </form>
+</body>
+</html>

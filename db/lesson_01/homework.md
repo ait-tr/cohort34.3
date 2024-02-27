@@ -1,0 +1,1 @@
+Установить PostgreSQL   https://www.postgresql.org/download/ 
