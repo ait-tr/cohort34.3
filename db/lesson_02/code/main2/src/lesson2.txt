@@ -1,0 +1,59 @@
+SQL (Structured Query Language) -
+язык управления базами данных
+
+создание базы данных  CREATE DATABASE
+удаление базы данныз DROP DATABASE
+
+создание таблицы:
+
+CREATE TABLE table_name
+( column_name1 data_type atributes,
+  column_name2 data_type atributes,
+  ...
+  column_nameN data_type atributes);
+
+удаление таблицы:
+DROP TABLE table_name;
+
+Основные типы данных:
+
+несколько осн. числовых типов данных
+- SERIAL - автоматически увеличивающееся число (4 байта). Как правило используется
+    для определения идентификатора строки
+- INTEGER
+-NUMERIC - числа с запятой. принимает 2 параметра
+        - precision - кол.цифр в числе и
+        - scale - кол-во цифр после запятой
+        65.4567
+
+        Id SERIAL
+        weight NUMERIC(5,2)
+
+ Символьные типы:
+ character(n) - строка фиксированного кол-ва символов  char(n)
+ character varying(n)   - строка переменной длины. n - макс.кол-во символов varchar(n)
+ text
+
+Для работы с временем:
+time
+date
+timestamp
+timestamp  с временной зоной
+yyyy-mm-dd-2024-02-27
+
+Логический тип
+boolean
+TRUE, t, y, yes, 1
+FALSE f  n no off 0
+
+Ограничения:
+UNIQUE -столбец должен иметь уникальные значения
+NOT NULL -  не допускаются отсутствие значений в столбце
+DEFAULT - значение столбца по умолчанию
+CHECK -  ограничивает диапазон значений
+
+Добавление данных
+INSERT INTO table_name(column1,column2,...)
+VALUES( .....,...., ...
+
+
