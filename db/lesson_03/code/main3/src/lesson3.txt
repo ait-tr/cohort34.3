@@ -1,0 +1,46 @@
+--Distinct  выбрать уникальные значения
+--SELECT DISTINCT company FROM computers;
+--сортировка
+--SELECT name, price, company
+--FROM computers
+--ORDER BY company, name;
+
+--диапазон
+--SELECT * FROM computers
+--ORDER BY company
+--LIMIT 2;
+
+--In
+--SELECT * FROM computers
+--WHERE  company IN ('Lenovo','HP')
+--LIMIT 2;
+
+--Like
+--SELECT * FROM computers
+--WHERE name LIKE 'notebookL%';
+
+-- вычисление значения
+--AVG
+--SELECT AVG(price) AS average FROM computers
+--WHERE company = 'Lenovo'
+
+-- count
+--SELECT COUNT(*) FROM computers;
+--SELECT COUNT(DISTINCT company) FROM computers;
+
+-- Min Max
+--SELECT MAX(price) FROM computers;
+
+--Sum
+SELECT SUM(numberofproducts) FROM computers;
+
+SELECT COUNT(*) AS computersTypes,
+		SUM(numberofproducts)AS Total,
+		MIN(price)AS min_price,
+		AVG(price)AS average
+FROM computers;
+
+
+
+
+
