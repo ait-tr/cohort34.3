@@ -1,0 +1,212 @@
+/*
+ Группировка данных
+ GROUP BY
+ HAVING
+
+ SELECT columns
+ FROM table
+ WHERE condition for lines
+ GROUP BY columns
+ HAVING condition for groups
+ ORDER BY columns
+
+--SELECT * FROM computers;
+
+SELECT company, COUNT(*) AS Counter
+FROM computers
+GROUP BY company
+HAVING COUNT(*) > 1;
+
+SELECT COUNT(company)
+FROM computers
+WHERE company = 'Lenovo';
+*/
+-- Внешние ключи Foreign Keys
+/*
+
+REFERENCES table_name(column)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+*/
+/*CREATE TABLE Students
+(
+	Id SERIAL PRIMARY KEY,
+	Age INTEGER,
+	name VARCHAR(15) NOT NULL
+);
+*/
+
+/*CREATE TABLE Notebooks
+(
+	Id Serial PRIMARY KEY,
+	StudentId INTEGER --REFERENCES Students(Id),
+	brand VARCHAR(20)
+	FOREIGN KEY(StudentId) REFERENCES Students(Id)
+);
+
+
+CASCADE - удаляет соответствующую строку из зависимой таблицы при удалении связанной
+строки в главной
+RESTRICT - запрещает какие-либо действия в зависимой таблице при удалении строки в главной
+NO ACTION - тоже что RESTRICT  но генерирует ошибку
+SET NULL - устанавливает для соотв. столбца внешнего ключа значение NULL
+SET DEFAULT
+
+
+CREATE TABLE Notebooks
+(
+	Id Serial PRIMARY KEY,
+	StudentId INTEGER, --REFERENCES Students(Id),
+	brand VARCHAR(20),
+	FOREIGN KEY(StudentId) REFERENCES Students(Id) ON DELETE CASCADE
+);
+
+-- array
+CREATE TABLE books(
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(40),
+	author VARCHAR(30),
+	contents VARCHAR(15)[]
+);
+INSERT INTO books(title,author,contents)
+VALUES( 'The Lord of the Rings','Tolkien','{"Chapter1","Chapter2","Chapter3"}');
+
+UPDATE books
+SET contents = '{"Chapter1","Chapter2","Chapter3"}'
+WHERE id = 1;
+
+SELECT contents FROM books;
+
+
+--Поменять значение конкретного элемента
+UPDATE books
+SET contents[2]='Chapter new'
+WHERE id = 1;
+
+SELECT contents FROM books;
+
+*/
+--Соединение таблиц
+/*
+CREATE TABLE Products
+(
+	Id SERIAL PRIMARY KEY,
+	name VARCHAR(45) NOT NULL,
+	Brand VARCHAR(25) NOT NULL,
+	ProductQuantity INTEGER DEFAULT 0,
+	Price INTEGER NOT NULL
+);
+
+
+
+CREATE TABLE Clients
+(
+	Id SERIAL PRIMARY KEY,
+	FirstName VARCHAR(10) NOT NULL
+);
+*/
+/*
+CREATE TABLE Orders
+(
+	Id SERIAL PRIMARY KEY,
+	ProductId INTEGER NOT NULL REFERENCES Products(Id) ON DELETE CASCADE,
+	ClientId INTEGER NOT NULL REFERENCES Clients(Id) ON DELETE CASCADE,
+	DateCreated DATE NOT NULL,
+	ProductQuantity INTEGER DEFAULT 1,
+	Price NUMERIC NOT NULL
+);
+*/
+
+/*INSERT INTO Products(name,brand,productQuantity,price)
+VALUES
+('Macbook X','Apple',2,2000),
+('Macbook Y','Apple',2,1800),
+('LenovoNote1','Lenovo',4,1200),
+('LenovoNote2','Lenovo',1,1500),
+('HPDesk','HP',7 ,900);
+
+INSERT INTO Clients(FirstName)
+VALUES
+('John'),
+('Bill'),
+('Sam');
+*/
+
+/*CREATE TABLE Orders
+(
+	Id SERIAL PRIMARY KEY,
+	ProductId INTEGER NOT NULL REFERENCES Products(Id) ON DELETE CASCADE,
+	ClientId INTEGER NOT NULL REFERENCES Clients(Id) ON DELETE CASCADE,
+	DateCreated DATE NOT NULL,
+	ProductQuantity INTEGER DEFAULT 1,
+	Price NUMERIC NOT NULL
+);
+*/
+/*
+INSERT INTO Orders(ProductId, ClientId, DateCreated, ProductQuantity, Price)
+ VALUES
+ (
+	 (SELECT Id FROM Products WHERE name ='LenovoNote1'),
+	 (SELECT Id FROM Clients WHERE firstname ='John'),
+	 '2024-02-27',
+	 2,
+	 (SELECT Price FROM Products WHERE name ='LenovoNote1')
+ ),
+
+ (
+	 (SELECT Id FROM Products WHERE name ='Macbook Y'),
+	 (SELECT Id FROM Clients WHERE firstname ='John'),
+	 '2024-02-28',
+	 1,
+	 (SELECT Price FROM Products WHERE name ='Macbook Y')
+ ),
+
+ (
+	 (SELECT Id FROM Products WHERE name ='Macbook X'),
+	 (SELECT Id FROM Clients WHERE firstname ='Bill'),
+	 '2024-02-29',
+	 1,
+	 (SELECT Price FROM Products WHERE name ='Macbook X')
+ );
+
+
+SELECT C.FirstName,P.name, O.DateCreated
+FROM Orders AS O,Clients AS C,Products AS P
+WHERE O.ClientId = C.Id AND O.ProductId = P.Id;
+*/
+
+--JOINs
+
+-- INNER JOIN
+/*
+SELECT columns
+FROM table1
+   JOIN table2
+   ON condition
+
+
+SELECT O.DateCreated,C.FirstName,P.name
+FROM Orders AS O
+JOIN Products AS P
+ON P.Id = O.ProductId
+JOIN Clients AS C
+ON C.Id = O.ClientId
+WHERE P.Price > 1200
+ORDER BY C.FirstName;
+*/
+
+--LEFT/RIGHT JOIN
+
+/*INNER JOIN
+SELECT FirstName,DateCreated,ProductQuantity,Price
+FROM Clients JOIN Orders
+ON Orders.ClientId = Clients.Id;
+
+-- LEFT JOIN
+SELECT FirstName,DateCreated,ProductQuantity,Price
+FROM Clients LEFT JOIN Orders
+ON Orders.ClientId = Clients.Id;
+*/
+--RIGHT JOIN
+SELECT FirstName,DateCreated,ProductQuantity,Price
+FROM Orders,Customers
