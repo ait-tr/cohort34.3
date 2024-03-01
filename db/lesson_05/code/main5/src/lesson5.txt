@@ -1,0 +1,90 @@
+JSON
+"first_name" : "Bill"
+"last_name" : "Smith"
+BSON
+
+MongoDB             RelationalDBMS
+Documents             Rows
+Collections           Tables
+
+{
+  title : "Lesson 5"
+  date :  new Date('March 01, 2024')
+ }
+
+ {
+   title : "Lesson 4"
+   date :  new Date('March 04, 2024')
+   teacher : "Evgeny"
+ }
+
+ Data types
+ Null
+ "name" : null
+
+ Boolean
+ "name":true
+
+ Number
+ "price ": 20.78
+ "price ": 900
+
+ String
+ "name": "John"
+
+ Date
+ "date" : new  Date()
+
+ Array
+ "persons":["John",3.5,"Bill"]
+
+ Document
+ {
+    "title": "The Lord of the Rings",
+    "pages": 1500,
+    "author": {
+        "first_name":"John",
+        "last_name": "Tolkien"
+    }
+
+ }
+
+ ObjectId
+ "_id"
+
+ Create:
+ insertOne(
+    <document>
+ )
+
+ insertMany
+ db.collection.insertMany(
+        document1, document2
+ )
+
+ поиск
+ findOne()
+ db.collection.findOne(query, projection)
+
+ операторы сравнения:
+ $eq =
+ $lt <
+ $lte <=
+ $gte >=
+ $ne !=
+ $in
+ $nin
+
+ $and
+ $or
+ $not
+
+ Aggregation pipeline
+ Операции, которые могут выполняться:
+ $project -  выбор полей
+ $match -  выбрать документы
+ $limit - ограничивает кол-во документов
+ $sort - сортирует документы
+ $group
+ db.collection.aggregate()
+
